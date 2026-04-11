@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115029574897+0000_in_the_world_bank_supply_chain_management_guidance",
+  "timestamp_utc": "2026-04-11T11:50:29.574897+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "In the World Bank supply chain management guidance, what does the 'spread or transfer' risk reduction approach include?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.14714414981909194,
+      "chunk_id": "worldbank_scm_guidance_2023:p0007:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 7,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "v Contents SECTION I. Introduction ........................................... 1 Purpose ......................................................................... 1 Background ...................................................................... 1 How to Use this Guidance.......................................................... 2 What is Supply Chain Management?................................................. 2 A Simple Illustration of a Supply Chain ............................................... 3 The Importance of Supply Chain Management........................................ 5 Objectives of Supply Chain Management ............................................ 6 SECTION II. Incorporating SCM into the Procurement Process . . . . . . . . . .9 Overview ........................................................................ 9 Supply Chain Analysis ............................................................ 10 Creating Leverage",
+      "char_count": 944
+    },
+    {
+      "rank": 2,
+      "score": 0.12560535066350403,
+      "chunk_id": "wto_gvc_2025:p0063:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 63,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "\b Enterprise Surveys – Firm-Level Data. Washington, DC: World Bank\b https://www\benterprisesurveys\borg/\b World Bank\b 2025c\b Logistics Performance Index (LPI)\b Washington, DC: World Bank\b https://lpi\bworldbank\borg/\b World Bank\b 2025d\b World Development Indicators (WDI). Washington, DC: World Bank\b https://databank\bworldbank\borg/source/world-development-indicators\b World Bank\b 2025e\b B-READY (Business Ready) Program Indicators. Washington, DC: World Bank\b https://www\bworldbank\borg/en/programs/business-ready\b World Bank\b 2025f\b Global Findex Database 2025. Washington, DC: World Bank\b https:// globalfindex\bworldbank\borg/\b World Bank Group, WTO, IDE-JETRO, OECD, and UIBE\b 2017\b Global Value Chain Development Report 2017: Measuring and Analyzing the Impact of GVCs on Economic Development. Washington, DC: World Bank\b World Economic Forum (WEF)\b 2024\b Future of Growth Report 2024. Geneva: World Economic Forum\b https://www3\bweforum\borg/docs/WEF_Future_of_Growth_ Report_2024\bpdf\b World Trade",
+      "char_count": 995
+    },
+    {
+      "rank": 3,
+      "score": 0.11754024564066244,
+      "chunk_id": "oecd_scrr_2025:p0042:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 42,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "Globalization, convergence, and history”, The Journal of Economic History, Vol. 56/2, pp. 277-306, https://doi.org/10.1017/s0022050700016454. [5] WITS (2025), World Integrated Trade Solutions (dataset), https://wits.worldbank.org/. [15] World Bank (2025), World Development Indicators, https://databank.worldbank.org/source/world- development-indicators (accessed on 2025). [14] World Bank (2020), World Bank Development Report 2020: Trading for development in the age of global value chains, World Bank, Washington, DC. [4] World Bank and WTO (2022), Trade Therapy: Deepening Cooperation to Strengthen Pandemic Defenses, The World Bank and the World Trade Organization, https://doi.org/10.1596/978-1- 4648-1885-1. [28] WTO (2024), World Trade Report 2024: Trade and Inclusiveness: How to make trade work for all, World Trade Organization, Geneva, https://www.wto.org/english/res_e/publications_e/wtr24_e.htm. [12] Notes 1 GVC trade refers to trade flows associated with the vertical specialisation",
+      "char_count": 998
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

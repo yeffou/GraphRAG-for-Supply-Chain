@@ -1,0 +1,514 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130200247371+0000_how_do_information-sharing_and_visibility_help_fir",
+  "timestamp_utc": "2026-04-11T13:02:00.247371+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "How do information-sharing and visibility help firms identify disruptions early and respond more effectively?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::firms",
+      "canonical_name": "Firms",
+      "entity_type": "actor",
+      "matched_alias": "firms",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::visibility",
+      "canonical_name": "Visibility",
+      "entity_type": "capability",
+      "matched_alias": "visibility",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::risk::supply_chain_disruption",
+      "canonical_name": "Supply Chain Disruption",
+      "entity_type": "risk",
+      "matched_alias": "disruptions",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::strategy::information_sharing",
+      "canonical_name": "Information Sharing",
+      "entity_type": "strategy",
+      "matched_alias": "information sharing",
+      "source": "base",
+      "is_generic": false
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.84138,
+      "chunk_id": "itf_collaboration_scm_2018:p0014:c003",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions . Subsequently this enables flexibility through allowing sufficient time to coordinate other supply chain resources to achieve the desired outcome. Communication facilitates the streamlining of supply chain processes, thereby enhancing the ve locity of subsequent supply chain responses to a disruptive event . Another managerial contribution directly relates to supplier management through collaborative supply chain efforts and the leveraging of supply chain members ’ capabilities. Managers can enh ance supply chain flexibility through the reciprocal leveraging of partners ’ resources to respond to a disruptive event under capacity limitations . Internal",
+      "char_count": 771,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::information_sharing",
+          "canonical_name": "Information Sharing",
+          "entity_type": "strategy",
+          "matched_alias": "information sharing",
+          "specificity": 0.9102392266268374,
+          "score_contribution": 3.640957,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::visibility",
+          "canonical_name": "Visibility",
+          "entity_type": "capability",
+          "matched_alias": "visibility",
+          "specificity": 0.7200385228630293,
+          "score_contribution": 2.880154,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruptions",
+          "specificity": 0.4113243956235369,
+          "score_contribution": 1.645298,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "trigger": "disruptions",
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.572942
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::strategy::information_sharing",
+          "target_name": "Information Sharing",
+          "trigger": null,
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 6.300875
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::strategy::information_sharing",
+          "target_name": "Information Sharing",
+          "trigger": null,
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.884111
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 159,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.291733
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::information_sharing",
+          "source_name": "Information Sharing",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 19,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.629393
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 0,
+          "support_count": 20,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.366202
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::strategy::information_sharing",
+          "target_name": "Information Sharing",
+          "relation_chain": [
+            "AFFECTS",
+            "APPLIES_TO"
+          ],
+          "evidence_texts": [
+            "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+            "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions ."
+          ],
+          "score_contribution": 2.950189
+        },
+        {
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "APPLIES_TO",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+            "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions ."
+          ],
+          "score_contribution": 2.683908
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 8.166409,
+        "coverage_bonus": 10.125,
+        "sentence_alignment": 36.942362,
+        "direct_relation": 33.045256,
+        "path_bonus": 5.634097,
+        "lexical_overlap": 0.388889,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 91.152013
+      },
+      "dense_rank": 1,
+      "dense_score": 0.628083,
+      "graph_rank": null,
+      "graph_score": 91.152013,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.313796,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.75,
+        "relation_signal": 1.0,
+        "total": 0.84138
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.726895,
+      "chunk_id": "itf_collaboration_scm_2018:p0014:c002",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "to, and recover from supply chain disruption (Christopher and Peck , 2004; Sheffi and Rice , 2005). Supply Chain Collaboration and Resilience Scholten and Schilder (2015) described how specific collaborative activities (information-sharing, collaborative communication, mutually created knowledge and joint relationship efforts) increase supply chain resilience via increased visibility, velocity and flexibility . This was one of the first papers to provide an in-depth insight into collaboration as a formative element of resilience in a supply chain setting . A series of propositions in the paper explain the specific influence of collaborative activities on supply chain resilience beyond a single company perspective. Further to this, Botes et al ., (2017) provided managerial insights into the importance of collaborative communication and information -sharing in gaining supply chain visibility, helping early identification of impending disruptions . Subsequently this enables flexibility",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::information_sharing",
+          "canonical_name": "Information Sharing",
+          "entity_type": "strategy",
+          "matched_alias": "information sharing",
+          "specificity": 0.9102392266268374,
+          "score_contribution": 3.640957,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::visibility",
+          "canonical_name": "Visibility",
+          "entity_type": "capability",
+          "matched_alias": "visibility",
+          "specificity": 0.7200385228630293,
+          "score_contribution": 2.880154,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "supply chain disruption",
+          "specificity": 0.4113243956235369,
+          "score_contribution": 1.645298,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "trigger": "disruptions",
+          "evidence_text": "Further to this, Botes et al ., (2017) provided managerial insights into the importance of collaborative communication and information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 5,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.572942
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::recovery",
+          "source_name": "Recovery",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "to, and recover from supply chain disruption (Christopher and Peck , 2004;",
+          "sentence_index": 0,
+          "support_count": 13,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.409996
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "to, and recover from supply chain disruption (Christopher and Peck , 2004;",
+          "sentence_index": 0,
+          "support_count": 159,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.291733
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Further to this, Botes et al ., (2017) provided managerial insights into the importance of collaborative communication and information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 5,
+          "support_count": 159,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.291733
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::information_sharing",
+          "source_name": "Information Sharing",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Supply Chain Collaboration and Resilience Scholten and Schilder (2015) described how specific collaborative activities (information-sharing, collaborative communication, mutually created knowledge and joint relationship efforts) increase supply chain resilience via increased visibility, velocity and flexibility .",
+          "sentence_index": 2,
+          "support_count": 19,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.629393
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::information_sharing",
+          "source_name": "Information Sharing",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Further to this, Botes et al ., (2017) provided managerial insights into the importance of collaborative communication and information -sharing in gaining supply chain visibility, helping early identification of impending disruptions .",
+          "sentence_index": 5,
+          "support_count": 19,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.629393
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::strategy::information_sharing",
+          "target_name": "Information Sharing",
+          "relation_chain": [
+            "AFFECTS",
+            "APPLIES_TO"
+          ],
+          "evidence_texts": [
+            "to, and recover from supply chain disruption (Christopher and Peck , 2004;",
+            "Supply Chain Collaboration and Resilience Scholten and Schilder (2015) described how specific collaborative activities (information-sharing, collaborative communication, mutually created knowledge and joint relationship efforts) increase supply chain resilience via increased visibility, velocity and flexibility ."
+          ],
+          "score_contribution": 2.950189
+        },
+        {
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "APPLIES_TO",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "Supply Chain Collaboration and Resilience Scholten and Schilder (2015) described how specific collaborative activities (information-sharing, collaborative communication, mutually created knowledge and joint relationship efforts) increase supply chain resilience via increased visibility, velocity and flexibility .",
+            "to, and recover from supply chain disruption (Christopher and Peck , 2004;"
+          ],
+          "score_contribution": 2.683908
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 8.166409,
+        "coverage_bonus": 10.125,
+        "sentence_alignment": 40.173824,
+        "direct_relation": 42.531929,
+        "path_bonus": 5.634097,
+        "lexical_overlap": 0.388889,
+        "generic_penalty": 2.0,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.3,
+        "total": 102.320148
+      },
+      "dense_rank": 4,
+      "dense_score": 0.587878,
+      "graph_rank": null,
+      "graph_score": 102.320148,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.806115,
+        "graph_score": 0.352668,
+        "dense_rank_signal": 0.785714,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.75,
+        "relation_signal": 1.0,
+        "total": 0.726895
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.69698,
+      "chunk_id": "itf_collaboration_scm_2018:p0009:c004",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "scope of the study focused on the quality of information . Findings are that information sharing plays an important role and has a positive impact on operational firm performance even with low or high quality of information.",
+      "char_count": 224,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::information_sharing",
+          "canonical_name": "Information Sharing",
+          "entity_type": "strategy",
+          "matched_alias": "information sharing",
+          "specificity": 0.9102392266268374,
+          "score_contribution": 3.640957,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::firms",
+          "canonical_name": "Firms",
+          "entity_type": "actor",
+          "matched_alias": "firm",
+          "specificity": 0.3229467764196763,
+          "score_contribution": 1.291787,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::information_sharing",
+          "source_name": "Information Sharing",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": null,
+          "evidence_text": "Findings are that information sharing plays an important role and has a positive impact on operational firm performance even with low or high quality of information.",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 6.557088
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 4.932744,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 8.776823,
+        "direct_relation": 6.557088,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.0,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.0,
+        "total": 19.966655
+      },
+      "dense_rank": 2,
+      "dense_score": 0.616765,
+      "graph_rank": null,
+      "graph_score": 19.966655,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.945421,
+        "graph_score": 0.06603,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.5,
+        "relation_signal": 0.55,
+        "total": 0.69698
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

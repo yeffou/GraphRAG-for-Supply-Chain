@@ -1,0 +1,219 @@
+{
+  "evaluation_id": "retrieval_eval_20260411T130055563570+0000",
+  "timestamp_utc": "2026-04-11T13:02:06.122169+00:00",
+  "question_count": 24,
+  "top_k": 3,
+  "scoring_version": "retrieval_eval_v2_dual_track",
+  "questions_path": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/data/evaluation/questions.jsonl",
+  "output_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/evaluation/retrieval_eval_20260411T130055563570+0000",
+  "category_distribution": {
+    "causal": 5,
+    "direct_factual": 7,
+    "mitigation": 4,
+    "multi_hop": 5,
+    "trade_off": 3
+  },
+  "evaluation_track_distribution": {
+    "exact_retrieval": 8,
+    "graph_stressing": 16
+  },
+  "explanation_oriented_question_count": 16,
+  "method_summaries": [
+    {
+      "method_label": "dense",
+      "retrieval_method": "baseline_dense",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "question_count": 24,
+      "wins": 5,
+      "wins_by_track": {
+        "exact_retrieval": 3,
+        "graph_stressing": 2
+      },
+      "mean_relevance": 0.579054,
+      "mean_directness": 0.521635,
+      "mean_groundedness": 0.465103,
+      "mean_correctness_of_evidence": 0.496906,
+      "mean_overall": 0.515675,
+      "mean_collective_concept_coverage": 0.498611,
+      "mean_collective_relation_support": 0.783003,
+      "mean_collective_reasoning_support": 0.474028,
+      "top1_doc_accuracy": 0.791667,
+      "topk_gold_chunk_recall": 0.458333,
+      "mean_overall_by_category": {
+        "causal": 0.530724,
+        "direct_factual": 0.439008,
+        "mitigation": 0.356787,
+        "multi_hop": 0.622594,
+        "trade_off": 0.703132
+      },
+      "mean_overall_by_track": {
+        "exact_retrieval": 0.384132,
+        "graph_stressing": 0.581446
+      },
+      "failure_reasons": {
+        "broad_context_not_direct": 2,
+        "competitive": 11,
+        "concept_coverage_gap": 6,
+        "indirect_context_only": 2,
+        "weak_evidence_support": 1,
+        "wrong_document_cluster": 2
+      },
+      "question_ids_won": [
+        "q03_triple_a_qualities",
+        "q04_services_for_adaptable_supply_chains",
+        "q07_worldbank_spread_or_transfer",
+        "q15_trade_facilitation_agility",
+        "q19_aligning_sustainability_efficiency_resilience"
+      ]
+    },
+    {
+      "method_label": "graph",
+      "retrieval_method": "baseline_graph",
+      "embedding_model": "graph_entity_relation_v3",
+      "question_count": 24,
+      "wins": 7,
+      "wins_by_track": {
+        "graph_stressing": 7
+      },
+      "mean_relevance": 0.506009,
+      "mean_directness": 0.497572,
+      "mean_groundedness": 0.408034,
+      "mean_correctness_of_evidence": 0.45225,
+      "mean_overall": 0.465966,
+      "mean_collective_concept_coverage": 0.347222,
+      "mean_collective_relation_support": 0.878155,
+      "mean_collective_reasoning_support": 0.459928,
+      "top1_doc_accuracy": 0.625,
+      "topk_gold_chunk_recall": 0.375,
+      "mean_overall_by_category": {
+        "causal": 0.639823,
+        "direct_factual": 0.251268,
+        "mitigation": 0.303462,
+        "multi_hop": 0.606007,
+        "trade_off": 0.660438
+      },
+      "mean_overall_by_track": {
+        "exact_retrieval": 0.219859,
+        "graph_stressing": 0.589019
+      },
+      "failure_reasons": {
+        "competitive": 9,
+        "concept_coverage_gap": 3,
+        "indirect_context_only": 4,
+        "wrong_document_cluster": 8
+      },
+      "question_ids_won": [
+        "q08_diversification_improves_resilience",
+        "q09_trade_cooperation_improves_resilience",
+        "q11_digitalisation_improves_resilience",
+        "q12_collaboration_strengthens_resilience",
+        "q19_aligning_sustainability_efficiency_resilience",
+        "q21_trade_facilitation_new_suppliers",
+        "q24_trade_in_services_and_resilience"
+      ]
+    },
+    {
+      "method_label": "hybrid_graph",
+      "retrieval_method": "baseline_graph_hybrid",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+      "question_count": 24,
+      "wins": 7,
+      "wins_by_track": {
+        "exact_retrieval": 1,
+        "graph_stressing": 6
+      },
+      "mean_relevance": 0.610369,
+      "mean_directness": 0.567312,
+      "mean_groundedness": 0.503113,
+      "mean_correctness_of_evidence": 0.535724,
+      "mean_overall": 0.554129,
+      "mean_collective_concept_coverage": 0.546528,
+      "mean_collective_relation_support": 0.829898,
+      "mean_collective_reasoning_support": 0.524836,
+      "top1_doc_accuracy": 0.791667,
+      "topk_gold_chunk_recall": 0.541667,
+      "mean_overall_by_category": {
+        "causal": 0.522156,
+        "direct_factual": 0.49856,
+        "mitigation": 0.373903,
+        "multi_hop": 0.700959,
+        "trade_off": 0.732665
+      },
+      "mean_overall_by_track": {
+        "exact_retrieval": 0.43624,
+        "graph_stressing": 0.613074
+      },
+      "failure_reasons": {
+        "broad_context_not_direct": 2,
+        "competitive": 13,
+        "concept_coverage_gap": 5,
+        "indirect_context_only": 1,
+        "weak_evidence_support": 1,
+        "wrong_document_cluster": 2
+      },
+      "question_ids_won": [
+        "q03_triple_a_qualities",
+        "q08_diversification_improves_resilience",
+        "q15_trade_facilitation_agility",
+        "q18_resilience_efficiency_sustainability_tradeoffs",
+        "q19_aligning_sustainability_efficiency_resilience",
+        "q22_information_sharing_visibility_disruptions",
+        "q23_sustainability_rules_and_foreign_suppliers"
+      ]
+    },
+    {
+      "method_label": "tfidf",
+      "retrieval_method": "baseline_rag",
+      "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+      "question_count": 24,
+      "wins": 13,
+      "wins_by_track": {
+        "exact_retrieval": 6,
+        "graph_stressing": 7
+      },
+      "mean_relevance": 0.673269,
+      "mean_directness": 0.6139,
+      "mean_groundedness": 0.574584,
+      "mean_correctness_of_evidence": 0.600883,
+      "mean_overall": 0.615659,
+      "mean_collective_concept_coverage": 0.636111,
+      "mean_collective_relation_support": 0.749143,
+      "mean_collective_reasoning_support": 0.537702,
+      "top1_doc_accuracy": 0.958333,
+      "topk_gold_chunk_recall": 0.625,
+      "mean_overall_by_category": {
+        "causal": 0.539842,
+        "direct_factual": 0.686047,
+        "mitigation": 0.514585,
+        "multi_hop": 0.605221,
+        "trade_off": 0.729945
+      },
+      "mean_overall_by_track": {
+        "exact_retrieval": 0.621243,
+        "graph_stressing": 0.612867
+      },
+      "failure_reasons": {
+        "broad_context_not_direct": 1,
+        "competitive": 12,
+        "concept_coverage_gap": 5,
+        "indirect_context_only": 3,
+        "weak_evidence_support": 3
+      },
+      "question_ids_won": [
+        "q01_strategic_manufacturing_foreign_inputs",
+        "q02_three_building_blocks",
+        "q03_triple_a_qualities",
+        "q05_four_external_transport_disruptions",
+        "q06_early_warning_examples",
+        "q09_trade_cooperation_improves_resilience",
+        "q10_relocalisation_vs_resilience",
+        "q13_wto_mitigation_strategies",
+        "q14_strengthen_service_sectors",
+        "q16_early_warning_and_intervention",
+        "q17_efficiency_resilience_tradeoff",
+        "q18_resilience_efficiency_sustainability_tradeoffs",
+        "q20_crm_concentration_export_restrictions"
+      ]
+    }
+  ]
+}

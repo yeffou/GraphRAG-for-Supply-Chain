@@ -1,0 +1,319 @@
+{
+  "run_id": "baseline_graph_20260411T130111360030+0000_what_examples_of_early_warning_or_risk-reduction_s",
+  "timestamp_utc": "2026-04-11T13:01:11.360030+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "What examples of early warning or risk-reduction strategies does the WTO report mention for preparing for shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::wto",
+      "canonical_name": "WTO",
+      "entity_type": "organization",
+      "matched_alias": "wto",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::strategy::early_warning",
+      "canonical_name": "Early Warning",
+      "entity_type": "strategy",
+      "matched_alias": "early warning",
+      "source": "base",
+      "is_generic": false
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 45.103107181125736,
+      "chunk_id": "wto_wtr_2021:p0006:c004",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and health services, can be enhanced by greater trade in services. When a shock hits, trade can help to mitigate the impact by allowing households and businesses continued access to goods and services. During the COVID-19 crisis, despite some pandemic-related export restrictions, trade helped countries meet the skyrocketing demand for medical products. In 2020, even as the value of global trade declined by 7.6 per cent, trade in medical supplies grew by 16 per cent. Trade in personal protective equipment Foreword by the WTO Director-General",
+      "char_count": 693,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 4.547078,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shock",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::wto",
+          "canonical_name": "WTO",
+          "entity_type": "organization",
+          "matched_alias": "wto",
+          "specificity": 0.06148607146505206,
+          "score_contribution": 0.110675,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::sector::telecommunications_services",
+          "target_name": "Telecommunications Services",
+          "trigger": "enhanced",
+          "evidence_text": "Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and health services, can be enhanced by greater trade in services.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.734639
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::system::trade_in_services",
+          "target_name": "Trade in Services",
+          "trigger": "enhanced",
+          "evidence_text": "Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and health services, can be enhanced by greater trade in services.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.734639
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::strategy::insurance",
+          "target_name": "Insurance",
+          "trigger": null,
+          "evidence_text": "Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and health services, can be enhanced by greater trade in services.",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.726926
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 4.984514,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 19.392389,
+        "direct_relation": 17.196204,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.28,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.5,
+        "total": 45.103107
+      }
+    },
+    {
+      "rank": 2,
+      "score": 39.36185636225147,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0008:c002",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 8,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "ency can be responsible for managing specific supply chain risks. Equally, a specific government agency can be in charge of a particular type of risk, e.g. disruptions related to health, logistics. • Based on the above structure, identify different agencies and local administrations responsible for responding to the early warning signs and implementing risk management strategies that would report to the government bodies managing overall risk. • Identify and agree on a diverse set of indicators that encompass a wide range of potential risks. This includes mechanisms to detect and anticipate crises (e.g. monitoring the vulnerabilities in supply chains, international exchange of information, and early warning indicators). • Develop a methodology to identify the right time for the government to intervene based on the above indicators – when the level of disruption to supply chains exceeds “routine risks”. • Create a system for collecting data about past supply chain disruptions from",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 4.547078,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": null,
+          "evidence_text": "• Based on the above structure, identify different agencies and local administrations responsible for responding to the early warning signs and implementing risk management strategies that would report to the government bodies managing overall risk.",
+          "sentence_index": 3,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.734639
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "monitoring the vulnerabilities in supply chains, international exchange of information, and early warning indicators).",
+          "sentence_index": 6,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.626926
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::vulnerability",
+          "source_name": "Vulnerability",
+          "target_entity_id": "entity::strategy::early_warning",
+          "target_name": "Early Warning",
+          "trigger": null,
+          "evidence_text": "monitoring the vulnerabilities in supply chains, international exchange of information, and early warning indicators).",
+          "sentence_index": 6,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.834639
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 4.547078,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 17.588574,
+        "direct_relation": 13.196204,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.28,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 39.361856
+      }
+    },
+    {
+      "rank": 3,
+      "score": 33.34158018112574,
+      "chunk_id": "wto_wtr_2021:p0010:c002",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 10,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "e a leading source of greenhouse gas emissions, it does cause emissions to be generated through transport and by enabling increased production. In the absence of effective climate change policy, such emissions contribute to climate change and the risk of climate-based natural disasters. Trade can, however, also mitigate the risk of climate change by facilitating the adoption and deployment of environmental goods, services and technologies, including clean and renewable energy. Trade can also contribute to climate change adaptation by bridging the difference between supply and demand across regions; for example, as some regions experience falling yields for some crops, others will experience rising yields. Trade in services can also be crucial in helping countries prepare for and cope with shocks. For example, weather forecasting and early warning systems can anticipate and spread information about storms, fires, floods, droughts and earthquakes. Insurance supports incomes and",
+      "char_count": 990,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 4.547078,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::drought",
+          "source_name": "Drought",
+          "target_entity_id": "entity::strategy::early_warning",
+          "target_name": "Early Warning",
+          "trigger": null,
+          "evidence_text": "For example, weather forecasting and early warning systems can anticipate and spread information about storms, fires, floods, droughts and earthquakes.",
+          "sentence_index": 6,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.726926
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::earthquake",
+          "source_name": "Earthquake",
+          "target_entity_id": "entity::strategy::early_warning",
+          "target_name": "Early Warning",
+          "trigger": null,
+          "evidence_text": "For example, weather forecasting and early warning systems can anticipate and spread information about storms, fires, floods, droughts and earthquakes.",
+          "sentence_index": 6,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.726926
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::flood",
+          "source_name": "Flood",
+          "target_entity_id": "entity::strategy::early_warning",
+          "target_name": "Early Warning",
+          "trigger": null,
+          "evidence_text": "For example, weather forecasting and early warning systems can anticipate and spread information about storms, fires, floods, droughts and earthquakes.",
+          "sentence_index": 6,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.726926
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 4.873839,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 13.326963,
+        "direct_relation": 11.180778,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.21,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 33.34158
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "run_id": "baseline_graph_20260411T121646590517+0000_how_does_trade_in_services_support_resilience_duri",
+  "timestamp_utc": "2026-04-11T12:16:46.590517+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How does trade in services support resilience during shocks according to the WTO and OECD reports?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd"
+    },
+    {
+      "entity_id": "entity::organization::wto",
+      "canonical_name": "WTO",
+      "entity_type": "organization",
+      "matched_alias": "wto"
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 81.56951177937101,
+      "chunk_id": "wto_gvc_2025:p0011:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 11,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "k of reassessing their position within GVCs. While rapid trade liberalization, technological change and a rules-based international system fuelled the expansion of GVCs in previous decades, the “hyper-globalization” model has slowed since the global financial crisis of 2008 (IMF 2025). A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean). Figure 2.7: Simulated Unit Labor Cost Differences, By Macro-Region and Scenario Note: Simulated differences in unit labor costs across",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 41,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.002458
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "direct_pair",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::preparedness",
+          "source_name": "Preparedness",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_supply_chain",
+          "target_name": "Global Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.892476,
+        "coverage_bonus": 4.0,
+        "direct_relation": 75.627036,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.33,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.28,
+        "total": 81.569512
+      }
+    },
+    {
+      "rank": 2,
+      "score": 69.05284677937102,
+      "chunk_id": "worldbank_scm_guidance_2023:p0016:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 16,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "general overview of SCM functions and their objectives, please see Annex III): ◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+      "char_count": 580,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.002458
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shortage",
+          "target_name": "Shortage",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.317975
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.892476,
+        "coverage_bonus": 4.0,
+        "direct_relation": 63.290371,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.11,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.24,
+        "total": 69.052847
+      }
+    },
+    {
+      "rank": 3,
+      "score": 68.869311779371,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 41,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.002458
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.917975
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.254201
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.892476,
+        "coverage_bonus": 4.0,
+        "direct_relation": 62.296836,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.44,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.76,
+        "total": 68.869312
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

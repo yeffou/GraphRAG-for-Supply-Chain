@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115028503407+0000_what_three_basic_building_blocks_do_firms_rely_on_",
+  "timestamp_utc": "2026-04-11T11:50:28.503407+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What three basic building blocks do firms rely on to build resilient supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.24098807968724226,
+      "chunk_id": "oecd_scrr_2025:p0021:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 21,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 19 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 1.6. Supply chains can be resilient without undermining the benefits of open markets Commonly proposed strategies for addressing the risk of foreign supply, such as dual sourcing, diversification of supply or reshoring, can increase the complexity of supply chains, affect growth and may not always improve resilience. There are risks everyw here – in the domestic economy as much as in foreign economies from which key inputs are sourced. Firms adopt resilience strategies for all types of risks and cannot focus only on risks related to foreign supply. Moreover, uncertainty is not just a vulnerability – it is also an opportunity. It is precisely the competitive advantage of global firms to benefit from market arbitrage, shifting production and exploiting opportunities in local markets they operate in. To build resilient supply chains, firms gener ally rely on three basic building blocks: redundancy (maintaining safety stocks and back -up",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.23044159098884132,
+      "chunk_id": "oecd_scrr_2025:p0021:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 21,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "operate in. To build resilient supply chains, firms gener ally rely on three basic building blocks: redundancy (maintaining safety stocks and back -up suppliers), flexibility (developing dynamic capabilities to quickly adapt and change the organisation of supply chains when a disruption occurs) and a culture of responsiveness (adequate training of staff and managers as well as decentralised decision -making to quickly solve issues as they arise). Efficient risk management strategies combine these three blocks. Resilience strategies are also tailored to the type of risks: for routine risks the cost of redundancy strategies is acceptable, while for major crises inventories and back-up capacity will never be enough and firms need to be flexible to absorb disruptions. Top-performing firms tend to have supply chains posse ssing three qualities, described as “triple -A” (Lee, 2004[5]) because they are: • agile – they can react quickly to any change in demand or supply • adaptable – they can",
+      "char_count": 999
+    },
+    {
+      "rank": 3,
+      "score": 0.1814570083491074,
+      "chunk_id": "oecd_scrr_2025:p0102:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 102,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "The fifth type, catastrophic risk, emerges from unpredictable uncertainties and requires disaster management strategies to achieve resilience. 1. The literature refers to the concept of “ergodic” risks. An ergodic process is one whose properties can be deduced from a single (sufficiently long) random sample of the process. Non-ergodic processes change erratically at an inconsistent speed. 5.1. Firms use various strategies to build resilient supply chains Firms adopt various strategies to manage risks. They generally consist of three basic building blocks – introducing redundancy, building flexibility, and changing the corporate culture (Sheffi, 2020[4]; Sheffi and Rice Jr., 2005[5]). • Redundancy involves maintaining safety stocks, back-up suppliers and excess capacity in order to absorb any increase in demand and continue to serve customers during the disruption. There is a cost associated with such a strategy as firms need to invest in redundant assets that are not used when there",
+      "char_count": 997
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

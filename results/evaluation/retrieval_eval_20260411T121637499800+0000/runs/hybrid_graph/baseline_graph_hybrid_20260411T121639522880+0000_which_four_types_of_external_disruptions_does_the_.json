@@ -1,0 +1,365 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T121639522880+0000_which_four_types_of_external_disruptions_does_the_",
+  "timestamp_utc": "2026-04-11T12:16:39.522880+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v2",
+  "query_text": "Which four types of external disruptions does the transport resilience report focus on?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::risk::supply_chain_disruption",
+      "canonical_name": "Supply Chain Disruption",
+      "entity_type": "risk",
+      "matched_alias": "disruptions"
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.779485,
+      "chunk_id": "oecd_transport_resilience_2024:p0020:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 20,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 19 The crucial question for different transport systems is whether it is possible to determine this critical tipping point beyond which more connectedness results in catastrophic cascading prevalence. There are various transport systems in which the level of interconnections seems to have set in motion cascading effects that have transformed local crises into global crises, as was the case in the containerised transport chain in 2020-21 (ITF, 2022).",
+      "char_count": 564,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruptions",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE:",
+          "support_count": 74,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.76783
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": "disruptions",
+          "evidence_text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE:",
+          "support_count": 40,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": null,
+          "evidence_text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE:",
+          "support_count": 62,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.532772
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 19.73566,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.611111,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 31.09666
+      },
+      "dense_rank": 3,
+      "dense_score": 0.768429,
+      "graph_rank": null,
+      "graph_score": 31.09666,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.870006,
+        "graph_score": 0.438664,
+        "dense_rank_signal": 0.846154,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 1.0,
+        "relation_signal": 0.8,
+        "total": 0.779485
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.767764,
+      "chunk_id": "oecd_transport_resilience_2024:p0005:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 5,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "TABLE OF CONTENTS 4 TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Table of contents Executive summary ................................ ................................ ................................ ........................ 6 The resilience of transport systems ................................ ................................ ................................ 8 Disruptions to transport systems ................................ ................................ ................................ .. 11 Climate change .............................................................................................................................. 11 Pandemics ..................................................................................................................................... 12 Geopolitical conflicts ..................................................................................................................... 13 Cyber-attacks",
+      "char_count": 975,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruptions",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": "disruptions",
+          "evidence_text": "8 Disruptions to transport systems ................................",
+          "support_count": 40,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": null,
+          "evidence_text": "TABLE OF CONTENTS 4 TRANSPORT SYSTEM RESILIENCE:",
+          "support_count": 62,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.532772
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::system::transport_system",
+          "via_name": "Transport System",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "APPLIES_TO",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "TABLE OF CONTENTS 4 TRANSPORT SYSTEM RESILIENCE:",
+            "8 Disruptions to transport systems ................................"
+          ],
+          "score_contribution": 1.842819
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 9.96783,
+        "path_bonus": 1.842819,
+        "lexical_overlap": 0.366667,
+        "query_miss_penalty": 7.0,
+        "hub_penalty": 0.12,
+        "total": 15.807204
+      },
+      "dense_rank": 1,
+      "dense_score": 0.78929,
+      "graph_rank": null,
+      "graph_score": 15.807204,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.207639,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 1.0,
+        "relation_signal": 0.225,
+        "total": 0.767764
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.75779,
+      "chunk_id": "oecd_transport_resilience_2024:p0011:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 11,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "THE RESILIENCE OF TRANSPORT SYSTEMS 10 TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes. The first distinction is between internal or external causes: 1. Internal disruptions may originate from mistakes and accidents caused by staff or users, technical failures, components that break down, faulty constructions, overload and so on. They could also be intentional, such as labour market conflicts. 2. External disruptions may be related to natural phenomena including various degrees of adverse weather and natural disasters. One specific long-term threat that lies between internal and external causes is climate change, which is partially a consequence of human activities in the transport sector. The second distinction is between accidental or intentional causes: 1. Accidental disruptions strike the system mostly at random. 2. Intentional",
+      "char_count": 990,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruptions",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruptions",
+          "evidence_text": "SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": "disruptions",
+          "evidence_text": "SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes.",
+          "support_count": 40,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::transport_system",
+          "target_name": "Transport System",
+          "trigger": null,
+          "evidence_text": "THE RESILIENCE OF TRANSPORT SYSTEMS 10 TRANSPORT SYSTEM RESILIENCE:",
+          "support_count": 62,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.532772
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::risk::natural_disaster",
+          "source_name": "Natural Disaster",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "External disruptions may be related to natural phenomena including various degrees of adverse weather and natural disasters.",
+          "support_count": 8,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 2.335058
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::system::transport_system",
+          "via_name": "Transport System",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "APPLIES_TO",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "THE RESILIENCE OF TRANSPORT SYSTEMS 10 TRANSPORT SYSTEM RESILIENCE:",
+            "SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes."
+          ],
+          "score_contribution": 1.842819
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 18.737946,
+        "path_bonus": 1.842819,
+        "lexical_overlap": 0.855556,
+        "query_miss_penalty": 7.0,
+        "hub_penalty": 0.0,
+        "total": 25.186209
+      },
+      "dense_rank": 2,
+      "dense_score": 0.779401,
+      "graph_rank": null,
+      "graph_score": 25.186209,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.938375,
+        "graph_score": 0.349356,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 1.0,
+        "relation_signal": 0.35,
+        "total": 0.75779
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

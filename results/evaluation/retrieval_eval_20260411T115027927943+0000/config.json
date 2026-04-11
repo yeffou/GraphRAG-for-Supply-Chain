@@ -1,0 +1,11 @@
+{
+  "evaluation_id": "retrieval_eval_20260411T115027927943+0000",
+  "timestamp_utc": "2026-04-11T11:50:33.235112+00:00",
+  "top_k": 3,
+  "scoring_version": "retrieval_eval_v1",
+  "methods": {
+    "tfidf": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+    "dense": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+    "graph": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121643766855+0000_what_trade-off_between_efficiency_and_resilience_i",
+  "timestamp_utc": "2026-04-11T12:16:43.766855+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What trade-off between efficiency and resilience is discussed in the ITF paper on multimodal supply chains?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.329328349799349,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0004:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 4,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 3 Table of contents Introduction ................................ ................................ ................................ ................................ ........ 4 Multimodality and connectivity ................................ ................................ ................................ ........... 5 Supply chain risk and resilience ................................ ................................ ................................ ........... 6 Trade-off 1: Resilience-efficiency ................................ ................................ ................................ ......... 8 Trade-off 2: Efficiency-sustainability ................................ ................................ ................................ .... 9 Trade-off 3: Resilience-sustainability ................................ ................................",
+      "char_count": 978
+    },
+    {
+      "rank": 2,
+      "score": 0.232456383238059,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0021:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 21,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "2018-10/Photo credit: Slavomir Kubes/CTK Photo Balancing Efficiency and Resilience in Multimodal Supply Chains This report examines how efficiency and resilience can be balanced in the management of multimodal supply chains. It investigates the trade-off between supply chain resilience and efficiency, the approaches to sustainability in supply chain management, innovation and technological development, collaboration and alliances and risk mitigation. The report summarises findings from an ITF Roundtable held in April 2018. International Transport Forum 2 rue André Pascal F-75775 Paris Cedex 16 +33 (0)1 45 24 97 10 contact@itf-oecd.org www.itf-oecd.org",
+      "char_count": 659
+    },
+    {
+      "rank": 3,
+      "score": 0.19822285028957304,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0009:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 8 © OECD/ITF 2018 Trade-off 1: Resilience-efficiency There was wide agreement that in the management of supply chains, t here is an inverse relationship between econom ic efficiency and resilience. A nalysis of the relationship between traffic flows and resilience on the road networks of major US cities has also shown that in a transport planning context ‘resilience and efficiency are not correlated’. Central to the resilience -efficiency trade -off in business i s the management of inventory. For several decades, companies have been driving down inventory levels, partly to reduce working capital and related financing costs, but also to exploit a range of co-benefits, including higher productivity, improved product quality and lower space requirements , etc. Inventory has come to be regarded as a form of waste that needs to be minimised. As a result its important role as a buffer a",
+      "char_count": 998
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

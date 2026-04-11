@@ -1,0 +1,4 @@
+method_label,retrieval_method,embedding_model,question_count,wins,mean_relevance,mean_directness,mean_groundedness,mean_correctness_of_evidence,mean_overall
+dense,baseline_dense,sentence-transformers/all-MiniLM-L6-v2,24,10,0.512698,0.407581,0.464759,0.455525,0.460141
+graph,baseline_graph,graph_entity_relation_v2,24,3,0.28022,0.215892,0.241669,0.245609,0.245847
+tfidf,baseline_rag,tfidf_word_unigram_bigram_l2_v1,24,15,0.615319,0.512815,0.56535,0.561822,0.563827

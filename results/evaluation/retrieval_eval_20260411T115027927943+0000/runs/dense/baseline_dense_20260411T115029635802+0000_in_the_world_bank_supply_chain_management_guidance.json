@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115029635802+0000_in_the_world_bank_supply_chain_management_guidance",
+  "timestamp_utc": "2026-04-11T11:50:29.635802+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "In the World Bank supply chain management guidance, what does the 'spread or transfer' risk reduction approach include?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6049357652664185,
+      "chunk_id": "oecd_scrr_2025:p0101:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 101,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "raphical structure of supply chains and the choice of suppliers that do not allow for solutions such as repatriating all production. Second, risks are everywhere, including in the domestic economy, and can affect multiple suppliers at the same time (as witnessed during the COVID -19 pandemic). Firms and governments seek responses to all types of risks and not just to risks identified for a specific type of input coming from a specific country. The next crisis may be very different from the scenario they have planned for. Third, while there are risks when sourcing or producing internationally, there are also gains; a cost-benefit analysis generally suggests that some risks are acceptable. One can never eliminate all risks, so firms engage in what is called “real options”, d eploying their activities across countries to balance the benefits and risks (Klibi, Trepte and Rice Jr., 2024[1]). Supply chain operations are exposed to many types of risks ( Box 5.1). As explained by Sheffi",
+      "char_count": 993
+    },
+    {
+      "rank": 2,
+      "score": 0.6034470796585083,
+      "chunk_id": "worldbank_scm_guidance_2023:p0056:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 56,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "SUPPL Y CHAIN MANAGEMENT: AN INTRODUCTION AND PRACTICAL TOOLSET FOR PROCUREMENT PRACTITIONERS 46 ◾ Spread or transfer: The supply chain design is implemented, but risk is reduced via diversi- fication, subcontracting, outsourcing, joint ventures, hedging, or insurance. For example, the Borrower may want to purchase scarce components themselves, and then provide them to the Supplier/Contractor when needed (giving the Borrower more control, but also greater liability if they fail to deliver on quality issues). ◾ Accept: The supply chain design is implemented, and any risks associated with it are accepted. For example, the effort needed to prevent every small quality defect would outweigh the impact of the defect; hence Borrowers accept this risk, since the defect can be corrected easily and inexpensively without any harm to stakeholders. How risk mitigation and management can look like for the three identified risks from Example Box 10 is illustrated in Example Box 11. EXAMPLE BOX 11:",
+      "char_count": 997
+    },
+    {
+      "rank": 3,
+      "score": 0.59942626953125,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0019:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 19,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty. • Employ a wide range of policies to support the participation of small and medium-sized enterprises (SME) in international supply chains. SMEs have fewer resources to devote to risk management strategies and therefore need higher government support. • Provide help and guidance for companies with the implementation of their risk-management strategies – disseminate best practices and lessons learned. • Promote greater traceability in supply chains and more sustainable practices through the use of responsible business conduct (RBC) standards and tools (such as due diligence). • Review domestic stockpiling decisions against a wide range of policies and assess on a case-by-case basis. Conduct an in-depth cost-benefit analysis. • Work closely with the",
+      "char_count": 1000
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

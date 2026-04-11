@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130203260145+0000_how_does_trade_in_services_support_resilience_duri",
+  "timestamp_utc": "2026-04-11T13:02:03.260145+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How does trade in services support resilience during shocks according to the WTO and OECD reports?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.1085806070225777,
+      "chunk_id": "wto_wtr_2021:p0013:c002",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 13,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "ional cooperation on trade takes place at the multilateral, plurilateral and regional levels. In this context, the WTO actively helps to advance trade cooperation by supporting policies that create or expand positive spillovers, by limiting WTO members’ discretion to adopt policies that cause negative cross-border spillovers, and by providing a forum to address and resolve frictions. Among the WTO’s contributions to trade cooperation are reduced trade barriers, streamlined customs procedures, encouragement for greater policy transparency and predictability, trade capacity-building in poorer countries, and collaboration with other international organizations to strengthen the global economy. The existing body of multilateral, plurilateral and regional rules and disciplines is complemented by work by international organizations that directly seeks to foster economic resilience. During the COVID-19 pandemic the WTO has monitored pandemic-related measures governments have introduced to",
+      "char_count": 996
+    },
+    {
+      "rank": 2,
+      "score": 0.10449899077445131,
+      "chunk_id": "wto_wtr_2021:p0013:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 13,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "ectly seeks to foster economic resilience. During the COVID-19 pandemic the WTO has monitored pandemic-related measures governments have introduced to restrict or facilitate trade, thus enhancing transparency about market conditions. It has worked with vaccine manufacturers, as well as with other international organizations, to identify bottlenecks in the vaccine supply chain, which has yielded granular information about key vaccine inputs and the panoply of trade and regulatory policies that could potentially impede their cross-border movement. The WTO was able to use its role as a convener and coordinator of different actors to contribute to efforts to increase vaccine production volumes and decentralize vaccine manufacturing. Longstanding WTO work to track the evolution of goods and services trade, and to deliver policy support and technical cooperation, now reflects the pandemic’s impact on the global economy, and thus helps inform members’ policy responses. WTO members themselves",
+      "char_count": 999
+    },
+    {
+      "rank": 3,
+      "score": 0.09911387940859863,
+      "chunk_id": "wto_wtr_2021:p0008:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 8,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "d strength during the pandemic, helping countries cope by facilitating access to critical medical supplies, food and consumer goods, and by supporting their economic recovery (see Figure 1). According to the WTO’s most recent forecast, global economic output (at market exchange rates) is projected to recover by 5.3 per cent in 2021. This has been, in part, thanks to the robust recovery in merchandise trade, which is set to rise by 8 per cent in 2021. However, trade in services continues to remain depressed. The 2021 World Trade Report looks at why the interconnected global trading system is both vulnerable and resilient to crises, how it can help countries to be more economically resilient to shocks, and what can be done to make the system better prepared and more resilient in the future. These are pressing questions in light of the prospect of increasingly frequent and more intense natural and man-made disasters. For example, climate change is driving increases in extreme weather",
+      "char_count": 995
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

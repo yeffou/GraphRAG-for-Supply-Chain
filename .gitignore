@@ -1,0 +1,41 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
+
+# Local corpus and generated processed data
+data/raw/*
+data/processed/*
+
+# Generated experiment artifacts
+results/indexes/*
+results/graphs/*
+results/runs/*
+results/evaluations/*
+results/answers/*
+results/answer_evaluation/*

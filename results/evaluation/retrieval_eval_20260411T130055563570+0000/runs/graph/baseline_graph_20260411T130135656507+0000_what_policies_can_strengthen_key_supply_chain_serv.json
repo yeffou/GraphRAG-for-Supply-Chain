@@ -1,0 +1,311 @@
+{
+  "run_id": "baseline_graph_20260411T130135656507+0000_what_policies_can_strengthen_key_supply_chain_serv",
+  "timestamp_utc": "2026-04-11T13:01:35.656507+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "What policies can strengthen key supply chain service sectors, and why do they matter for resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 45.712338555555554,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0009:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment. Minimising exposure to external risks and promoting growth need not be a zero-sum game. Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness. These actions represent an investment that is likely to have long-term benefits extending well beyond the time of a crisis. They also support the private sector by strengthening the external framework in which supply chains operate, indirectly helping to build resilience. Minimise exposure to shocks: Deploying domestic policy tools",
+      "char_count": 904,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "improving",
+          "evidence_text": "Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness.",
+          "sentence_index": 2,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "strengthening",
+          "evidence_text": "They also support the private sector by strengthening the external framework in which supply chains operate, indirectly helping to build resilience.",
+          "sentence_index": 4,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.645899
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.395268,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 19.946697,
+        "direct_relation": 26.803707,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.466667,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 45.712339
+      }
+    },
+    {
+      "rank": 2,
+      "score": 40.334857,
+      "chunk_id": "unctad_gsc_2023:p0014:c001",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 14,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "as in just-in-case systems (Jenkins, 2021). Supply chain diversification has proven an effective means of strengthening supply chain resilience while overcoming supply chain disruption and improving company profitability and demand flows. Supply chain resilience can be defined as follows: the ability of a supply chain to return to its original state or move to a more desirable state after being disrupted (Barroso et al., 2010; Brandon-Jones et al., 2014; Carvalho et al., 2011; Christopher and Peck, 2004; Christopher and Rutherford, 2004), the ability of the production and distribution system to meet each customer demand for each product on time and to quantity (Priya Datta et al., 2007) and the ability to quickly adapt and respond to changes (Erol et al., 2010). These definitions and others are recapitulated in Tukamuhabwa et al. (2015). With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption. Diversification,",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "improving",
+          "evidence_text": "Supply chain diversification has proven an effective means of strengthening supply chain resilience while overcoming supply chain disruption and improving company profitability and demand flows.",
+          "sentence_index": 1,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "allows",
+          "evidence_text": "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+          "sentence_index": 10,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.645899
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Supply chain resilience can be defined as follows:",
+          "sentence_index": 2,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.395268,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 19.513692,
+        "direct_relation": 22.014786,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.311111,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 40.334857
+      }
+    },
+    {
+      "rank": 3,
+      "score": 40.198405666666666,
+      "chunk_id": "itf_collaboration_scm_2018:p0014:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 13 the supply chain, from point of origin to point of final consumption, are connected via flows of material, information and finances (Craighead et al. 2007). Collaboration between partners is therefore critical. The term resilience has been defined broadly as possessing “the skill and capacity to be robust under conditions of enormous stress and change” (Coutu 2002). Resilience reflects the capacity of the supply chain to resp ond and recover to the same or better state after the disruption . Beyond enabling supply chains to mitigate the effects of disruption, resilience can be a source of competitive advantage when the focal company is able to respond more quickly and effectivel y than its competition (Rice and Caniato 2003; Christopher and Peck 2004). Hamel and Valikangas (2003) suggested firms needed to overcome four challenges to achieve resilience: (i)",
+      "char_count": 993,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "recover",
+          "evidence_text": "Resilience reflects the capacity of the supply chain to resp ond and recover to the same or better state after the disruption .",
+          "sentence_index": 4,
+          "support_count": 17,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.911622
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "mitigate",
+          "evidence_text": "Beyond enabling supply chains to mitigate the effects of disruption, resilience can be a source of competitive advantage when the focal company is able to respond more quickly and effectivel y than its competition (Rice and Caniato 2003;",
+          "sentence_index": 5,
+          "support_count": 17,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.911622
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 13 the supply chain, from point of origin to point of final consumption, are connected via flows of material, information and finances (Craighead et al.",
+          "sentence_index": 0,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.395268,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 19.556577,
+        "direct_relation": 22.113227,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.2,
+        "total": 40.198406
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

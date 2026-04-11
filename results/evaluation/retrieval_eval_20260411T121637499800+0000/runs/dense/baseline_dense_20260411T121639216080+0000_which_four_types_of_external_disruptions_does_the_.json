@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121639216080+0000_which_four_types_of_external_disruptions_does_the_",
+  "timestamp_utc": "2026-04-11T12:16:39.216080+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "Which four types of external disruptions does the transport resilience report focus on?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7892903089523315,
+      "chunk_id": "oecd_transport_resilience_2024:p0005:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 5,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "TABLE OF CONTENTS 4 TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Table of contents Executive summary ................................ ................................ ................................ ........................ 6 The resilience of transport systems ................................ ................................ ................................ 8 Disruptions to transport systems ................................ ................................ ................................ .. 11 Climate change .............................................................................................................................. 11 Pandemics ..................................................................................................................................... 12 Geopolitical conflicts ..................................................................................................................... 13 Cyber-attacks",
+      "char_count": 975
+    },
+    {
+      "rank": 2,
+      "score": 0.7794007658958435,
+      "chunk_id": "oecd_transport_resilience_2024:p0011:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 11,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "THE RESILIENCE OF TRANSPORT SYSTEMS 10 TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes. The first distinction is between internal or external causes: 1. Internal disruptions may originate from mistakes and accidents caused by staff or users, technical failures, components that break down, faulty constructions, overload and so on. They could also be intentional, such as labour market conflicts. 2. External disruptions may be related to natural phenomena including various degrees of adverse weather and natural disasters. One specific long-term threat that lies between internal and external causes is climate change, which is partially a consequence of human activities in the transport sector. The second distinction is between accidental or intentional causes: 1. Accidental disruptions strike the system mostly at random. 2. Intentional",
+      "char_count": 990
+    },
+    {
+      "rank": 3,
+      "score": 0.7684290409088135,
+      "chunk_id": "oecd_transport_resilience_2024:p0020:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 20,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 19 The crucial question for different transport systems is whether it is possible to determine this critical tipping point beyond which more connectedness results in catastrophic cascading prevalence. There are various transport systems in which the level of interconnections seems to have set in motion cascading effects that have transformed local crises into global crises, as was the case in the containerised transport chain in 2020-21 (ITF, 2022).",
+      "char_count": 564
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

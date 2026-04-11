@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115031924139+0000_according_to_the_oecd_review_what_trade-offs_arise",
+  "timestamp_utc": "2026-04-11T11:50:31.924139+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "According to the OECD review, what trade-offs arise when balancing resilience, efficiency and sustainability?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7276105284690857,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0011:c002",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 11,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "esilience-sustainability Of the three trade -offs, this one has received the least attention and research. One might infer that if there is a positive correlation between environmental sustainability and economic efficiency and an inverse one between efficiency and resi lience, then sustainability and resilience m ust also be inversely related. Such an inference would over -simplify what is in practice a fair ly complex inter-relationship. As mentioned above, efficiency -driven practices lik e just -in-time ( JIT) and global sou rcing are usually detrimental to the environment. Curbing or reversing them would simultaneously enhance resilience and sustainability, suggesting close alignment between these objectives. It also depends on how the term sustainability is defined. As discu ssed in the Annex , environmental sustainability has both mitigation and adaptation dimensions, particularly with respect to climate change. Among sustainable supply chain specialists, mitigation is currently",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.7184629440307617,
+      "chunk_id": "oecd_scrr_2025:p0134:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 134,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency. Policymakers may face the challenge of aligning these objectives in ways that foster long-term economic stability and sustainable development while ensuring the ca pacity to withstand disruptions. While it is possible to achieve synergies across these dimensions, trade -offs are also inherently involved. This chapter examines these issues through a policy lens. 7.1. Synergies between resilience, efficiency and sustainability can be captured From the perspective of governments regulating supply chains, many policies not only strengthen the capacity to withstand disruptions, but also contribute to sustainability and efficiency. For example, investments in renewable energy",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.7102521061897278,
+      "chunk_id": "oecd_scrr_2025:p0134:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 134,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "gies—such as smart grids or decentralised renewable energy systems —enhances both the reliability of energy supplies and environmental outcomes. Firms that build resilience through dynamic capabilities such as flexibility, agility and visibility in their supply chains are often better positioned to enhance efficiency as well (Sheffi, 2015[1]). Moreover, efforts to mitigate sustainability risks through responsible business conduct (RBC) and due diligence generally benefit firms’ sustainability performance and resilience (OECD, 2021[2]). 7.2. Trade-offs need to be addressed when balancing objectives Despite these synergies, achieving a balance between resilience, efficiency and sustainability often involves trade-offs (Ivanov, 2017[3]; Rajesh, 2021 [4]). Firms designing resilient supply chains must weigh the costs of redundancy against efficiency and environmental considerations. For instance, maintaining buffer stocks, diversifying supplie rs, or investing in additional production",
+      "char_count": 994
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

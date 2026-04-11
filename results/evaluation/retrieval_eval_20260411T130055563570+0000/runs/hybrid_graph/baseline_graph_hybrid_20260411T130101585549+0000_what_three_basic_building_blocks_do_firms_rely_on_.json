@@ -1,0 +1,411 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130101585549+0000_what_three_basic_building_blocks_do_firms_rely_on_",
+  "timestamp_utc": "2026-04-11T13:01:01.585549+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "What three basic building blocks do firms rely on to build resilient supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::firms",
+      "canonical_name": "Firms",
+      "entity_type": "actor",
+      "matched_alias": "firms",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilient",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::capability::resilient_supply",
+      "canonical_name": "Resilient Supply",
+      "entity_type": "capability",
+      "matched_alias": "resilient supply",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilient_supply_chains",
+      "canonical_name": "Resilient Supply Chains",
+      "entity_type": "capability",
+      "matched_alias": "resilient supply chains",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chains",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.743376,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0001:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to resilient supply chains Increasing supply chain resilience: OECD policy toolkit",
+      "char_count": 87,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilient_supply",
+          "canonical_name": "Resilient Supply",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilient_supply_chains",
+          "canonical_name": "Resilient Supply Chains",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply chains",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to resilient supply chains Increasing supply chain resilience:",
+          "sentence_index": 0,
+          "support_count": 63,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.005432
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilient_supply_chains",
+          "source_name": "Resilient Supply Chains",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to resilient supply chains Increasing supply chain resilience:",
+          "sentence_index": 0,
+          "support_count": 63,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.005432
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to resilient supply chains Increasing supply chain resilience:",
+          "sentence_index": 0,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.401995,
+        "coverage_bonus": 6.0,
+        "sentence_alignment": 16.644115,
+        "direct_relation": 14.300847,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 40.180291
+      },
+      "dense_rank": 2,
+      "dense_score": 0.778787,
+      "graph_rank": null,
+      "graph_score": 40.180291,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.952126,
+        "graph_score": 0.096459,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.833333,
+        "relation_signal": 0.55,
+        "total": 0.743376
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.609953,
+      "chunk_id": "oecd_scrr_2025:p0100:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 100,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions. This chapter analyses the types of risks faced by firms and identifies successful practices. It highlights the role of “triple-A” supply chains – agile, adaptable and aligned – as a reliable source of resilience. 5 Risk management at the firm-level",
+      "char_count": 466,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::firms",
+          "canonical_name": "Firms",
+          "entity_type": "actor",
+          "matched_alias": "firms",
+          "specificity": 0.3229467764196763,
+          "score_contribution": 1.291787,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "build resilience",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "sentence_index": 0,
+          "support_count": 18,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.454934
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "build resilience",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "sentence_index": 0,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.978904
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "build resilience",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "sentence_index": 0,
+          "support_count": 5,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.705711
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "disruptions",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "sentence_index": 0,
+          "support_count": 17,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.35115
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "disruptions",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "sentence_index": 0,
+          "support_count": 35,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.270845
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "It highlights the role of “triple-A” supply chains – agile, adaptable and aligned – as a reliable source of resilience.",
+          "sentence_index": 2,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.764296,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 39.666165,
+        "direct_relation": 40.911052,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.35,
+        "generic_penalty": 1.0,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.4,
+        "total": 77.991513
+      },
+      "dense_rank": 5,
+      "dense_score": 0.745214,
+      "graph_rank": null,
+      "graph_score": 77.991513,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.683567,
+        "graph_score": 0.188361,
+        "dense_rank_signal": 0.733333,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.666667,
+        "relation_signal": 0.8,
+        "total": 0.609953
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.6,
+      "chunk_id": "oecd_scrr_2025:p0001:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "OECD Supply Chain Resilience Review Navigating Risks OECD Supply Chain Resilience Review Navigating Risks",
+      "char_count": 105,
+      "contributing_entities": [],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.0,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 0.0,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.0,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.0
+      },
+      "dense_rank": 1,
+      "dense_score": 0.784772,
+      "graph_rank": null,
+      "graph_score": null,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.0,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.0,
+        "relation_signal": 0.0,
+        "total": 0.6
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130128241857+0000_how_does_collaboration_strengthen_supply_chain_res",
+  "timestamp_utc": "2026-04-11T13:01:28.241857+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How does collaboration strengthen supply chain resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.12468452423079604,
+      "chunk_id": "itf_collaboration_scm_2018:p0027:c003",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 27,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "ins to be seen if collaboration does occur for just sharing and matching information . Information sharing is needed but it does not mean supply chain collaboration as the other driv ers such as trust and commitment are needed to make supply collaboration a reality. In order to achieve supply chain resilience during or after a disruption, collaboration cannot solely be between direct supply chain members. The need to involve state agen cies and NGOs in the supply chain is apparent as not all can be done by direct supply chain members . A road that is flooded will need the support of external agencies for its rehabilitation . The illustrative example of public and private collaboration show s the key role played by not for profit organi sations in providing relief to affect ed populations.",
+      "char_count": 799
+    },
+    {
+      "rank": 2,
+      "score": 0.11448874761004113,
+      "chunk_id": "itf_collaboration_scm_2018:p0007:c003",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 7,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "ors involved. The second is “technology” based collaboration. This type of collaboration focuses and relies on information technology with information sharing between partners . The third is “affinity” based collaboration which focuses and relies on relationship management . Trust and commitment is the foundation of this type of co llaboration. The last type is “integral” based collaboration . This type of collaboration is a combination of relationships between the actors involved and information technology. This is the most complex type of collaboration . However, the “integral” based collaboration has an advantage over other types of collaboration as it can sustain longer term relationships and further develop supply chain resilience. Sahay (2003) further explained three types of collaboration ; manufacturing/supplier collaboration, manufacturer/customer collaboration and collaboration with Third-party logistics (3PL) and fourth-party logistics (4PL). Each type of collaboration",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.11084157755785992,
+      "chunk_id": "itf_collaboration_scm_2018:p0006:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster. Drivers of Supply Chain Collaboration Several authors have studied and mentioned the benefits of supply chain collaboration . Horvath (2001) has listed one benefit of collaboration in term s of information infrastucture such as theconnectivity network that will be opened at lower cost . This helps smaller firm s to access information at a lower investment cost. Min et al., (2005) studied supply chain collaboration by using a qualitative approach and observed that firms gain benefits from long-term collaboration as they are often not seen in the early period of collaboration . The usual consequence of collaboration is presented in the form of efficiency, effectiveness and profitability .The benefit of collaboration in term s of",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

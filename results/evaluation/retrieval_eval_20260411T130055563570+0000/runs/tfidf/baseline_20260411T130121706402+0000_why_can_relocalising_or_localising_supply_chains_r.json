@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130121706402+0000_why_can_relocalising_or_localising_supply_chains_r",
+  "timestamp_utc": "2026-04-11T13:01:21.706402+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "Why can relocalising or localising supply chains reduce resilience rather than improve it?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.12512079959885716,
+      "chunk_id": "oecd_scrr_2025:p0044:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 44,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "significant economic and societal damage in the event of unexpected disruptions, or could become a tool for economic coercion, undermining national or strategic security. Perceptions of the negative sides of trade dependencies have resulted in calls for deglobalisation, friend - shoring, near-shoring, creating trading blocs or re -localising supply chains (e.g. Arriola (2020[3]); Crowe and Rawdanowicz (2023[4]). On the other hand, there are concerns that some of these policy responses, aimed at minimising trade risks and improving supply chain resilience, may not be well designed and could unintentionally undermine the benefits of international trade and reduce resilience (discussed further in Chapter 5). There is also the risk that such measures could trigger a process of fragmentation of the international trading system. This chapter explores potentially vulnerable trade links, referred to here as “trade dependencies” or “critical trade dependencies” (i.e. dependencies considered to",
+      "char_count": 999
+    },
+    {
+      "rank": 2,
+      "score": 0.08904511688737429,
+      "chunk_id": "oecd_scrr_2025:p0008:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 8,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "6  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Table of contents Preface 3 Acknowledgements 4 Abbreviations 5 Executive summary 10 1 Overview 12 1.1. Supply chains enable competitive production 13 1.2. Current trade flows are relatively well diversified, but there are some trends towards over - concentration 14 1.3. Some sectors and countries may be more exposed to shocks than others 15 1.4. Relocalising supply chains may result in GDP declines and more variable output for most countries 16 1.5. Global supply chains are affected by the digital transformation and by policies pursuing environmental objectives 17 1.6. Supply chains can be resilient without undermining the benefits of open markets 19 1.7. Policy approaches for agile, adaptable and aligned supply chains 19 References 22 Note 22 Part I Monitoring supply chain interdependencies 23 2 The state of international supply chains 24 2.1. International supply chains have boosted efficiency, created new opportunities and reduced",
+      "char_count": 999
+    },
+    {
+      "rank": 3,
+      "score": 0.07363183302336972,
+      "chunk_id": "oecd_scrr_2025:p0012:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 12,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "evels of upstream and d ownstream foreign product exposure. In the OECD, 26% of inputs for strategic manufacturing industries are sourced from abroad, and 27% of their output depends on foreign final demand. These supply chains are highly complex, often requiring more production steps and border crossings. Relocalising supply chains can come at a high economic cost Modelling presented in the report demonstrates that re -localisation could decrease global trade by more than 18% and global real GDP by more than 5%, with no consisten t improvements in resilience. GDP stability would decrease in more than half of the economies analysed.",
+      "char_count": 640
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

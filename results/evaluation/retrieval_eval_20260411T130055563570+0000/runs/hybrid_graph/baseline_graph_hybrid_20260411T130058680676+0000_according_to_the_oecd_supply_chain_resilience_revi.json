@@ -1,0 +1,427 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130058680676+0000_according_to_the_oecd_supply_chain_resilience_revi",
+  "timestamp_utc": "2026-04-11T13:00:58.680676+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "According to the OECD Supply Chain Resilience Review, what share of inputs for strategic manufacturing industries in the OECD are sourced from abroad?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::chain_resilience",
+      "canonical_name": "Chain Resilience",
+      "entity_type": "capability",
+      "matched_alias": "chain resilience",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::sector::strategic_manufacturing",
+      "canonical_name": "Strategic Manufacturing",
+      "entity_type": "sector",
+      "matched_alias": "strategic manufacturing",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.822145,
+      "chunk_id": "oecd_scrr_2025:p0038:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 38,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "36  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Figure 2.9. Foreign exposure varies across OECD industries Percent of inputs sourced from abroad (FPEM) and outputs supplying foreign markets (FPEX), OECD averages, 2020 Note: FPEM and FPEX are indicators of foreign supply chain exposure on the import and expo rt sides, respectively (Baldwin, Freeman and Theodorakopoulos, 2022[36]). Both indicators are on gross trade terms and account for direct linkages (i.e. the supplier of an input) and indirect linkages (i.e., the supplier's supplier). The OECD is presented as a weighted average, where weights are sectorial final demand. Raw materials correspond to agriculture and mining. The manufacturing sector is split into strategic and non-strategic industries, following the definition in IMF (2023[37]), in its report’s Annex to Chapter 4. Strategic manufacturing refers to industries that are identified to be of critical importance for national and economic security, such as petroleum and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::sector::strategic_manufacturing",
+          "canonical_name": "Strategic Manufacturing",
+          "entity_type": "sector",
+          "matched_alias": "strategic manufacturing",
+          "specificity": 0.9764068505025263,
+          "score_contribution": 3.905627,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "36  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Figure 2.9.",
+          "sentence_index": 0,
+          "support_count": 277,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.345751
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "36  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Figure 2.9.",
+          "sentence_index": 0,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 4.708101,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 12.100959,
+        "direct_relation": 8.635734,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.592308,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 30.537101
+      },
+      "dense_rank": 1,
+      "dense_score": 0.817557,
+      "graph_rank": null,
+      "graph_score": 30.537101,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.361446,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 1.0,
+        "relation_signal": 0.55,
+        "total": 0.822145
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.723874,
+      "chunk_id": "oecd_scrr_2025:p0137:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 137,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 135 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex A. A guide to using the country by country data The country profiles in this annex complement the OECD Supply Chain Resilience Review and build on data and analysis carried out under the OECD Trade Committee to give a unique co untry specific perspective. The section on Monitoring supply chain interdependencies gives a snapshot of a country’s integration into global supply chains by looking at global linkages of key industries while also presenting how the significance of import and export concentration has evolved over time. The section on Agile, adaptable and aligned supply chains showcases a set of OECD indicators to assess the transparency and ease of border processes, the level of regulatory barriers to services and digital trade, as well as the overall level of international integration and alignment with best practices. Together, these insights aim to guide governments and the private sector in creating an enabling",
+      "char_count": 995,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": " 135 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex A.",
+          "sentence_index": 0,
+          "support_count": 277,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.345751
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "A guide to using the country by country data The country profiles in this annex complement the OECD Supply Chain Resilience Review and build on data and analysis carried out under the OECD Trade Committee to give a unique co untry specific perspective.",
+          "sentence_index": 1,
+          "support_count": 277,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.345751
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": " 135 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex A.",
+          "sentence_index": 0,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "A guide to using the country by country data The country profiles in this annex complement the OECD Supply Chain Resilience Review and build on data and analysis carried out under the OECD Trade Committee to give a unique co untry specific perspective.",
+          "sentence_index": 1,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.802474,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 20.456083,
+        "direct_relation": 17.271468,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.323077,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 1.2,
+        "total": 31.853102
+      },
+      "dense_rank": 2,
+      "dense_score": 0.803547,
+      "graph_rank": null,
+      "graph_score": 31.853102,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.864501,
+        "graph_score": 0.379563,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.8,
+        "relation_signal": 0.55,
+        "total": 0.723874
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.656013,
+      "chunk_id": "oecd_scrr_2025:p0145:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 145,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 143 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex B. Country by country data",
+      "char_count": 86,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": " 143 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex B.",
+          "sentence_index": 0,
+          "support_count": 277,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.345751
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": " 143 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Annex B.",
+          "sentence_index": 0,
+          "support_count": 492,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.289983
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.802474,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 10.228042,
+        "direct_relation": 8.635734,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.269231,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 14.13548
+      },
+      "dense_rank": 3,
+      "dense_score": 0.796016,
+      "graph_rank": null,
+      "graph_score": 14.13548,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.791667,
+        "graph_score": 0.135639,
+        "dense_rank_signal": 0.846154,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.8,
+        "relation_signal": 0.55,
+        "total": 0.656013
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

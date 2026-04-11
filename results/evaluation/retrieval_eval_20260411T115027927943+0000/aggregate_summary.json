@@ -1,0 +1,121 @@
+{
+  "evaluation_id": "retrieval_eval_20260411T115027927943+0000",
+  "timestamp_utc": "2026-04-11T11:50:33.235112+00:00",
+  "question_count": 24,
+  "top_k": 3,
+  "scoring_version": "retrieval_eval_v1",
+  "questions_path": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/data/evaluation/questions.jsonl",
+  "output_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/evaluation/retrieval_eval_20260411T115027927943+0000",
+  "method_summaries": [
+    {
+      "method_label": "dense",
+      "retrieval_method": "baseline_dense",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "question_count": 24,
+      "wins": 10,
+      "mean_relevance": 0.512698,
+      "mean_directness": 0.407581,
+      "mean_groundedness": 0.464759,
+      "mean_correctness_of_evidence": 0.455525,
+      "mean_overall": 0.460141,
+      "mean_overall_by_category": {
+        "causal": 0.442808,
+        "direct_factual": 0.439008,
+        "mitigation": 0.273835,
+        "multi_hop": 0.555128,
+        "trade_off": 0.628433
+      },
+      "failure_reasons": {
+        "broad_context_not_direct": 2,
+        "competitive": 10,
+        "indirect_context_only": 8,
+        "weak_evidence_support": 2,
+        "wrong_document_cluster": 2
+      },
+      "question_ids_won": [
+        "q03_triple_a_qualities",
+        "q04_services_for_adaptable_supply_chains",
+        "q07_worldbank_spread_or_transfer",
+        "q08_diversification_improves_resilience",
+        "q11_digitalisation_improves_resilience",
+        "q17_efficiency_resilience_tradeoff",
+        "q19_aligning_sustainability_efficiency_resilience",
+        "q22_information_sharing_visibility_disruptions",
+        "q23_sustainability_rules_and_foreign_suppliers",
+        "q24_trade_in_services_and_resilience"
+      ]
+    },
+    {
+      "method_label": "graph",
+      "retrieval_method": "baseline_graph",
+      "embedding_model": "graph_entity_relation_v2",
+      "question_count": 24,
+      "wins": 3,
+      "mean_relevance": 0.28022,
+      "mean_directness": 0.215892,
+      "mean_groundedness": 0.241669,
+      "mean_correctness_of_evidence": 0.245609,
+      "mean_overall": 0.245847,
+      "mean_overall_by_category": {
+        "causal": 0.364399,
+        "direct_factual": 0.182143,
+        "mitigation": 0.238865,
+        "multi_hop": 0.230177,
+        "trade_off": 0.232333
+      },
+      "failure_reasons": {
+        "competitive": 4,
+        "indirect_context_only": 8,
+        "weak_evidence_support": 4,
+        "wrong_document_cluster": 8
+      },
+      "question_ids_won": [
+        "q12_collaboration_strengthens_resilience",
+        "q15_trade_facilitation_agility",
+        "q17_efficiency_resilience_tradeoff"
+      ]
+    },
+    {
+      "method_label": "tfidf",
+      "retrieval_method": "baseline_rag",
+      "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+      "question_count": 24,
+      "wins": 15,
+      "mean_relevance": 0.615319,
+      "mean_directness": 0.512815,
+      "mean_groundedness": 0.56535,
+      "mean_correctness_of_evidence": 0.561822,
+      "mean_overall": 0.563827,
+      "mean_overall_by_category": {
+        "causal": 0.40721,
+        "direct_factual": 0.686047,
+        "mitigation": 0.556477,
+        "multi_hop": 0.519532,
+        "trade_off": 0.623297
+      },
+      "failure_reasons": {
+        "broad_context_not_direct": 1,
+        "competitive": 15,
+        "indirect_context_only": 7,
+        "weak_evidence_support": 1
+      },
+      "question_ids_won": [
+        "q01_strategic_manufacturing_foreign_inputs",
+        "q02_three_building_blocks",
+        "q03_triple_a_qualities",
+        "q05_four_external_transport_disruptions",
+        "q06_early_warning_examples",
+        "q09_trade_cooperation_improves_resilience",
+        "q10_relocalisation_vs_resilience",
+        "q13_wto_mitigation_strategies",
+        "q14_strengthen_service_sectors",
+        "q16_early_warning_and_intervention",
+        "q17_efficiency_resilience_tradeoff",
+        "q18_resilience_efficiency_sustainability_tradeoffs",
+        "q20_crm_concentration_export_restrictions",
+        "q21_trade_facilitation_new_suppliers",
+        "q24_trade_in_services_and_resilience"
+      ]
+    }
+  ]
+}

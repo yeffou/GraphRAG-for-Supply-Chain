@@ -1,0 +1,195 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130115786741+0000_in_the_world_bank_supply_chain_management_guidance",
+  "timestamp_utc": "2026-04-11T13:01:15.786741+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "In the World Bank supply chain management guidance, what does the 'spread or transfer' risk reduction approach include?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::world_bank",
+      "canonical_name": "World Bank",
+      "entity_type": "organization",
+      "matched_alias": "world bank",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain_management",
+      "canonical_name": "Supply Chain Management",
+      "entity_type": "system",
+      "matched_alias": "supply chain management",
+      "source": "mined",
+      "is_generic": false
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.618972,
+      "chunk_id": "oecd_preparedness_2024:p0042:c001",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 42,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "en will supply chain management grow up?”, Strategy and business 32, https://www.strategy-business.com/article/03304. [3] Lee, H. (2010), Global trade process and supply chain management, Springer, Boston, MA. [129] Miroudot, S. (2020), “Reshaping the policy debate on the implications of COVID-19 for global supply chains”, Journal of International Business Policy, Vol. 3/4, pp. 430-442, https://doi.org/10.1057/s42214-020-00074-6. [38] Miroudot, S. and H. Nordström (2020), “Made in the World? Global Value Chains in the Midst of Rising Protectionism”, Review of Industrial Organization, Vol. 57/2, pp. 195-222, https://doi.org/10.1007/s11151-020-09781-z. [26] Mizgier, K. (2022), “The path forward to a unified risk framework”, The European Business Review, pp. 8-11, https://www.europeanbusinessreview.com/risk-management-in-financial-services-and- manufacturing-industries-the-path-forward-to-a-unified-framework/. [49] Mizgier, K. (2019), “Managing risk in a modular economy”, The European",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain_management",
+          "canonical_name": "Supply Chain Management",
+          "entity_type": "system",
+          "matched_alias": "supply chain management",
+          "specificity": 0.2368448358219291,
+          "score_contribution": 0.947379,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.060769,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 1.102641,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.291667,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 6.955077
+      },
+      "dense_rank": 4,
+      "dense_score": 0.598421,
+      "graph_rank": null,
+      "graph_score": 6.955077,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.91922,
+        "graph_score": 0.007902,
+        "dense_rank_signal": 0.785714,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.666667,
+        "relation_signal": 0.0,
+        "total": 0.618972
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.6,
+      "chunk_id": "oecd_scrr_2025:p0101:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 101,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "raphical structure of supply chains and the choice of suppliers that do not allow for solutions such as repatriating all production. Second, risks are everywhere, including in the domestic economy, and can affect multiple suppliers at the same time (as witnessed during the COVID -19 pandemic). Firms and governments seek responses to all types of risks and not just to risks identified for a specific type of input coming from a specific country. The next crisis may be very different from the scenario they have planned for. Third, while there are risks when sourcing or producing internationally, there are also gains; a cost-benefit analysis generally suggests that some risks are acceptable. One can never eliminate all risks, so firms engage in what is called “real options”, d eploying their activities across countries to balance the benefits and risks (Klibi, Trepte and Rice Jr., 2024[1]). Supply chain operations are exposed to many types of risks ( Box 5.1). As explained by Sheffi",
+      "char_count": 993,
+      "contributing_entities": [],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.0,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 0.0,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.0,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.0
+      },
+      "dense_rank": 1,
+      "dense_score": 0.604936,
+      "graph_rank": null,
+      "graph_score": null,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.0,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.0,
+        "relation_signal": 0.0,
+        "total": 0.6
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.582437,
+      "chunk_id": "worldbank_scm_guidance_2023:p0056:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 56,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "SUPPL Y CHAIN MANAGEMENT: AN INTRODUCTION AND PRACTICAL TOOLSET FOR PROCUREMENT PRACTITIONERS 46 ◾ Spread or transfer: The supply chain design is implemented, but risk is reduced via diversi- fication, subcontracting, outsourcing, joint ventures, hedging, or insurance. For example, the Borrower may want to purchase scarce components themselves, and then provide them to the Supplier/Contractor when needed (giving the Borrower more control, but also greater liability if they fail to deliver on quality issues). ◾ Accept: The supply chain design is implemented, and any risks associated with it are accepted. For example, the effort needed to prevent every small quality defect would outweigh the impact of the defect; hence Borrowers accept this risk, since the defect can be corrected easily and inexpensively without any harm to stakeholders. How risk mitigation and management can look like for the three identified risks from Example Box 10 is illustrated in Example Box 11. EXAMPLE BOX 11:",
+      "char_count": 997,
+      "contributing_entities": [],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.0,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 0.0,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.0,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.0
+      },
+      "dense_rank": 2,
+      "dense_score": 0.603447,
+      "graph_rank": null,
+      "graph_score": null,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.98154,
+        "graph_score": 0.0,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.0,
+        "relation_signal": 0.0,
+        "total": 0.582437
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

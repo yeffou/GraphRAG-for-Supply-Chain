@@ -1,0 +1,386 @@
+{
+  "run_id": "baseline_graph_20260411T115030131608+0000_how_can_trade_cooperation_improve_resilience_to_sh",
+  "timestamp_utc": "2026-04-11T11:50:30.131608+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How can trade cooperation improve resilience to shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks"
+    },
+    {
+      "entity_id": "entity::strategy::international_cooperation",
+      "canonical_name": "International Cooperation",
+      "entity_type": "strategy",
+      "matched_alias": "trade cooperation"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 93.36416085450945,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::international_cooperation",
+          "canonical_name": "International Cooperation",
+          "entity_type": "strategy",
+          "matched_alias": "trade cooperation",
+          "specificity": 1.16961373575384,
+          "score_contribution": 4.09364807513844
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 12.012147
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.348372
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 41,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.002458
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "supported",
+          "evidence_text": "It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation.",
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.511458
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 6.986124,
+        "coverage_bonus": 12.0,
+        "direct_relation": 74.258037,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.88,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.76,
+        "total": 93.364161
+      }
+    },
+    {
+      "rank": 2,
+      "score": 79.23284511270435,
+      "chunk_id": "wto_gvc_2025:p0011:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 11,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "k of reassessing their position within GVCs. While rapid trade liberalization, technological change and a rules-based international system fuelled the expansion of GVCs in previous decades, the “hyper-globalization” model has slowed since the global financial crisis of 2008 (IMF 2025). A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean). Figure 2.7: Simulated Unit Labor Cost Differences, By Macro-Region and Scenario Note: Simulated differences in unit labor costs across",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 41,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.002458
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "direct_pair",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::preparedness",
+          "source_name": "Preparedness",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_supply_chain",
+          "target_name": "Global Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.892476,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 75.627036,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.66,
+        "query_miss_penalty": 4.0,
+        "hub_penalty": 1.28,
+        "total": 79.232845
+      }
+    },
+    {
+      "rank": 3,
+      "score": 78.23576585450945,
+      "chunk_id": "wto_wtr_2021:p0006:c002",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "ction and distribution we need, which are a prerequisite for a strong, inclusive and lasting economic recovery. Looking to the future, trade will also be at the heart of building a more decentralized and diversified production base for vaccines, therapeutics and diagnostics that would be more resilient in the face of future pandemics. COVID-19 took us by surprise, despite many predictions that the world was overdue for a respiratory virus pandemic. Other risks are more firmly established on our radar screens, from climate change to natural disasters. Here too, trade can help us better prepare for, and respond to, the eventual shocks associated with those and other risks. This year’s World Trade Report reviews the role of trade, trade policy and international cooperation in building and supporting economic resilience in the face of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and",
+      "char_count": 990,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::international_cooperation",
+          "canonical_name": "International Cooperation",
+          "entity_type": "strategy",
+          "matched_alias": "international cooperation",
+          "specificity": 1.16961373575384,
+          "score_contribution": 4.09364807513844
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "direct_pair",
+          "evidence_text": "Looking to the future, trade will also be at the heart of building a more decentralized and diversified production base for vaccines, therapeutics and diagnostics that would be more resilient in the face of future pandemics.",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": null,
+          "evidence_text": "This year’s World Trade Report reviews the role of trade, trade policy and international cooperation in building and supporting economic resilience in the face of natural and man-made disasters, including the COVID-19 pandemic.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.736773
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::pandemic",
+          "target_name": "Pandemic",
+          "trigger": null,
+          "evidence_text": "This year’s World Trade Report reviews the role of trade, trade policy and international cooperation in building and supporting economic resilience in the face of natural and man-made disasters, including the COVID-19 pandemic.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.736773
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::pandemic",
+          "target_name": "Pandemic",
+          "trigger": null,
+          "evidence_text": "Looking to the future, trade will also be at the heart of building a more decentralized and diversified production base for vaccines, therapeutics and diagnostics that would be more resilient in the face of future pandemics.",
+          "support_count": 17,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": null,
+          "evidence_text": "This year’s World Trade Report reviews the role of trade, trade policy and international cooperation in building and supporting economic resilience in the face of natural and man-made disasters, including the COVID-19 pandemic.",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 6.986124,
+        "coverage_bonus": 12.0,
+        "direct_relation": 59.769642,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.88,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.4,
+        "total": 78.235766
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

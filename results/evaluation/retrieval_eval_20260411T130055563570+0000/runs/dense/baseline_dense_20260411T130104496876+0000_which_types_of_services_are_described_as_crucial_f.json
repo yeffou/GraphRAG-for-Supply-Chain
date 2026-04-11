@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T130104496876+0000_which_types_of_services_are_described_as_crucial_f",
+  "timestamp_utc": "2026-04-11T13:01:04.496876+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "Which types of services are described as crucial for adaptable supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6958901286125183,
+      "chunk_id": "oecd_scrr_2025:p0022:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 22,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "20  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 • Strengthen key supply chain service secto rs. Services play a crucial role in supporting agile, adaptable and aligned global supply chains by enhancing efficiency, reducing costs, and ensuring seamless connectivity from manufacturers to consumers. Air, sea, road and rail transport help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and allocation of capacity and resources. However, evidence from the OECD’s Services Trade Restrictiveness Index (STRI) shows substantial bar riers to trade across these sectors. Key actions include: o Remove market access barriers for critical services sectors, notably transport, financial and telecommunications services. o Work towards greater regulatory interoperability across countries by streng thening common regulatory standards and expanding tools such as mutual recognition of qualifications and permits. o Foster",
+      "char_count": 993
+    },
+    {
+      "rank": 2,
+      "score": 0.6528530716896057,
+      "chunk_id": "oecd_scrr_2025:p0116:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 116,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "y of transactions across supply chains, the TFIs show that many of the areas that require sharing of data – such as shared risk management systems and interconnected or shared computer systems between border agencies – are among those with the lowest levels of implementation (OECD, 2025 forthcoming[6]). In addition, reducing regulatory heterogeneity in trade facilitation policies is crucial for enhancing cross - border trade efficiency, lowering costs and improving supply chain resilience. This is discussed further for trade in services in the section below. 6.2. Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+      "char_count": 990
+    },
+    {
+      "rank": 3,
+      "score": 0.6376565098762512,
+      "chunk_id": "oecd_scrr_2025:p0143:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 143,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ment for GVC -enabling services is. For more context around this indicator, see Chapter 6 of the OECD Supply Chain Resilience Review. Data sources and variables construction The data is drawn from the OECD’s 2024 Services Trade Restrictiveness Index (STRI) covering eight services sectors that play a key role in connecting global supply chains, namely: transport services (air, maritime, rail freight and road freight), logistics services, postal and courier services, distribution services and telecommunications services. The indices take values between zero and one, with one indicating the most restrictive regulatory environment for services trade. The information evaluated unde r each of these sectors can be found at https://sim.oecd.org/. Regulatory alignment This figure illustrates the disparities in the ease of the regulatory environment for goods trade and to GVC- enabling services trade across OECD Member countries.",
+      "char_count": 933
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

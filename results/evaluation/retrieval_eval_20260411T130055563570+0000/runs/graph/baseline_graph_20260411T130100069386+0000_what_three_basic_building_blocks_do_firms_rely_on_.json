@@ -1,0 +1,739 @@
+{
+  "run_id": "baseline_graph_20260411T130100069386+0000_what_three_basic_building_blocks_do_firms_rely_on_",
+  "timestamp_utc": "2026-04-11T13:01:00.069386+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "What three basic building blocks do firms rely on to build resilient supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::firms",
+      "canonical_name": "Firms",
+      "entity_type": "actor",
+      "matched_alias": "firms",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilient",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::capability::resilient_supply",
+      "canonical_name": "Resilient Supply",
+      "entity_type": "capability",
+      "matched_alias": "resilient supply",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilient_supply_chains",
+      "canonical_name": "Resilient Supply Chains",
+      "entity_type": "capability",
+      "matched_alias": "resilient supply chains",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chains",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 411.9235077872823,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0019:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 19,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty. • Employ a wide range of policies to support the participation of small and medium-sized enterprises (SME) in international supply chains. SMEs have fewer resources to devote to risk management strategies and therefore need higher government support. • Provide help and guidance for companies with the implementation of their risk-management strategies – disseminate best practices and lessons learned. • Promote greater traceability in supply chains and more sustainable practices through the use of responsible business conduct (RBC) standards and tools (such as due diligence). • Review domestic stockpiling decisions against a wide range of policies and assess on a case-by-case basis. Conduct an in-depth cost-benefit analysis. • Work closely with the",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilient_supply",
+          "canonical_name": "Resilient Supply",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilient_supply_chains",
+          "canonical_name": "Resilient Supply Chains",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply chains",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::firms",
+          "canonical_name": "Firms",
+          "entity_type": "actor",
+          "matched_alias": "firm",
+          "specificity": 0.3229467764196763,
+          "score_contribution": 1.291787,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.929318
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.867829
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilient_supply_chains",
+          "source_name": "Resilient Supply Chains",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.867829
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply",
+          "target_name": "Resilient Supply",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.308876
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.308876
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "strengthening",
+          "evidence_text": "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.18251
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient",
+          "via_name": "Keys To Resilient",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "STRENGTHENS",
+            "STRENGTHENS"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient_supply",
+          "via_name": "Keys To Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "STRENGTHENS",
+            "STRENGTHENS"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::transparency",
+          "via_name": "Transparency",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "STRENGTHENS",
+            "STRENGTHENS"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::strategy::risk_management",
+          "via_name": "Risk Management",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "STRENGTHENS",
+            "STRENGTHENS"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty.",
+            "Keys to Resilient Supply Chains 19 Policy toolkit for strengthening private-public partnerships • Support firm-level risk management strategies by creating a policy and regulatory framework that promotes transparency, and regulatory certainty."
+          ],
+          "score_contribution": 3.92532
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 6.616541,
+        "coverage_bonus": 13.5,
+        "sentence_alignment": 175.13193,
+        "direct_relation": 172.207358,
+        "path_bonus": 47.334345,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 3.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.1,
+        "total": 411.923508
+      }
+    },
+    {
+      "rank": 2,
+      "score": 260.9370155897269,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0009:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment. Minimising exposure to external risks and promoting growth need not be a zero-sum game. Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness. These actions represent an investment that is likely to have long-term benefits extending well beyond the time of a crisis. They also support the private sector by strengthening the external framework in which supply chains operate, indirectly helping to build resilience. Minimise exposure to shocks: Deploying domestic policy tools",
+      "char_count": 904,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilient_supply",
+          "canonical_name": "Resilient Supply",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilient_supply_chains",
+          "canonical_name": "Resilient Supply Chains",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply chains",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.309303
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply",
+          "target_name": "Resilient Supply",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.688861
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.688861
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.562495
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply_chains",
+          "source_name": "Resilient Supply Chains",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.562495
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "improving",
+          "evidence_text": "Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness.",
+          "sentence_index": 2,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.978904
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::actor::governments",
+          "via_name": "Governments",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient",
+          "via_name": "Keys To Resilient",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient_supply",
+          "via_name": "Keys To Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "EXPOSES",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+            "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment."
+          ],
+          "score_contribution": 3.92532
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 5.324754,
+        "coverage_bonus": 6.0,
+        "sentence_alignment": 116.633506,
+        "direct_relation": 121.444142,
+        "path_bonus": 15.70128,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 2.0,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 260.937016
+      }
+    },
+    {
+      "rank": 3,
+      "score": 231.79589825639354,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilient_supply",
+          "canonical_name": "Resilient Supply",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilient_supply_chains",
+          "canonical_name": "Resilient Supply Chains",
+          "entity_type": "capability",
+          "matched_alias": "resilient supply chains",
+          "specificity": 0.6161856267759761,
+          "score_contribution": 2.464743,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.309303
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply",
+          "target_name": "Resilient Supply",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.688861
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.688861
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.562495
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilient_supply_chains",
+          "source_name": "Resilient Supply Chains",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.562495
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "help",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "sentence_index": 0,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.545899
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::actor::governments",
+          "via_name": "Governments",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient",
+          "via_name": "Keys To Resilient",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::capability::keys_to_resilient_supply",
+          "via_name": "Keys To Resilient Supply",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning."
+          ],
+          "score_contribution": 3.92532
+        },
+        {
+          "source_entity_id": "entity::capability::resilient_supply",
+          "source_name": "Resilient Supply",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::capability::resilient_supply_chains",
+          "target_name": "Resilient Supply Chains",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+            "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning."
+          ],
+          "score_contribution": 3.92532
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 5.324754,
+        "coverage_bonus": 6.0,
+        "sentence_alignment": 105.769066,
+        "direct_relation": 103.425798,
+        "path_bonus": 15.70128,
+        "lexical_overlap": 0.175,
+        "generic_penalty": 2.0,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.2,
+        "total": 231.795898
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

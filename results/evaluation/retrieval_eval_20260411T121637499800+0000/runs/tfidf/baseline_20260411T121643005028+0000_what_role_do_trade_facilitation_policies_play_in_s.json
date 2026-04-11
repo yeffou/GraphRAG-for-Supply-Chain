@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121643005028+0000_what_role_do_trade_facilitation_policies_play_in_s",
+  "timestamp_utc": "2026-04-11T12:16:43.005028+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What role do trade facilitation policies play in supply chain agility and adaptability?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.17970431627112246,
+      "chunk_id": "oecd_scrr_2025:p0108:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 108,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ely influence firms’ strategies. It also increases the level of preparedness and the speed at which firms and governments respond to shocks and create emergency supply chains. This chapter reviews specific policy options to: reduce trade frictions; to improve the regulation of services, facilitating the smooth operations of supply chains; to support the adoption of digital tools by companies; and to foster public-private co-operation on supply chain issues. 6.1. Trade facilitation measures for goods increase the agility and adaptability of supply chains Trade facilitation policies for goods aim to make trade and customs laws, regulations, documents and procedures simpler and more efficient. They play a key role in streamlining and simplifying the tech nical and legal procedures at the border for intermediate and final products to be traded internationally. Such policies proved essential during the COVID -19 pandemic, with trade facilitation measures taken at the border making it",
+      "char_count": 993
+    },
+    {
+      "rank": 2,
+      "score": 0.17144629237550332,
+      "chunk_id": "oecd_scrr_2025:p0107:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 107,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 105 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 While firms have their own strategies for enhancing resilience, governments can play a key supporting role. This chapter reviews policy actions to enable agility, adaptability and alignment in supply chains. These include trade facilitation policies to reduce friction at borders, service sector regulations that facilitate the smooth operations of supply chains and to allow companies to adopt digital tools, and mechanisms to foster international and public - private co-operation on supply chain issues 6 Policy environments that enable agility, adaptability and alignment",
+      "char_count": 629
+    },
+    {
+      "rank": 3,
+      "score": 0.1573161893053616,
+      "chunk_id": "oecd_scrr_2025:p0021:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 21,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "oviders of infrastructure and emergency resources in co-operation with the private sector. Government intervention is also required for major risks or disruptions that exceed firms’ capabilities of routine risk management. The following actions can have a high impact on the agility and adaptability of supply ch ains, as well in aligning interests among stakeholders. • Promote trade facilitation policies. These aim to make trade and customs laws, regulations, documents, and procedures simpler and more efficient. They play a key role in streamlining and simplifying the technical and legal procedures at the border for products to be traded internationally. Such policies: o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic. o help firms adapt to sustainability regulatory requirements and prove compliance at the border o support alignment across stakeholders through enhanced consultations with",
+      "char_count": 999
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

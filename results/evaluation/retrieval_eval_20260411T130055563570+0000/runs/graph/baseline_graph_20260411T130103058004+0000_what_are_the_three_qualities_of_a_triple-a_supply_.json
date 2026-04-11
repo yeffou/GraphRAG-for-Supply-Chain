@@ -1,0 +1,182 @@
+{
+  "run_id": "baseline_graph_20260411T130103058004+0000_what_are_the_three_qualities_of_a_triple-a_supply_",
+  "timestamp_utc": "2026-04-11T13:01:03.058004+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "What are the three qualities of a triple-A supply chain according to the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.5406310000000003,
+      "chunk_id": "oecd_scrr_2025:p0138:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 138,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "136  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 green line shows supply to foreign markets. The nearer the green line is to the centre of the chart (0%), the smaller the share of the industry’s output that is supplied to foreign markets. For more co ntext around this indicator, see Chapter 2 of the OECD Supply Chain Resilience Review. Data sources and variables construction The figure presents two indicators of exposure to foreign production. Use of foreign inputs (blue line) is based on foreign product exposure for imports (FPEM) and supply to foreign markets (green line) is based on foreign product exposure for exports (FPEX) (Baldwin, Freeman and Theodorakopoulos, 2022[1]). It can be interpreted as the perce ntage of a country’s sector that could be exposed to foreign disruptions, both upstream (FPEM) and downstream (FPEX). These indicators are on gross trade terms and account for direct linkages (i.e. the supplier of an input) and indirect linkages (i.e. the supplier’s",
+      "char_count": 993,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.190631,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 1.9,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.35,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.540631
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.5406310000000003,
+      "chunk_id": "oecd_scrr_2025:p0139:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 139,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 137 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 How to interpret the chart: The dark blue line shows the country’s values, the light blue line represents the OECD average. The y-axis shows the number of products that have significant import concentration. The higher the line is plotted, the greater the number of products imported featuring significant import concentration. For more context around this indicator, see Chapter 3 of the OECD Supply Chain Resilience Review. Data sources and variables construction Significant import concentration is defined as cases of bilateral trade links at the product level where the value of the country -level Herfindahl -Hirschman Index of concentration (HHI) for impor ts is more than double the value of the corresponding HHI for global exports. The concentration indices are calculated across all trading partners, including, intra-EU trade. To further constrain the spectrum of cases of significant concentration, an additional minimum cut-off",
+      "char_count": 995,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.190631,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 1.9,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.35,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.540631
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.5406310000000003,
+      "chunk_id": "oecd_scrr_2025:p0142:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 142,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "140  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 How to interpret the chart: The closer the needle is to the right of the gauge, the more open and integrated the county’s digital trade environment. The light blue stripe on the gauge represents the OECD average. The range of the gauge represents the maximum and minimum of the OECD sample. For more context around this indicator, see Chapter 6 of the OECD Supply Chain Resilience Review. Data sources and variables construction The OECD’s 2024 Index of Digital Trade Integration and Openness (INDIGO) index distinguishes between two dimensions: (i) INDIGO-i tracks non-trade-related international instruments, including agreements on privacy, cybersecurity, and AI governance; and (ii) INDIGO -t focuses on trade -related instruments, including commitments in WTO agreements, regional trade agreements, and dedicated digital economy agreements. The data in the figures are drawn from INDIGO-t. It ranges from zero – no international commitments",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.190631,
+        "coverage_bonus": 1.5,
+        "sentence_alignment": 1.9,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.35,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.540631
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

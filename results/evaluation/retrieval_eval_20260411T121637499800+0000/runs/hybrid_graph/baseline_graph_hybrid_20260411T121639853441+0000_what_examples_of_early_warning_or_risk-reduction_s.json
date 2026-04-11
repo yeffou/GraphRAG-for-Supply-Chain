@@ -1,0 +1,304 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T121639853441+0000_what_examples_of_early_warning_or_risk-reduction_s",
+  "timestamp_utc": "2026-04-11T12:16:39.853441+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v2",
+  "query_text": "What examples of early warning or risk-reduction strategies does the WTO report mention for preparing for shocks?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::wto",
+      "canonical_name": "WTO",
+      "entity_type": "organization",
+      "matched_alias": "wto"
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks"
+    },
+    {
+      "entity_id": "entity::strategy::early_warning",
+      "canonical_name": "Early Warning",
+      "entity_type": "strategy",
+      "matched_alias": "early warning"
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.928519,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.978542
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::risk_management",
+          "source_name": "Risk Management",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.154889
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disrupt",
+          "evidence_text": "Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::strategy::risk_management",
+          "target_name": "Risk Management",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 2.650768
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.500931,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 26.253885,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.2,
+        "total": 37.38815
+      },
+      "dense_rank": 1,
+      "dense_score": 0.620435,
+      "graph_rank": 2,
+      "graph_score": 37.38815,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.975189,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.916667,
+        "entity_coverage": 0.666667,
+        "relation_signal": 0.8,
+        "total": 0.928519
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.56161,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.054201
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.500931,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 28.263259,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.8,
+        "query_miss_penalty": 7.0,
+        "hub_penalty": 0.76,
+        "total": 32.137524
+      },
+      "dense_rank": 6,
+      "dense_score": 0.545887,
+      "graph_rank": 3,
+      "graph_score": 32.137524,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.497532,
+        "graph_score": 0.833251,
+        "dense_rank_signal": 0.6875,
+        "graph_rank_signal": 0.846154,
+        "entity_coverage": 0.666667,
+        "relation_signal": 0.25,
+        "total": 0.56161
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.519935,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0006:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 6 When government intervention is required, early response procedures would enable policy makers to respond to evolving crises in a timely manner . Effective response strategies should be put in place prior to disruptions occurring and dependent on different types of potential shocks. Ministries and agencies should receive clear guidelines that define risk management processes, roles and responsibilities of different governmental and other public sector actors. The occurrence of a risk situation should immediately trigger a specific government intervention. These early response strategies aim to minimise the initial response time and are not meant to be set in stone. They should be reviewed and adapted as the situation develops. In order to be able to reassess and adjust the response in light of changing needs, policy makers will need to adopt data-driven monitoring and risk-assessment procedures. This will also require appropriate communication channels",
+      "char_count": 1000,
+      "contributing_entities": [],
+      "contributing_relations": [],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.0,
+        "coverage_bonus": 0.0,
+        "direct_relation": 0.0,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 0.0
+      },
+      "dense_rank": 2,
+      "dense_score": 0.59915,
+      "graph_rank": null,
+      "graph_score": null,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.856536,
+        "graph_score": 0.0,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.0,
+        "relation_signal": 0.0,
+        "total": 0.519935
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

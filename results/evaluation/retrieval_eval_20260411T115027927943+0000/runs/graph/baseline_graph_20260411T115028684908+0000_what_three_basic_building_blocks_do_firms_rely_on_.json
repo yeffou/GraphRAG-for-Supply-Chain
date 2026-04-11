@@ -1,0 +1,533 @@
+{
+  "run_id": "baseline_graph_20260411T115028684908+0000_what_three_basic_building_blocks_do_firms_rely_on_",
+  "timestamp_utc": "2026-04-11T11:50:28.684908+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "What three basic building blocks do firms rely on to build resilient supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilient"
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chains"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 81.48510260792438,
+      "chunk_id": "itf_collaboration_scm_2018:p0006:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster. Drivers of Supply Chain Collaboration Several authors have studied and mentioned the benefits of supply chain collaboration . Horvath (2001) has listed one benefit of collaboration in term s of information infrastucture such as theconnectivity network that will be opened at lower cost . This helps smaller firm s to access information at a lower investment cost. Min et al., (2005) studied supply chain collaboration by using a qualitative approach and observed that firms gain benefits from long-term collaboration as they are often not seen in the early period of collaboration . The usual consequence of collaboration is presented in the form of efficiency, effectiveness and profitability .The benefit of collaboration in term s of",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::natural_disaster",
+          "target_name": "Natural Disaster",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.017286
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::natural_disaster",
+          "source_name": "Natural Disaster",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::natural_disaster",
+          "via_name": "Natural Disaster",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster."
+          ],
+          "score_contribution": 3.198531
+        },
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster."
+          ],
+          "score_contribution": 3.198531
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::natural_disaster",
+          "via_name": "Natural Disaster",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.246809,
+        "coverage_bonus": 12.0,
+        "direct_relation": 55.78182,
+        "path_bonus": 12.19814,
+        "lexical_overlap": 0.458333,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.2,
+        "total": 81.485103
+      }
+    },
+    {
+      "rank": 2,
+      "score": 77.45518727459105,
+      "chunk_id": "oecd_scrr_2025:p0100:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 100,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions. This chapter analyses the types of risks faced by firms and identifies successful practices. It highlights the role of “triple-A” supply chains – agile, adaptable and aligned – as a reliable source of resilience. 5 Risk management at the firm-level",
+      "char_count": 466,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruptions",
+          "evidence_text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+          "support_count": 19,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions."
+          ],
+          "score_contribution": 3.198531
+        },
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions."
+          ],
+          "score_contribution": 3.198531
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions.",
+            "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.246809,
+        "coverage_bonus": 12.0,
+        "direct_relation": 50.900238,
+        "path_bonus": 12.19814,
+        "lexical_overlap": 0.55,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.44,
+        "total": 77.455187
+      }
+    },
+    {
+      "rank": 3,
+      "score": 74.98602394125771,
+      "chunk_id": "oecd_preparedness_2024:p0027:c001",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 27,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "ons. This new approach relies on the commitment and collaborative efforts of member countries to be operationalised. 5.3. Sector-specific measures and initiatives As highlighted in the previous section, supply chain initiatives generally focus on specific sectors identified as critical or strategic. Specific measures in three of these sectors are described below. 5.3.1. Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains. As illustrated in Table 2 with policies implemented by selected OECD countries, resilience strategies in the aftermath of COVID-19 were also a combination of increased monitoring, coordination, diversification and shift to local production (OECD, 2023 [113]; OECD, 2024 [114]). Task forces involving health",
+      "char_count": 992,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "direct_pair",
+          "evidence_text": "As illustrated in Table 2 with policies implemented by selected OECD countries, resilience strategies in the aftermath of COVID-19 were also a combination of increased monitoring, coordination, diversification and shift to local production (OECD, 2023 [113];",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.932772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": null,
+          "evidence_text": "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains.",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::pandemic",
+          "target_name": "Pandemic",
+          "trigger": null,
+          "evidence_text": "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains.",
+          "support_count": 17,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::covid_19",
+          "via_name": "COVID-19",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains.",
+            "As illustrated in Table 2 with policies implemented by selected OECD countries, resilience strategies in the aftermath of COVID-19 were also a combination of increased monitoring, coordination, diversification and shift to local production (OECD, 2023 [113];"
+          ],
+          "score_contribution": 3.198531
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::covid_19",
+          "via_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "As illustrated in Table 2 with policies implemented by selected OECD countries, resilience strategies in the aftermath of COVID-19 were also a combination of increased monitoring, coordination, diversification and shift to local production (OECD, 2023 [113];",
+            "Medical supply chains As COVID-19 was a health crisis that highlighted that the provision of many essential medical goods, such as face masks, was not guaranteed in the context of a pandemic, many countries have introduced new measures and initiatives to promote health resilience, with a focus on supply chains."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.246809,
+        "coverage_bonus": 12.0,
+        "direct_relation": 55.713478,
+        "path_bonus": 6.09907,
+        "lexical_overlap": 0.366667,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.44,
+        "total": 74.986024
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121644996395+0000_how_are_critical_raw_material_concentration_and_ex",
+  "timestamp_utc": "2026-04-11T12:16:44.996395+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How are critical raw material concentration and export restrictions linked to supply-chain vulnerability in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7988566756248474,
+      "chunk_id": "oecd_scrr_2025:p0087:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 87,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 85 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Figure 4.4. A growing number of exported raw material products are subject to at least one export restriction measure Number of exported raw material products subject to at least one export restriction measure up to 1st January 2023 Note: The count of all types of measures in place across all covered raw materials and all implementing countries takes into account the stock of measures in place at the beginning of the period, as well as new additions and eliminations. Source: OECD Inventory on Export Restrictions on Industrial Raw Materials , https://www.oecd.org/en/topics/export-restrictions-on-critical-raw- materials.html. 4.2. Promoting social and environmental sustainability along supply chains The intertwined nature of global production in the form of GVCs has drawn attention to the sustainability of supply chains to the fore of discussions in recent years. In this specific context, sustainability is broadly understood to include",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.748224139213562,
+      "chunk_id": "oecd_scrr_2025:p0085:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 85,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 83 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 wind. Concentration of exports is particularly significant for unprocessed forms of cobalt, m anganese, borates, chromium, magnesium and lithium (Figure 4.3). Restrictions on exports of raw materials to favour domestic users to the detriment of foreign users a re some of the most contentious forms of state intervention. As they undermine the economic viability and decrease the output of domestic extractive industries, this hampers the global supply of the materials concerned. In addition, if the exporter holds a large share of the market, export restrictions can increase world market prices, creating incentives for other exporters to impose them, resulting in spiralling negative effects on international markets. The OECD Inventory on Export Restrictions on Indust rial Raw Materials , which covers the period 2009 - 2022 (OECD, 2024[12]), shows that export restrictions on industrial raw materials saw a more than five-fold increase over",
+      "char_count": 1000
+    },
+    {
+      "rank": 3,
+      "score": 0.7272955179214478,
+      "chunk_id": "oecd_scrr_2025:p0140:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 140,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "138  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Data sources and variables construction Significant export concentration is defined as cases of bilateral trade links at the product level where the value of the country -level Herfindahl -Hirschman Index of concentration (HHI) for exports is more than double the value of the corresponding HHI for global imports. The concentration indices are calculated across all trading partners, including intra-EU trade. To further constrain the spectrum of cases of significant concentration, an additional minimum cut-off value of the HHI calculated for global product-level imports was set at 0.2, as current OECD work uses HHI value of 0.2 to indicate relatively high concentration (see Section 3.3 of the report). This means that only products with a global imports HHI of at least 0.2 and products with country -level exports HHI of at least 0.4 were considered. Agile, adaptable and aligned supply chains Transparency of regulations This figure",
+      "char_count": 995
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

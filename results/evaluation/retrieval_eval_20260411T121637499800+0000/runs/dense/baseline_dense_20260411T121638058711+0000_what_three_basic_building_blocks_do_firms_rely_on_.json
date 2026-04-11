@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121638058711+0000_what_three_basic_building_blocks_do_firms_rely_on_",
+  "timestamp_utc": "2026-04-11T12:16:38.058711+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "What three basic building blocks do firms rely on to build resilient supply chains in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7847715020179749,
+      "chunk_id": "oecd_scrr_2025:p0001:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "OECD Supply Chain Resilience Review Navigating Risks OECD Supply Chain Resilience Review Navigating Risks",
+      "char_count": 105
+    },
+    {
+      "rank": 2,
+      "score": 0.7787866592407227,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0001:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to resilient supply chains Increasing supply chain resilience: OECD policy toolkit",
+      "char_count": 87
+    },
+    {
+      "rank": 3,
+      "score": 0.7537256479263306,
+      "chunk_id": "oecd_scrr_2025:p0014:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "12  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 1 Overview",
+      "char_count": 63
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

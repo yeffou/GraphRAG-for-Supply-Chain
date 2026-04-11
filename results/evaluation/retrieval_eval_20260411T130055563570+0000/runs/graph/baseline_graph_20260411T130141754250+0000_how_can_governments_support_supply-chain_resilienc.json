@@ -1,0 +1,514 @@
+{
+  "run_id": "baseline_graph_20260411T130141754250+0000_how_can_governments_support_supply-chain_resilienc",
+  "timestamp_utc": "2026-04-11T13:01:41.754250+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How can governments support supply-chain resilience through early warning systems and intervention thresholds?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::governments",
+      "canonical_name": "Governments",
+      "entity_type": "actor",
+      "matched_alias": "governments",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::chain_resilience",
+      "canonical_name": "Chain Resilience",
+      "entity_type": "capability",
+      "matched_alias": "chain resilience",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::policy::intervention_thresholds",
+      "canonical_name": "Intervention Thresholds",
+      "entity_type": "policy",
+      "matched_alias": "intervention thresholds",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::strategy::early_warning",
+      "canonical_name": "Early Warning",
+      "entity_type": "strategy",
+      "matched_alias": "early warning",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 157.3086057355407,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0009:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment. Minimising exposure to external risks and promoting growth need not be a zero-sum game. Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness. These actions represent an investment that is likely to have long-term benefits extending well beyond the time of a crisis. They also support the private sector by strengthening the external framework in which supply chains operate, indirectly helping to build resilience. Minimise exposure to shocks: Deploying domestic policy tools",
+      "char_count": 904,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::governments",
+          "canonical_name": "Governments",
+          "entity_type": "actor",
+          "matched_alias": "governments",
+          "specificity": 0.34801176665841504,
+          "score_contribution": 1.392047,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.202377
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "improving",
+          "evidence_text": "Investing in infrastructure, enabling digital trade, sound public procurement procedures and improving the regulatory environment can promote the resilience of supply chains while also contributing to the country’s productivity and competitiveness.",
+          "sentence_index": 2,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "strengthening",
+          "evidence_text": "They also support the private sector by strengthening the external framework in which supply chains operate, indirectly helping to build resilience.",
+          "sentence_index": 4,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::governments",
+          "source_name": "Governments",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "exposure",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 6,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.871537
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.645899
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::governments",
+          "source_name": "Governments",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "exposure",
+          "evidence_text": "Keys to Resilient Supply Chains 9 A range of domestic policy tools can support governments’ efforts to minimise exposure to shocks while also delivering a range of other benefits related to the flow of goods, services and investment.",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.569816
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.787315,
+        "coverage_bonus": 2.25,
+        "sentence_alignment": 74.578848,
+        "direct_relation": 82.109109,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 1.25,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 157.308606
+      }
+    },
+    {
+      "rank": 2,
+      "score": 141.14854569330362,
+      "chunk_id": "oecd_preparedness_2024:p0005:c000",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 5,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "4  OECD TRADE POLICY PAPER NO. 286 © OECD 2024 Key messages • Role of governments: Governments play an important role in supply chain resilience as facilitators, integrators, and providers of infrastructure and emergency resources, in co - operation with the private sector. • Proportionality and accountability: Not every disruption or delay is a market failure requiring government intervention. Dealing with occasional stockouts at any node is part of every firm’s routine risk management. Government should actively support supply chain resilience in cases of major risks or disruptions. • Strategic segmentation: Resilience strategies should be segmented to address two distinct categories of risks: uncertainties which emerge during business-as-usual and extreme ‘black swan’ events. Applying the instruments of routine risk management (like stockpiles) to major disruptions results in waste, environmental burden, and underperformance. • Evidence-based decisions: To avoid unintended",
+      "char_count": 991,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::governments",
+          "canonical_name": "Governments",
+          "entity_type": "actor",
+          "matched_alias": "governments",
+          "specificity": 0.34801176665841504,
+          "score_contribution": 1.392047,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": "support",
+          "evidence_text": "Government should actively support supply chain resilience in cases of major risks or disruptions.",
+          "sentence_index": 6,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.462892
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": "support",
+          "evidence_text": "Government should actively support supply chain resilience in cases of major risks or disruptions.",
+          "sentence_index": 6,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.202377
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "support",
+          "evidence_text": "Government should actively support supply chain resilience in cases of major risks or disruptions.",
+          "sentence_index": 6,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.902005
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Government should actively support supply chain resilience in cases of major risks or disruptions.",
+          "sentence_index": 6,
+          "support_count": 13,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.787225
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "support",
+          "evidence_text": "Government should actively support supply chain resilience in cases of major risks or disruptions.",
+          "sentence_index": 6,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.645899
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": null,
+          "evidence_text": "Governments play an important role in supply chain resilience as facilitators, integrators, and providers of infrastructure and emergency resources, in co - operation with the private sector.",
+          "sentence_index": 2,
+          "support_count": 12,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 4.985135
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.11728,
+        "coverage_bonus": 2.25,
+        "sentence_alignment": 68.617555,
+        "direct_relation": 70.8526,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.311111,
+        "generic_penalty": 0.5,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.1,
+        "total": 141.148546
+      }
+    },
+    {
+      "rank": 3,
+      "score": 141.06722706887402,
+      "chunk_id": "oecd_preparedness_2024:p0024:c003",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 24,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "ert Group on Global Value and Supply Chains as part of Ireland’s ‘Trade and Investment Strategy 2022-2026’ (Government of Ireland, 2022 [105]). In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience. For example, in the UK, building resilience was addressed as part of an ‘Integrated Review of Security, Defence, Development and Foreign Policy’ (HM Government, 2021[107]). More detailed guidance on how to mitigate risks in supply chains was then provided as part of the Department for Business and Trade’s (DBT) resilience framework. 17 5.2.2. Measures aimed at facilitating trade and increasing flexibility in supply chains During the",
+      "char_count": 995,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::governments",
+          "canonical_name": "Governments",
+          "entity_type": "actor",
+          "matched_alias": "government",
+          "specificity": 0.34801176665841504,
+          "score_contribution": 1.392047,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": "help",
+          "evidence_text": "In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.462892
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": "help",
+          "evidence_text": "In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.202377
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "mitigate",
+          "evidence_text": "More detailed guidance on how to mitigate risks in supply chains was then provided as part of the Department for Business and Trade’s (DBT) resilience framework.",
+          "sentence_index": 3,
+          "support_count": 17,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.911622
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "help",
+          "evidence_text": "In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.902005
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "help",
+          "evidence_text": "In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 13,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.787225
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "help",
+          "evidence_text": "In New Zealand, the Ministerial Strategic Advisory Group on Trade (an advisory board with experts) was asked to investigate how firms are preparing for disruptions and what the government can do to help (Sense Partners, 2023[106]).16 Finally, it should be noted that supply chain risk assessments can also be part of broader initiatives aimed at economic security and not dealing only with supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 30,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.645899
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.11728,
+        "coverage_bonus": 2.25,
+        "sentence_alignment": 68.199294,
+        "direct_relation": 71.572875,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.077778,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 141.067227
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

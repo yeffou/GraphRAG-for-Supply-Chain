@@ -1,0 +1,427 @@
+{
+  "run_id": "baseline_graph_20260411T115032616785+0000_how_does_the_oecd_review_connect_trade_facilitatio",
+  "timestamp_utc": "2026-04-11T11:50:32.616785+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How does the OECD review connect trade facilitation with finding new suppliers or buyers during shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd"
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks"
+    },
+    {
+      "entity_id": "entity::system::international_trade",
+      "canonical_name": "International Trade",
+      "entity_type": "system",
+      "matched_alias": "trade facilitation"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 53.0059751388896,
+      "chunk_id": "wto_gvc_2025:p0011:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 11,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "k of reassessing their position within GVCs. While rapid trade liberalization, technological change and a rules-based international system fuelled the expansion of GVCs in previous decades, the “hyper-globalization” model has slowed since the global financial crisis of 2008 (IMF 2025). A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean). Figure 2.7: Simulated Unit Labor Cost Differences, By Macro-Region and Scenario Note: Simulated differences in unit labor costs across",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::preparedness",
+          "source_name": "Preparedness",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.569686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_supply_chain",
+          "target_name": "Global Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_value_chain",
+          "target_name": "Global Value Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.522238,
+        "coverage_bonus": 1.333333,
+        "direct_relation": 51.130404,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.3,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.28,
+        "total": 53.005975
+      }
+    },
+    {
+      "rank": 2,
+      "score": 51.86016466377748,
+      "chunk_id": "oecd_scrr_2025:p0109:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 109,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "environmental and social sustainability – often enforced at the border – are increasingly impacting firms across their entire value chain (Chapter 4). Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways: • Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions. This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations. These approaches need to rely on transparent and predictable trade -related information, streamlined border processes, and co-operation between public and private stakeholders. Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions. • Being adaptable as sustainability regulatory requirements proliferate",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::system::international_trade",
+          "canonical_name": "International Trade",
+          "entity_type": "system",
+          "matched_alias": "trade facilitation",
+          "specificity": 0.18571843568225221,
+          "score_contribution": 0.6500145248878828
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.550755
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::logistics",
+          "target_name": "Logistics",
+          "trigger": "disruptions",
+          "evidence_text": "This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations.",
+          "support_count": 5,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.396802
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "trigger": "disruptions",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "support_count": 5,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.184976
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::port_infrastructure",
+          "target_name": "Port Infrastructure",
+          "trigger": "disruptions",
+          "evidence_text": "This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.154201
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "via_entity_id": "entity::capability::agility",
+          "via_name": "Agility",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "relation_chain": [
+            "MITIGATES",
+            "APPLIES_TO"
+          ],
+          "evidence_texts": [
+            "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+            "Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways:"
+          ],
+          "score_contribution": 2.444772
+        },
+        {
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "relation_chain": [
+            "CO_OCCURS_WITH",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions."
+          ],
+          "score_contribution": 2.444772
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.172252,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 39.465035,
+        "path_bonus": 4.889544,
+        "lexical_overlap": 0.6,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.6,
+        "total": 51.860165
+      }
+    },
+    {
+      "rank": 3,
+      "score": 50.60839255100436,
+      "chunk_id": "oecd_scrr_2025:p0073:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 73,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "“Efficiency and risks in global value chains in the context of COVID-19”, OECD Economics Department Working Papers, No. 1637, OECD Publishing, Paris, https://doi.org/10.1787/3e4b7ecf-en. [3] Arriola, C., P. Kowalski and F. van Tongeren (2024), “Shocks in a highly interlinked global economy”, OECD Trade Policy Papers, No. 283, OECD Publishing, Paris, https://doi.org/10.1787/4a2f0127-en. [7] Arriola, C., P. Kowalski and F. van Tongeren (2021), “The impact of COVID-19 on directions and structure of international trade”, OECD Trade Policy Papers, No. 252, OECD Publishing, Paris, https://doi.org/10.1787/0b8eaafe-en. [2] Ayadi, R. et al. (2021), “Demand and supply exposure through global value chains: Euro ‐ Mediterranean countries during COVID”, The World Economy, Vol. 45/3, pp. 637-656, https://doi.org/10.1111/twec.13156. [9] Baker, S., N. Bloom and S. Davis (2016), “Measuring economic policy uncertainty”, The Quarterly Journal of Economics, Vol. 131/4, pp. 1593-1636,",
+      "char_count": 978,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        },
+        {
+          "entity_id": "entity::system::international_trade",
+          "canonical_name": "International Trade",
+          "entity_type": "system",
+          "matched_alias": "international trade",
+          "specificity": 0.18571843568225221,
+          "score_contribution": 0.6500145248878828
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "trigger": "shocks",
+          "evidence_text": "van Tongeren (2024), “Shocks in a highly interlinked global economy”, OECD Trade Policy Papers, No.",
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.727547
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "shocks",
+          "evidence_text": "van Tongeren (2024), “Shocks in a highly interlinked global economy”, OECD Trade Policy Papers, No.",
+          "support_count": 19,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.660874
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "trigger": "impact",
+          "evidence_text": "van Tongeren (2021), “The impact of COVID-19 on directions and structure of international trade”, OECD Trade Policy Papers, No.",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.257861
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": null,
+          "evidence_text": "“Efficiency and risks in global value chains in the context of COVID-19”, OECD Economics Department Working Papers, No.",
+          "support_count": 21,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::covid_19",
+          "via_name": "COVID-19",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "“Efficiency and risks in global value chains in the context of COVID-19”, OECD Economics Department Working Papers, No.",
+            "van Tongeren (2021), “The impact of COVID-19 on directions and structure of international trade”, OECD Trade Policy Papers, No."
+          ],
+          "score_contribution": 2.951597
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "van Tongeren (2024), “Shocks in a highly interlinked global economy”, OECD Trade Policy Papers, No.",
+            "van Tongeren (2024), “Shocks in a highly interlinked global economy”, OECD Trade Policy Papers, No."
+          ],
+          "score_contribution": 2.951597
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.54773,
+        "coverage_bonus": 12.0,
+        "direct_relation": 29.837469,
+        "path_bonus": 5.903194,
+        "lexical_overlap": 0.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.08,
+        "total": 50.608393
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

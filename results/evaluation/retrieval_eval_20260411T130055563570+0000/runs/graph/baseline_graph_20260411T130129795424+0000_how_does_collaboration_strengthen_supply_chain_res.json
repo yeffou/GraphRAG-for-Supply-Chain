@@ -1,0 +1,489 @@
+{
+  "run_id": "baseline_graph_20260411T130129795424+0000_how_does_collaboration_strengthen_supply_chain_res",
+  "timestamp_utc": "2026-04-11T13:01:29.795424+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How does collaboration strengthen supply chain resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::chain_resilience",
+      "canonical_name": "Chain Resilience",
+      "entity_type": "capability",
+      "matched_alias": "chain resilience",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::strategy::collaboration",
+      "canonical_name": "Collaboration",
+      "entity_type": "strategy",
+      "matched_alias": "collaboration",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 244.0385791057422,
+      "chunk_id": "itf_collaboration_scm_2018:p0015:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 15,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility . The importance of collective learning from past disruptions in gaining visibility and velocity offers managers some insight into how joint retrospective learning from disruptive events allows a supply chain dyad to quickly identify an impending disruption. Velocity is also gained through the fact that improved insights are gained and mitigation procedures are put in place . Whereas the above -mentioned managerial implications are generally known within industry, supply chain practitioners should be aware that collab orating with suppliers should not be directly aimed at increasing resilience . Instead, buyer -supplier collaboration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::collaboration",
+          "canonical_name": "Collaboration",
+          "entity_type": "strategy",
+          "matched_alias": "collaboration",
+          "specificity": 0.5933255849283894,
+          "score_contribution": 2.373302,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 7,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.089476
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.829156
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "Instead, buyer -supplier collaboration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of",
+          "sentence_index": 4,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.829156
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience_perspective",
+          "source_name": "Resilience Perspective",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.70099
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience_perspective_discussion",
+          "source_name": "Resilience Perspective Discussion",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.70099
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.76857,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 118.752999,
+        "direct_relation": 120.20701,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 2.25,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.5,
+        "total": 244.038579
+      }
+    },
+    {
+      "rank": 2,
+      "score": 171.4275621057422,
+      "chunk_id": "itf_collaboration_scm_2018:p0010:c001",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 10,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "complexity. Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012). The key requirements for collaboration need to be contained within an established supply chain and objectives, information sharing and t he establishment of trust within focal firms and with supply chain partners. A similar concept to explain the evolution of collaboration has been discussed by Stank et al., in 2011. Firms can develop collaboration by starting with the recognition of the po wer of collaboration . Trust will need to be developed through the establishment of the working process between partners . The next step is the development of common performance indicators to jointly measure supply chain objectives. A collaboration index has been developed based on three key elements of information sharing, decision synchroni sation and incentive alignment (Simatupang",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::collaboration",
+          "canonical_name": "Collaboration",
+          "entity_type": "strategy",
+          "matched_alias": "collaborative",
+          "specificity": 0.5933255849283894,
+          "score_contribution": 2.373302,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::chain_resilience",
+          "canonical_name": "Chain Resilience",
+          "entity_type": "capability",
+          "matched_alias": "chain resilience",
+          "specificity": 0.18331407378421877,
+          "score_contribution": 0.329965,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.640751
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 7,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.089476
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.829156
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 34,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.296402
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 33,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.172811
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "Collaborative relationships between internal functional areas as well as with external customers and suppliers have been proposed as a key determinant for enhancing supply chain resilience (Randall, 2012).",
+          "sentence_index": 1,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 3.098535,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 79.7083,
+        "direct_relation": 85.060727,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 1.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 171.427562
+      }
+    },
+    {
+      "rank": 3,
+      "score": 150.2883121057422,
+      "chunk_id": "itf_collaboration_scm_2018:p0015:c001",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 15,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness. A number of resilience scholars point to collaboration among the organisational capabilities that offer the potential for overcoming turbulence and disruption in the supply chain (Christopher and Peck, 2004; Sheffi, 2005; Juttner and Maklan, 2011 ). According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain. The exchange of information and application of shared knowledge reduces uncertainty at each level of organisational analysis (strategic, operational, and tactical ). Analogous to the notion of contextual knowledge described by Sanders and Ritzman (1995),",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::collaboration",
+          "canonical_name": "Collaboration",
+          "entity_type": "strategy",
+          "matched_alias": "collaboration",
+          "specificity": 0.5933255849283894,
+          "score_contribution": 2.373302,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhances",
+          "evidence_text": "According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain.",
+          "sentence_index": 4,
+          "support_count": 7,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.089476
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness.",
+          "sentence_index": 0,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.829156
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhances",
+          "evidence_text": "According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain.",
+          "sentence_index": 4,
+          "support_count": 14,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.829156
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "enhances",
+          "evidence_text": "According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain.",
+          "sentence_index": 4,
+          "support_count": 69,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.078904
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::flexibility",
+          "source_name": "Flexibility",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.593277
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::velocity",
+          "source_name": "Velocity",
+          "target_entity_id": "entity::strategy::collaboration",
+          "target_name": "Collaboration",
+          "trigger": "enhancing",
+          "evidence_text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.593277
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.76857,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 67.215825,
+        "direct_relation": 76.243917,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 1.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 150.288312
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

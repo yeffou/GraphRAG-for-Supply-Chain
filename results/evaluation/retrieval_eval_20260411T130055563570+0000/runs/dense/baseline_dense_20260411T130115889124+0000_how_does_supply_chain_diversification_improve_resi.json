@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T130115889124+0000_how_does_supply_chain_diversification_improve_resi",
+  "timestamp_utc": "2026-04-11T13:01:15.889124+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How does supply chain diversification improve resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.8293269276618958,
+      "chunk_id": "unctad_gsc_2023:p0014:c001",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 14,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "as in just-in-case systems (Jenkins, 2021). Supply chain diversification has proven an effective means of strengthening supply chain resilience while overcoming supply chain disruption and improving company profitability and demand flows. Supply chain resilience can be defined as follows: the ability of a supply chain to return to its original state or move to a more desirable state after being disrupted (Barroso et al., 2010; Brandon-Jones et al., 2014; Carvalho et al., 2011; Christopher and Peck, 2004; Christopher and Rutherford, 2004), the ability of the production and distribution system to meet each customer demand for each product on time and to quantity (Priya Datta et al., 2007) and the ability to quickly adapt and respond to changes (Erol et al., 2010). These definitions and others are recapitulated in Tukamuhabwa et al. (2015). With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption. Diversification,",
+      "char_count": 994
+    },
+    {
+      "rank": 2,
+      "score": 0.8261728882789612,
+      "chunk_id": "unctad_gsc_2023:p0014:c002",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 14,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "015). With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption. Diversification, through flexibility in activities, makes it possible to surmount the adverse effects of shocks and thus enable a supply chain to Figure 1 Features of supply chain diversification Diversi/f_ied goods and services Diversi/f_ied customer base (customers) Diversi/f_ied supply base (suppliers) Improved supply chain resilience (absorbing shocks) Ability to avoid supply chain disruption Improved pro/f_itability and demand /f_lows Unlocked supply chain Supply chain diversi/f_ication Supply chain /f_lexibility Source: UNCTAD.",
+      "char_count": 673
+    },
+    {
+      "rank": 3,
+      "score": 0.7999860644340515,
+      "chunk_id": "oecd_scrr_2025:p0105:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 105,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "marter-investments-in-resilient-supply-chains/. [1] Lee, H. (2021), “The New AAA Supply Chain”, Management and Business Review, Vol. 1/1, pp. 173-176, https://doi.org/10.1177/2694105820210101026. [25] Lee, H. (2004), “The triple-A supply chain”, Harvard Business Review, Vol. October. [21] Mizgier, K., S. Wagner and M. Jüttner (2015), “Disentangling diversification in supply chain networks”, International Journal of Production Economics, Vol. 162, pp. 115-124, https://doi.org/10.1016/j.ijpe.2015.01.007. [10]",
+      "char_count": 512
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

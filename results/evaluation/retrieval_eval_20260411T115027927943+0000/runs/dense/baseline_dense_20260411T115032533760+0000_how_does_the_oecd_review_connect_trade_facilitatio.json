@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115032533760+0000_how_does_the_oecd_review_connect_trade_facilitatio",
+  "timestamp_utc": "2026-04-11T11:50:32.533760+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How does the OECD review connect trade facilitation with finding new suppliers or buyers during shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6928932666778564,
+      "chunk_id": "oecd_scrr_2025:p0005:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 5,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "trade. Going forward, the OECD will continue to foster dialogue and provide objective, evidence -based analysis in support of open markets and a rules -based international trading system in good working order. Mathias Cormann Secretary-General",
+      "char_count": 243
+    },
+    {
+      "rank": 2,
+      "score": 0.6817709803581238,
+      "chunk_id": "oecd_scrr_2025:p0005:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 5,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "priorities, the OECD’s Trade Committee has shaped and overseen a programme of work on resilient supply chains. The OECD has developed unique evidence -based research and analysis, complemented by a series of expert discussions and multi -stakeholder dialogues, including with the participation and support of Business at the OECD (BIAC) and the OECD Trade Union Advisory Committee (TUAC). This work has drawn from country experience, and identified new approaches to anticipating and monitoring shocks, analysing and mitigating impacts, and cooperating across the public and private sectors. This OECD Supply Chain Resilience Review brings together the OECD’s work in this area. It h ighlights the importance of a balanced approach to mitigating supply chain risks without undermining the upside benefits that come with expanding international trade. Going forward, the OECD will continue to foster dialogue and provide objective, evidence -based analysis in support of open markets and a rules",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.6475896239280701,
+      "chunk_id": "oecd_scrr_2025:p0114:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 114,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "he percentage increase in exports from a 10% improvement in the average trade facilitation perfo rmance as measured by the TFIs (average across the 11 areas shown in Box 6.1). The results for the intensive and extensive margins rely on different explained variables and modelling approaches. Source: OECD (2023[5]), OECD Trade Facilitation Indicators: Monitoring facilitation reforms up to 2023, https://issuu.com/oecd.publishing/docs/oecd-trade-facilitation-update-2023. Trade facilitation policies can also play an important role in boosting existing trade relationships (referred to as “intensive margins”), with analysis showing that a better trade facilitation policy environment can enhance the intensive margin of trade by up to 9% across different regions ( Figure 6.3) (OECD, 2023[5]). This can be particularly important for those supply chains where changing suppliers during a shock can be more challenging, such as when using cu stomised inputs (i.e. inputs designed to meet the exact",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130140465672+0000_how_can_governments_support_supply-chain_resilienc",
+  "timestamp_utc": "2026-04-11T13:01:40.465672+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How can governments support supply-chain resilience through early warning systems and intervention thresholds?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.10045608225842534,
+      "chunk_id": "worldbank_scm_guidance_2023:p0045:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 45,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "was, for instance, addressed by companies strengthening their Supplier relationships, which can be done via greater information sharing in the form of the synchronized capacity planning, increasing planning reliability, and transparency. ◾ Information visibility: Information is power. Vulnerabilities can be better managed and mitigated with better data. This can be in the form of tracking and tracing shipments, early warning systems, and frequent status reports. Contracts with Suppliers/Contractors should set out requirements on what data should be made available and when, and set out clearly the Borrower’s right to conduct inspections or audits. Commercial software solutions that provide this visibility are also available.",
+      "char_count": 733
+    },
+    {
+      "rank": 2,
+      "score": 0.09705978942710809,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0008:c002",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 8,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "ency can be responsible for managing specific supply chain risks. Equally, a specific government agency can be in charge of a particular type of risk, e.g. disruptions related to health, logistics. • Based on the above structure, identify different agencies and local administrations responsible for responding to the early warning signs and implementing risk management strategies that would report to the government bodies managing overall risk. • Identify and agree on a diverse set of indicators that encompass a wide range of potential risks. This includes mechanisms to detect and anticipate crises (e.g. monitoring the vulnerabilities in supply chains, international exchange of information, and early warning indicators). • Develop a methodology to identify the right time for the government to intervene based on the above indicators – when the level of disruption to supply chains exceeds “routine risks”. • Create a system for collecting data about past supply chain disruptions from",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.08676491984525034,
+      "chunk_id": "worldbank_scm_guidance_2023:p0104:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 104,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "SUPPL Y CHAIN MANAGEMENT: AN INTRODUCTION AND PRACTICAL TOOLSET FOR PROCUREMENT PRACTITIONERS 94 PRACTICAL TOOLBOX T: Supply chain SWOT analysis (continued) TABLE XVII Supply chain SWOT analysis Strengths Weaknesses ◾ What supply chain insights can we obtain from our external partners and stakeholders (that is, supervising engineers, Consultants, subject matter experts, Bank staff)? ◾ What supply chain insights and experience can we apply from prior projects (lessons learned)? ◾ How can we best leverage our good relationships with current Suppliers/Contractors? ◾ How can we improve our external relationships to obtain valuable supply chain information? ◾ What lessons can we apply from prior supply chain challenges that we have encountered? ◾ Can we mobilize the necessary resources to complete some/all of the SCM work needed? ◾ How can we improve our current relationships with Suppliers/Contractors? Opportunities Threats ◾ What resources have become available to better monitor and",
+      "char_count": 994
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

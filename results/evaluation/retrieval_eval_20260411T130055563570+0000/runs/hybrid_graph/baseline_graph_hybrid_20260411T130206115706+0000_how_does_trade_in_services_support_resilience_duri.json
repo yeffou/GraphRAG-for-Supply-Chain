@@ -1,0 +1,335 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130206115706+0000_how_does_trade_in_services_support_resilience_duri",
+  "timestamp_utc": "2026-04-11T13:02:06.115706+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "How does trade in services support resilience during shocks according to the WTO and OECD reports?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::organization::wto",
+      "canonical_name": "WTO",
+      "entity_type": "organization",
+      "matched_alias": "wto",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::system::trade_in_services",
+      "canonical_name": "Trade in Services",
+      "entity_type": "system",
+      "matched_alias": "trade in services",
+      "source": "base",
+      "is_generic": false
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.754304,
+      "chunk_id": "wto_wtr_2021:p0003:c000",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 3,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "Contents Acknowledgements and disclaimer 2 A bbreviations and symbols 3 F oreword by the WTO Director-General 4 E xecutive summary 6 A . Introduction 1 2 1 . V ulnerability and resilience: two sides of the same globalization coin 14 2 . M ore resilience requires more, not less, global economic cooperation 18 B . W hy economic resilience matters 2 0 1 . Introduction 22 2 . E conomies are exposed to risks and shocks 22 3 . D isruptions and shocks can cause significant loss of life and severe economic impact 29 4 . H ow do shocks impact international trade? 36 5 . E conomic and trade policy response to shocks 47 6 . B uilding and supporting economic resilience has become a key strategy t o reduce business interruptions and economic losses caused by shocks 55 7 . Conclusion 62 C . T he role of trade in economic resilience 6 4 1 . Introduction 6 6 2 . T rade can be a spreader of shocks 6 6 3 . T rade can enable countries to better prepare for, cope with, and recover from shocks 81 4 . T he",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::wto",
+          "canonical_name": "WTO",
+          "entity_type": "organization",
+          "matched_alias": "wto",
+          "specificity": 0.06148607146505206,
+          "score_contribution": 0.110675,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "reduce",
+          "evidence_text": "B uilding and supporting economic resilience has become a key strategy t o reduce business interruptions and economic losses caused by shocks 55 7 .",
+          "sentence_index": 12,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.177632
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.719314,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 10.044299,
+        "direct_relation": 9.177632,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.388889,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 16.930134
+      },
+      "dense_rank": 1,
+      "dense_score": 0.731584,
+      "graph_rank": null,
+      "graph_score": 16.930134,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.013039,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.6,
+        "relation_signal": 0.675,
+        "total": 0.754304
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.673515,
+      "chunk_id": "wto_wtr_2021:p0008:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 8,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "d strength during the pandemic, helping countries cope by facilitating access to critical medical supplies, food and consumer goods, and by supporting their economic recovery (see Figure 1). According to the WTO’s most recent forecast, global economic output (at market exchange rates) is projected to recover by 5.3 per cent in 2021. This has been, in part, thanks to the robust recovery in merchandise trade, which is set to rise by 8 per cent in 2021. However, trade in services continues to remain depressed. The 2021 World Trade Report looks at why the interconnected global trading system is both vulnerable and resilient to crises, how it can help countries to be more economically resilient to shocks, and what can be done to make the system better prepared and more resilient in the future. These are pressing questions in light of the prospect of increasingly frequent and more intense natural and man-made disasters. For example, climate change is driving increases in extreme weather",
+      "char_count": 995,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::trade_in_services",
+          "canonical_name": "Trade in Services",
+          "entity_type": "system",
+          "matched_alias": "trade in services",
+          "specificity": 0.22563189283951246,
+          "score_contribution": 0.902528,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::wto",
+          "canonical_name": "WTO",
+          "entity_type": "organization",
+          "matched_alias": "wto",
+          "specificity": 0.06148607146505206,
+          "score_contribution": 0.110675,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "vulnerable",
+          "evidence_text": "The 2021 World Trade Report looks at why the interconnected global trading system is both vulnerable and resilient to crises, how it can help countries to be more economically resilient to shocks, and what can be done to make the system better prepared and more resilient in the future.",
+          "sentence_index": 4,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.639395
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.621842,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 9.967755,
+        "direct_relation": 8.639395,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.466667,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.2,
+        "total": 24.995658
+      },
+      "dense_rank": 2,
+      "dense_score": 0.707764,
+      "graph_rank": null,
+      "graph_score": 24.995658,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.804969,
+        "graph_score": 0.023636,
+        "dense_rank_signal": 0.916667,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.8,
+        "relation_signal": 0.675,
+        "total": 0.673515
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.575599,
+      "chunk_id": "wto_wtr_2021:p0009:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 9,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": ". In global terms, economic disruptions tend to have a greater impact on developing countries, and in particular on smaller, poorer countries, than on advanced economies. This report assesses the relationship of trade, trade policy cooperation and the multilateral trading system to economic resilience. Although “economic resilience” has become a popular term to capture the broad and diverse factors and strategies needed to reduce business interruptions and economic losses caused by shocks, it lacks a common definition. This report defines “economic resilience” as the ability of a system, including households, firms, and governments, to prevent and prepare for, cope with and recover from shocks. Building economic resilience requires an understanding of economic challenges and opportunities, as well as the ability to anticipate, evaluate and manage risks. Although a broad range of economic resilience strategies and actions, including those related to trade policies, can be adopted by",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "reduce",
+          "evidence_text": "Although “economic resilience” has become a popular term to capture the broad and diverse factors and strategies needed to reduce business interruptions and economic losses caused by shocks, it lacks a common definition.",
+          "sentence_index": 3,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.177632
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "cope with",
+          "evidence_text": "This report defines “economic resilience” as the ability of a system, including households, firms, and governments, to prevent and prepare for, cope with and recover from shocks.",
+          "sentence_index": 4,
+          "support_count": 9,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.177632
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.608639,
+        "coverage_bonus": 0.0,
+        "sentence_alignment": 19.977486,
+        "direct_relation": 18.355264,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 3.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 35.774723
+      },
+      "dense_rank": 3,
+      "dense_score": 0.693284,
+      "graph_rank": null,
+      "graph_score": 35.774723,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.686408,
+        "graph_score": 0.037797,
+        "dense_rank_signal": 0.846154,
+        "graph_rank_signal": 0.0,
+        "entity_coverage": 0.4,
+        "relation_signal": 0.8,
+        "total": 0.575599
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

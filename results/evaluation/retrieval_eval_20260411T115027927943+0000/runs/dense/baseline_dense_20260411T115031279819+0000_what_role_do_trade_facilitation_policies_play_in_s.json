@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115031279819+0000_what_role_do_trade_facilitation_policies_play_in_s",
+  "timestamp_utc": "2026-04-11T11:50:31.279819+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "What role do trade facilitation policies play in supply chain agility and adaptability?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7104243636131287,
+      "chunk_id": "oecd_scrr_2025:p0109:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 109,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "environmental and social sustainability – often enforced at the border – are increasingly impacting firms across their entire value chain (Chapter 4). Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways: • Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions. This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations. These approaches need to rely on transparent and predictable trade -related information, streamlined border processes, and co-operation between public and private stakeholders. Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions. • Being adaptable as sustainability regulatory requirements proliferate",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.6945734620094299,
+      "chunk_id": "oecd_scrr_2025:p0107:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 107,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 105 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 While firms have their own strategies for enhancing resilience, governments can play a key supporting role. This chapter reviews policy actions to enable agility, adaptability and alignment in supply chains. These include trade facilitation policies to reduce friction at borders, service sector regulations that facilitate the smooth operations of supply chains and to allow companies to adopt digital tools, and mechanisms to foster international and public - private co-operation on supply chain issues 6 Policy environments that enable agility, adaptability and alignment",
+      "char_count": 629
+    },
+    {
+      "rank": 3,
+      "score": 0.693326473236084,
+      "chunk_id": "oecd_scrr_2025:p0108:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 108,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "106  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Not every disruption or delay is a market failure requiring government intervention. Policy does, however, play a key role in fostering the enabling environment in which firms pursue agile, adaptable and aligned supply chains. Public policy facilitates, integrates and provides infrastructure and emergency resources in co-operation with the private sector. Government action also addresses major risks or disruptions that exceed firms’ capabilities of routine risk management. Several policy areas can have a high impact on the agility and adaptability of supply chains, as well as the required alignment of interests among stakeholders: • Trade facilitation measures for goods. The ability for firms to quickly adapt the organisation of their supply chains (including in the case of major crises) depends on efficient logistics and a reduction of trade frictions. Through trade facilitation measures (the streamlining of import and export",
+      "char_count": 994
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

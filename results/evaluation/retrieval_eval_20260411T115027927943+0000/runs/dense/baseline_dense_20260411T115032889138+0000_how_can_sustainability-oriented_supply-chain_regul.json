@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115032889138+0000_how_can_sustainability-oriented_supply-chain_regul",
+  "timestamp_utc": "2026-04-11T11:50:32.889138+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How can sustainability-oriented supply-chain regulations affect foreign suppliers and the inclusivity of global trade?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7592484354972839,
+      "chunk_id": "oecd_scrr_2025:p0091:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 91,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of adequate enforcement of sustainability laws by relevant authorities – might become more burdensome. In response, firms could choose to reorganise their supply chains to avoid any business partners that might lead to additional paperwork or other regulatory hurdles. These choices are not driven by the quality or price provided by sup pliers, but rather by avoidance of the transaction costs or potential uncertainty. Thus, production might be pushed to more inefficient locations and firms, negating the benefits of trade in ensuring that economic activity is allocated on the basis of productivity, as well as potentially reducing the inclusivity of the global economy. A second challenge is that the costs imposed by supply chain regulations appear unlikely to be distributed equally. In particular, firms in developing countries and small and",
+      "char_count": 997
+    },
+    {
+      "rank": 2,
+      "score": 0.7194032073020935,
+      "chunk_id": "oecd_scrr_2025:p0092:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 92,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "y of production across the world remains largely unexplored. Little is known about the way firms alter their strategies in response to these new legal frameworks. Res earch aimed at unpacking potential effects is needed in order to ensure sustainability policies benefit the environment and workers while addressing any unintended adverse effects on the efficiency and inclusiveness of supply chains. 4.2.2. Multistakeholder sustainability initiatives can complement regulation, but also add complexity Supply chain sustainability laws are part of a broader ecosystem for sustainability governance. This ecosystem encompasses various elements, inter alia: • International legal instrumen ts, such as the ILO International Labour Standards, the Convention on International Trade in Endangered Species and the OECD Guidelines for Multinational Enterprises on Responsible Business Conduct • National legislation (e.g. environmental protection laws, legislation for sustainability criteria in public",
+      "char_count": 995
+    },
+    {
+      "rank": 3,
+      "score": 0.7150041460990906,
+      "chunk_id": "oecd_scrr_2025:p0092:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 92,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "sulted in some firms avoiding artisanal and small-scale miners in conflict-affected and high-risk areas (OECD, 2021[22]). While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains. Their potential costs and negative impacts need to be carefully weighed against the good they can do, and their design and implementation must take these trade-offs into account. This includes careful consideration of the market failures and other forces that lead to unsustainable supply chain practices in the first place (Park, Lundquist and Stolzenburg, 2023[15]). As most supply chain sustainability laws have only been adopted relativel y recently, their practical impact on the structure of supply chains and the sustainability of production across the world remains largely unexplored. Little is known about the way firms alter their strategies in response to these new legal",
+      "char_count": 989
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

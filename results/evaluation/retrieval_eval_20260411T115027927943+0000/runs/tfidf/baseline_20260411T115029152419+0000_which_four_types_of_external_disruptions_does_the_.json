@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115029152419+0000_which_four_types_of_external_disruptions_does_the_",
+  "timestamp_utc": "2026-04-11T11:50:29.152419+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "Which four types of external disruptions does the transport resilience report focus on?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.24714656528110002,
+      "chunk_id": "oecd_transport_resilience_2024:p0012:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 12,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "EXTERNAL DISRUPTIONS TO TRANSPORT SYSTEMS TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 11 External disruptions to transport systems This report focuses on external disruptions and describes four specific types of external disruption: climate events, pandemics, war and terrorism, and cyber -attacks. Many of these disruptions are interrelated, which means that disruptions in one system or domain can spill over to another system or domain, increasing the potential impacts of disruptions to interconnected systems. Climate change The transport sector already faces a large variety of extreme weather events, and these events will become more frequent and serious if climate change continue. Most of these extreme weather events have been well documented in reports of institutions such as the Intergovernmental Panel on Climate Change (IPCC). The IPCC also provides regular updates on the likely effects of climate change. Table 2 gives an overview of the four types of",
+      "char_count": 994
+    },
+    {
+      "rank": 2,
+      "score": 0.13269423140093942,
+      "chunk_id": "oecd_transport_resilience_2024:p0011:c000",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 11,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "THE RESILIENCE OF TRANSPORT SYSTEMS 10 TRANSPORT SYSTEM RESILIENCE: SUMMARY AND CONCLUSIONS © OECD/ITF 2024 Classifying transport system disruptions This report classifies transport system disruptions according to two types of causes. The first distinction is between internal or external causes: 1. Internal disruptions may originate from mistakes and accidents caused by staff or users, technical failures, components that break down, faulty constructions, overload and so on. They could also be intentional, such as labour market conflicts. 2. External disruptions may be related to natural phenomena including various degrees of adverse weather and natural disasters. One specific long-term threat that lies between internal and external causes is climate change, which is partially a consequence of human activities in the transport sector. The second distinction is between accidental or intentional causes: 1. Accidental disruptions strike the system mostly at random. 2. Intentional",
+      "char_count": 990
+    },
+    {
+      "rank": 3,
+      "score": 0.1177356759170411,
+      "chunk_id": "oecd_transport_resilience_2024:p0011:c001",
+      "doc_id": "oecd_transport_resilience_2024",
+      "title": "Transport System Resilience",
+      "publisher": "OECD",
+      "page_number": 11,
+      "source_url": "https://www.oecd.org/en/publications/transport-system-resilience_d90b86ac-en.html",
+      "local_path": "data/raw/d90b86ac-en.pdf",
+      "year": 2024,
+      "text": "ctor. The second distinction is between accidental or intentional causes: 1. Accidental disruptions strike the system mostly at random. 2. Intentional disruptions take place because one or more actors decide to cause the disruption. Based on these two distinctions, it is possible to distinguish between four different kinds of disruption: internal accidental disruptions, internal intentional disruptions, external accidental disruptions, and external intentional disruptions (see Table 1). While transport policy makers have considerable leverage over internal causes, this is much less the case for external causes. Intentional disruptions to systems will generally be concentrated where the transport system is most vulnerable, as this will increase the potential impact of the intended disruption. Intentional external disruptions are more difficult to predict with respect to frequency and location, compared to natural disruptions and internal technical and human failures, for which it may be",
+      "char_count": 1000
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

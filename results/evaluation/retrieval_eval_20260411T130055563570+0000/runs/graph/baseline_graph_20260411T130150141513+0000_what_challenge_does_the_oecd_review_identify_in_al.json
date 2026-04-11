@@ -1,0 +1,463 @@
+{
+  "run_id": "baseline_graph_20260411T130150141513+0000_what_challenge_does_the_oecd_review_identify_in_al",
+  "timestamp_utc": "2026-04-11T13:01:50.141513+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "What challenge does the OECD review identify in aligning sustainability and efficiency with resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::efficiency",
+      "canonical_name": "Efficiency",
+      "entity_type": "capability",
+      "matched_alias": "efficiency",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 244.587161840401,
+      "chunk_id": "oecd_scrr_2025:p0134:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 134,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency. Policymakers may face the challenge of aligning these objectives in ways that foster long-term economic stability and sustainable development while ensuring the ca pacity to withstand disruptions. While it is possible to achieve synergies across these dimensions, trade -offs are also inherently involved. This chapter examines these issues through a policy lens. 7.1. Synergies between resilience, efficiency and sustainability can be captured From the perspective of governments regulating supply chains, many policies not only strengthen the capacity to withstand disruptions, but also contribute to sustainability and efficiency. For example, investments in renewable energy",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 2.018128,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "interplay between",
+          "evidence_text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 46,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.204203
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "strengthen",
+          "evidence_text": "Synergies between resilience, efficiency and sustainability can be captured From the perspective of governments regulating supply chains, many policies not only strengthen the capacity to withstand disruptions, but also contribute to sustainability and efficiency.",
+          "sentence_index": 5,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.775442
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptability",
+          "source_name": "Adaptability",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptable_and_aligned",
+          "source_name": "Adaptable And Aligned",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptable_and_aligned_supply",
+          "source_name": "Adaptable And Aligned Supply",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::agile_adaptable",
+          "source_name": "Agile Adaptable",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "132  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In addition to the specific policies outlined in the previous chapter, in order to promote agile, adaptable and aligned supply chains, policy design must account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.377247,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 121.756865,
+        "direct_relation": 119.44055,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.6125,
+        "generic_penalty": 3.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.6,
+        "total": 244.587162
+      }
+    },
+    {
+      "rank": 2,
+      "score": 173.41126942020048,
+      "chunk_id": "oecd_scrr_2025:p0022:c004",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 22,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency. Aligning these goals in ways that promote long -term economic stability and sustainable development —while maintaining the capacity to withstand disruptions — may present challenges. Achieving synergies across these dimensions is possible, though not without inherent trade-offs. Key actions may include:",
+      "char_count": 485,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 2.018128,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 46,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.204203
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptability",
+          "source_name": "Adaptability",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptable_and_aligned",
+          "source_name": "Adaptable And Aligned",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::adaptable_and_aligned_supply",
+          "source_name": "Adaptable And Aligned Supply",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::agile_adaptable",
+          "source_name": "Agile Adaptable",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::agile_adaptable_and_aligned",
+          "source_name": "Agile Adaptable And Aligned",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "interplay between",
+          "evidence_text": "To promote agile, adaptable and aligned supply chains, policy design can account for the interplay between resilience and other objectives, including sustainability and efficiency.",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.973405
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.300006,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 85.03471,
+        "direct_relation": 83.939053,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.4375,
+        "generic_penalty": 2.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.3,
+        "total": 173.411269
+      }
+    },
+    {
+      "rank": 3,
+      "score": 153.20350384040097,
+      "chunk_id": "oecd_scrr_2025:p0116:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 116,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "y of transactions across supply chains, the TFIs show that many of the areas that require sharing of data – such as shared risk management systems and interconnected or shared computer systems between border agencies – are among those with the lowest levels of implementation (OECD, 2025 forthcoming[6]). In addition, reducing regulatory heterogeneity in trade facilitation policies is crucial for enhancing cross - border trade efficiency, lowering costs and improving supply chain resilience. This is discussed further for trade in services in the section below. 6.2. Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+      "char_count": 990,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 2.018128,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "In addition, reducing regulatory heterogeneity in trade facilitation policies is crucial for enhancing cross - border trade efficiency, lowering costs and improving supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.775442
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::sector::logistics_services",
+          "target_name": "Logistics Services",
+          "trigger": "enhancing",
+          "evidence_text": "Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.481118
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::sector::transport_services",
+          "target_name": "Transport Services",
+          "trigger": "enhancing",
+          "evidence_text": "Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.481118
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::system::logistics",
+          "target_name": "Logistics",
+          "trigger": "enhancing",
+          "evidence_text": "Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.481118
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::adaptability",
+          "source_name": "Adaptability",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "enhancing",
+          "evidence_text": "Supporting services can underpin adaptable supply chains Services are essential to the functioning of global supply chains, enhancing efficiency, cutting costs and ensuring smooth connectivity from producers to consumer .Transport services, including air, sea, road and rail transport, help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.373405
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::capability::efficiency",
+          "target_name": "Efficiency",
+          "trigger": "improving",
+          "evidence_text": "In addition, reducing regulatory heterogeneity in trade facilitation policies is crucial for enhancing cross - border trade efficiency, lowering costs and improving supply chain resilience.",
+          "sentence_index": 1,
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.146735
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.377247,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 75.308786,
+        "direct_relation": 73.304971,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.2625,
+        "generic_penalty": 2.25,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.3,
+        "total": 153.203504
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115032246635+0000_how_are_critical_raw_material_concentration_and_ex",
+  "timestamp_utc": "2026-04-11T11:50:32.246635+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How are critical raw material concentration and export restrictions linked to supply-chain vulnerability in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.19386201279379392,
+      "chunk_id": "oecd_scrr_2025:p0087:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 87,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 85 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Figure 4.4. A growing number of exported raw material products are subject to at least one export restriction measure Number of exported raw material products subject to at least one export restriction measure up to 1st January 2023 Note: The count of all types of measures in place across all covered raw materials and all implementing countries takes into account the stock of measures in place at the beginning of the period, as well as new additions and eliminations. Source: OECD Inventory on Export Restrictions on Industrial Raw Materials , https://www.oecd.org/en/topics/export-restrictions-on-critical-raw- materials.html. 4.2. Promoting social and environmental sustainability along supply chains The intertwined nature of global production in the form of GVCs has drawn attention to the sustainability of supply chains to the fore of discussions in recent years. In this specific context, sustainability is broadly understood to include",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.15508240101176676,
+      "chunk_id": "oecd_scrr_2025:p0085:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 85,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 83 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 wind. Concentration of exports is particularly significant for unprocessed forms of cobalt, m anganese, borates, chromium, magnesium and lithium (Figure 4.3). Restrictions on exports of raw materials to favour domestic users to the detriment of foreign users a re some of the most contentious forms of state intervention. As they undermine the economic viability and decrease the output of domestic extractive industries, this hampers the global supply of the materials concerned. In addition, if the exporter holds a large share of the market, export restrictions can increase world market prices, creating incentives for other exporters to impose them, resulting in spiralling negative effects on international markets. The OECD Inventory on Export Restrictions on Indust rial Raw Materials , which covers the period 2009 - 2022 (OECD, 2024[12]), shows that export restrictions on industrial raw materials saw a more than five-fold increase over",
+      "char_count": 1000
+    },
+    {
+      "rank": 3,
+      "score": 0.1218914989332967,
+      "chunk_id": "oecd_scrr_2025:p0085:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 85,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ich covers the period 2009 - 2022 (OECD, 2024[12]), shows that export restrictions on industrial raw materials saw a more than five-fold increase over this period (Figure 4.4). Due to their critical role in the digital transformation and the shift to low-carbon energy and products, and the high degree of trade dependency of most users, the imposition of export restrictions on raw materials risks negative spillover effects cascading down global supply chains. Figure 4.2. Critical raw materials are produced by only a few countries Share of top three producing countries in global production, 2022 Note: AUS – Australia; BRA – Brazil; CHN - China; CHL – Chile; COD – Democratic Republic of Congo; IDN – Indonesia, IND – India, KAZ – Kazakhstan, MDG – Madagascar; MOZ – Mozambique; PER – Peru; PHL – Philippines, TUR – Türkiye; RUS – Russian Federation; USA – United States. Source: OECD, based on US Geological Survey.",
+      "char_count": 921
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

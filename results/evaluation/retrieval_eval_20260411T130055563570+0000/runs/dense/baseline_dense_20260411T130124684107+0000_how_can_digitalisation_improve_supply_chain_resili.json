@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T130124684107+0000_how_can_digitalisation_improve_supply_chain_resili",
+  "timestamp_utc": "2026-04-11T13:01:24.684107+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How can digitalisation improve supply chain resilience according to the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.8431710004806519,
+      "chunk_id": "oecd_scrr_2025:p0079:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 79,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 77 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 In many economies, the digital transformation and efforts to achieve environmental objectives are profound drivers of change. This chapter explores opportunities to improve supply chain efficiencies and sustainability (both environmental and social), as well as the potential associated risks. 4 The digital transformation, environmental objectives and international supply chains",
+      "char_count": 433
+    },
+    {
+      "rank": 2,
+      "score": 0.7989859580993652,
+      "chunk_id": "oecd_scrr_2025:p0013:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 13,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 11 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Global supply chains are affected by the digital transformation and by policies pursuing environmental objectives The digital transformation policies p ursuing environmental objectives are driving change across most economies. They offer opportunities for improving supply chain efficiencies, resilience and sustainability (both environmental and social), but also raise potential risks. Emerging sustainability requirements and the accelerated pace of digitalisation are adding to pressures on supply chains, which are already facing substantial challenges from factors such as geopolitical uncertainty, economic fluctuations, and the concentration of critical raw materials (CRMs) in certain regions. However, these pressures also open the door to transformative change. Supply chains can be resilient without undermining the benefits of open trade There are risks everywhere – in the domestic economy as much as in fo reign economies from which",
+      "char_count": 1000
+    },
+    {
+      "rank": 3,
+      "score": 0.7981465458869934,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0001:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to resilient supply chains Increasing supply chain resilience: OECD policy toolkit",
+      "char_count": 87
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

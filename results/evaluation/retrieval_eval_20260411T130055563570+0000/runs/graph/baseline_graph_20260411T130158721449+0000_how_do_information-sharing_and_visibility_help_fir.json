@@ -1,0 +1,618 @@
+{
+  "run_id": "baseline_graph_20260411T130158721449+0000_how_do_information-sharing_and_visibility_help_fir",
+  "timestamp_utc": "2026-04-11T13:01:58.721449+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How do information-sharing and visibility help firms identify disruptions early and respond more effectively?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::firms",
+      "canonical_name": "Firms",
+      "entity_type": "actor",
+      "matched_alias": "firms",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::capability::visibility",
+      "canonical_name": "Visibility",
+      "entity_type": "capability",
+      "matched_alias": "visibility",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::risk::supply_chain_disruption",
+      "canonical_name": "Supply Chain Disruption",
+      "entity_type": "risk",
+      "matched_alias": "disruptions",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::strategy::information_sharing",
+      "canonical_name": "Information Sharing",
+      "entity_type": "strategy",
+      "matched_alias": "information sharing",
+      "source": "base",
+      "is_generic": false
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 288.3040151267514,
+      "chunk_id": "itf_collaboration_scm_2018:p0015:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 15,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility . The importance of collective learning from past disruptions in gaining visibility and velocity offers managers some insight into how joint retrospective learning from disruptive events allows a supply chain dyad to quickly identify an impending disruption. Velocity is also gained through the fact that improved insights are gained and mitigation procedures are put in place . Whereas the above -mentioned managerial implications are generally known within industry, supply chain practitioners should be aware that collab orating with suppliers should not be directly aimed at increasing resilience . Instead, buyer -supplier collaboration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::visibility",
+          "canonical_name": "Visibility",
+          "entity_type": "capability",
+          "matched_alias": "visibility",
+          "specificity": 0.7200385228630293,
+          "score_contribution": 2.880154,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruption",
+          "specificity": 0.4113243956235369,
+          "score_contribution": 1.645298,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience_perspective",
+          "source_name": "Resilience Perspective",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.872052
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience_perspective_discussion",
+          "source_name": "Resilience Perspective Discussion",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.872052
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::strategy::collaboration_in_supply",
+          "target_name": "Collaboration In Supply",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.872052
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::strategy::collaboration_in_supply_chain",
+          "target_name": "Collaboration In Supply Chain",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.872052
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::actor::buyers",
+          "target_name": "Buyers",
+          "trigger": "enhancing",
+          "evidence_text": "Instead, buyer -supplier collaboration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.872052
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::system::supply_chain_management",
+          "target_name": "Supply Chain Management",
+          "trigger": "enhancing",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.764339
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "STRENGTHENS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 14 © OECD/ITF 2018 process insights are gained through a two -way knowledge flow, thereby enhancing visibility .",
+            "The importance of collective learning from past disruptions in gaining visibility and velocity offers managers some insight into how joint retrospective learning from disruptive events allows a supply chain dyad to quickly identify an impending disruption."
+          ],
+          "score_contribution": 3.783908
+        },
+        {
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "via_entity_id": "entity::capability::velocity",
+          "via_name": "Velocity",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "ENABLES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "The importance of collective learning from past disruptions in gaining visibility and velocity offers managers some insight into how joint retrospective learning from disruptive events allows a supply chain dyad to quickly identify an impending disruption.",
+            "The importance of collective learning from past disruptions in gaining visibility and velocity offers managers some insight into how joint retrospective learning from disruptive events allows a supply chain dyad to quickly identify an impending disruption."
+          ],
+          "score_contribution": 3.783908
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 4.525452,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 123.612155,
+        "direct_relation": 157.665259,
+        "path_bonus": 7.567816,
+        "lexical_overlap": 0.233333,
+        "generic_penalty": 4.5,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.5,
+        "total": 288.304015
+      }
+    },
+    {
+      "rank": 2,
+      "score": 252.52706521176236,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0016:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 16,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 16 While firms generally strive for economic efficiency, they also manage business risks. Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions. This benefits business operations, as well as broader supply chains. Supply chain resilience is built at the firm level through efforts to gain greater visibility of the supply chain, agility and flexibility. As firms need to balance the economic consequences of disruptions with the costs of mitigating risks, they are often required to decide on the acceptable level of risk and to organise the production process accordingly. Governments can support firms’ risk management strategies by creating the right policy framework for them to operate in as well as by offering help and guidance with the implementation of internal risk-management strategies. This",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::visibility",
+          "canonical_name": "Visibility",
+          "entity_type": "capability",
+          "matched_alias": "visibility",
+          "specificity": 0.7200385228630293,
+          "score_contribution": 2.880154,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruptions",
+          "specificity": 0.4113243956235369,
+          "score_contribution": 1.645298,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::firms",
+          "canonical_name": "Firms",
+          "entity_type": "actor",
+          "matched_alias": "firms",
+          "specificity": 0.3229467764196763,
+          "score_contribution": 1.291787,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "prepare",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.92734
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "prepare",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.80803
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "costs",
+          "evidence_text": "As firms need to balance the economic consequences of disruptions with the costs of mitigating risks, they are often required to decide on the acceptable level of risk and to organise the production process accordingly.",
+          "sentence_index": 4,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.336868
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "prepare",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.572052
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "prepare",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.464339
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::risk_management",
+          "source_name": "Risk Management",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "prepare",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "sentence_index": 1,
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.701595
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::visibility",
+          "source_name": "Visibility",
+          "via_entity_id": "entity::system::supply_chain",
+          "via_name": "Supply Chain",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions."
+          ],
+          "score_contribution": 3.783908
+        },
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "relation_chain": [
+            "AFFECTS",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions."
+          ],
+          "score_contribution": 3.660179
+        },
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::capability::visibility",
+          "target_name": "Visibility",
+          "relation_chain": [
+            "AFFECTS",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions."
+          ],
+          "score_contribution": 3.660179
+        },
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::strategy::risk_management",
+          "via_name": "Risk Management",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "MITIGATES",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+            "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions."
+          ],
+          "score_contribution": 3.22798
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 5.817239,
+        "coverage_bonus": 10.125,
+        "sentence_alignment": 98.597968,
+        "direct_relation": 131.015723,
+        "path_bonus": 14.332246,
+        "lexical_overlap": 0.388889,
+        "generic_penalty": 4.75,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.6,
+        "total": 252.527065
+      }
+    },
+    {
+      "rank": 3,
+      "score": 231.6376723551335,
+      "chunk_id": "unctad_gsc_2023:p0014:c002",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 14,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "015). With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption. Diversification, through flexibility in activities, makes it possible to surmount the adverse effects of shocks and thus enable a supply chain to Figure 1 Features of supply chain diversification Diversi/f_ied goods and services Diversi/f_ied customer base (customers) Diversi/f_ied supply base (suppliers) Improved supply chain resilience (absorbing shocks) Ability to avoid supply chain disruption Improved pro/f_itability and demand /f_lows Unlocked supply chain Supply chain diversi/f_ication Supply chain /f_lexibility Source: UNCTAD.",
+      "char_count": 673,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "supply chain disruption",
+          "specificity": 0.4113243956235369,
+          "score_contribution": 1.645298,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::firms",
+          "canonical_name": "Firms",
+          "entity_type": "actor",
+          "matched_alias": "firms",
+          "specificity": 0.3229467764196763,
+          "score_contribution": 1.291787,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::flexibility",
+          "source_name": "Flexibility",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "avoid",
+          "evidence_text": "Diversification, through flexibility in activities, makes it possible to surmount the adverse effects of shocks and thus enable a supply chain to Figure 1 Features of supply chain diversification Diversi/f_ied goods and services Diversi/f_ied customer base (customers) Diversi/f_ied supply base (suppliers) Improved supply chain resilience (absorbing shocks) Ability to avoid supply chain disruption Improved pro/f_itability and demand /f_lows Unlocked supply chain Supply chain diversi/f_ication Supply chain /f_lexibility Source:",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.155288
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "mitigate",
+          "evidence_text": "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+          "sentence_index": 1,
+          "support_count": 4,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.70089
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "avoid",
+          "evidence_text": "Diversification, through flexibility in activities, makes it possible to surmount the adverse effects of shocks and thus enable a supply chain to Figure 1 Features of supply chain diversification Diversi/f_ied goods and services Diversi/f_ied customer base (customers) Diversi/f_ied supply base (suppliers) Improved supply chain resilience (absorbing shocks) Ability to avoid supply chain disruption Improved pro/f_itability and demand /f_lows Unlocked supply chain Supply chain diversi/f_ication Supply chain /f_lexibility Source:",
+          "sentence_index": 2,
+          "support_count": 4,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.70089
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": "disruption",
+          "evidence_text": "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+          "sentence_index": 1,
+          "support_count": 35,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.626132
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "mitigate",
+          "evidence_text": "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+          "sentence_index": 1,
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.571966
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::chain_resilience",
+          "source_name": "Chain Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "avoid",
+          "evidence_text": "Diversification, through flexibility in activities, makes it possible to surmount the adverse effects of shocks and thus enable a supply chain to Figure 1 Features of supply chain diversification Diversi/f_ied goods and services Diversi/f_ied customer base (customers) Diversi/f_ied supply base (suppliers) Improved supply chain resilience (absorbing shocks) Ability to avoid supply chain disruption Improved pro/f_itability and demand /f_lows Unlocked supply chain Supply chain diversi/f_ication Supply chain /f_lexibility Source:",
+          "sentence_index": 2,
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.571966
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::capability::chain_resilience",
+          "via_name": "Chain Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "ENABLES",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption."
+          ],
+          "score_contribution": 3.22798
+        },
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::capability::resilience",
+          "via_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "ENABLES",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption."
+          ],
+          "score_contribution": 3.22798
+        },
+        {
+          "source_entity_id": "entity::actor::firms",
+          "source_name": "Firms",
+          "via_entity_id": "entity::strategy::diversification",
+          "via_name": "Diversification",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "relation_chain": [
+            "ENABLES",
+            "MITIGATES"
+          ],
+          "evidence_texts": [
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption.",
+            "With regard to supply chain resilience, the diversification of a supply chain allows firms to mitigate supply chain disruption."
+          ],
+          "score_contribution": 3.22798
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 2.937085,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 112.653249,
+        "direct_relation": 110.535621,
+        "path_bonus": 9.68394,
+        "lexical_overlap": 0.077778,
+        "generic_penalty": 3.75,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.2,
+        "total": 231.637672
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

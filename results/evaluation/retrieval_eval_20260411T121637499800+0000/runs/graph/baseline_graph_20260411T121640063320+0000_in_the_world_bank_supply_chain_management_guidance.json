@@ -1,0 +1,340 @@
+{
+  "run_id": "baseline_graph_20260411T121640063320+0000_in_the_world_bank_supply_chain_management_guidance",
+  "timestamp_utc": "2026-04-11T12:16:40.063320+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "In the World Bank supply chain management guidance, what does the 'spread or transfer' risk reduction approach include?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::world_bank",
+      "canonical_name": "World Bank",
+      "entity_type": "organization",
+      "matched_alias": "world bank"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 36.14232708021609,
+      "chunk_id": "oecd_preparedness_2024:p0009:c000",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "8  OECD TRADE POLICY PAPER NO. 286 © OECD 2024 makers can find themselves called -upon to provide oversight of private sector operations to assure the resilience adequate to support economic or national security. As can be seen on Figure 2, the level of global supply chain pressure2 is now back to its historical average. As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore. Decisions of supply chain managers will be guided by long -term strategic considerations that include not only a more uncertain global environment but also the continuing challenges of climate change or poverty in some parts of the world. Building resilient and sustainable supply chains will remain a key objective for policy makers. Figure 2. The reduction in supply chain disruptions after COVID-19 Global Supply Chain Pressure Index, standard deviations from average value Source: Federal Reserve Bank of New York. The aim of this report is to",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The reduction in supply chain disruptions after COVID-19 Global Supply Chain Pressure Index, standard deviations from average value Source:",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::climate_change",
+          "source_name": "Climate Change",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Decisions of supply chain managers will be guided by long -term strategic considerations that include not only a more uncertain global environment but also the continuing challenges of climate change or poverty in some parts of the world.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.202763
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 2.0,
+        "direct_relation": 34.411233,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.55,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.32,
+        "total": 36.142327
+      }
+    },
+    {
+      "rank": 2,
+      "score": 33.475976080216086,
+      "chunk_id": "unctad_gsc_2023:p0017:c000",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 17,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes. These sectors are categorized as global innovations, meaning that they entail the production of the most intricate and knowledge-intensive goods, and involve highly complex and dynamic commercial, operational, financial, and organizational processes. These are also sectors that are based on high-value, cutting-edge technologies (McKinsey and Company, 2020). By diversifying or relocating some of the supply chain components to Africa, companies in some of these high-value and technology-intensive sectors can source some of the inputs (raw materials and intermediate goods) from the continent, while reducing the costs of transportation and logistics and minimizing the risks of",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::trade_dispute",
+          "source_name": "Trade Dispute",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.006897
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::earthquake",
+          "source_name": "Earthquake",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 37 semiconductors and components, and medical devices ranked among the principal value and supply chains most exposed to shocks and disruptions stemming from the pandemic, geophysical events (for example, earthquakes) and trade disputes.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.906209
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 2.0,
+        "direct_relation": 33.899882,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.275,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 3.2,
+        "total": 33.475976
+      }
+    },
+    {
+      "rank": 3,
+      "score": 31.58625808021609,
+      "chunk_id": "oecd_scrr_2025:p0111:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 111,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 109 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 6.1.1. Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains. Disruptions to maritime operations during the pandemic caused severe delays and congestion that rippled through global supply chains (for more on maritime transport, see the case study in Box 6.2). Exposure to shocks is also in creasingly affecting ports and shipping routes worldwide: for instance, in 2023, droughts reduced traffic through the Panama Canal by almost 40%. The Panama Canal’s diminished capacity also affected between 10% to 25% of trade flows across ports in Panama, Nicaragua, Ecuador, Peru, El Salvador and Jamaica in 2023. More recently, shipping through the Suez Canal, linking Europe to Asia, has come to a near standstill due to Houthis",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": " 109 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 6.1.1.",
+          "support_count": 474,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 2.0,
+        "direct_relation": 31.530164,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.275,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 2.72,
+        "total": 31.586258
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

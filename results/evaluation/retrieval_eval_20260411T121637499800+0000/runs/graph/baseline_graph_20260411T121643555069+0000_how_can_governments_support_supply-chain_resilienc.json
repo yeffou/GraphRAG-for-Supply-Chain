@@ -1,0 +1,404 @@
+{
+  "run_id": "baseline_graph_20260411T121643555069+0000_how_can_governments_support_supply-chain_resilienc",
+  "timestamp_utc": "2026-04-11T12:16:43.555069+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How can governments support supply-chain resilience through early warning systems and intervention thresholds?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::strategy::early_warning",
+      "canonical_name": "Early Warning",
+      "entity_type": "strategy",
+      "matched_alias": "early warning"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 70.25497038736418,
+      "chunk_id": "worldbank_scm_guidance_2023:p0016:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 16,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "general overview of SCM functions and their objectives, please see Annex III): ◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+      "char_count": 580,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shortage",
+          "target_name": "Shortage",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.317975
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.871332,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 68.090305,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.2,
+        "query_miss_penalty": 4.0,
+        "hub_penalty": 1.24,
+        "total": 70.25497
+      }
+    },
+    {
+      "rank": 2,
+      "score": 62.76699046177533,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.132772
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.917975
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "supported",
+          "evidence_text": "It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.417286
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.850025,
+        "coverage_bonus": 12.0,
+        "direct_relation": 44.976965,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.7,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.76,
+        "total": 62.76699
+      }
+    },
+    {
+      "rank": 3,
+      "score": 60.37620246177533,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.708856
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disrupt",
+          "evidence_text": "Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning.",
+          "support_count": 474,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.754466
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "via_entity_id": "entity::risk::shock",
+          "via_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+            "Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders."
+          ],
+          "score_contribution": 4.135927
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 5.850025,
+        "coverage_bonus": 12.0,
+        "direct_relation": 38.09025,
+        "path_bonus": 4.135927,
+        "lexical_overlap": 0.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.2,
+        "total": 60.376202
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

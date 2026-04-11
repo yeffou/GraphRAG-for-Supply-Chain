@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130146085027+0000_according_to_the_oecd_review_what_trade-offs_arise",
+  "timestamp_utc": "2026-04-11T13:01:46.085027+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "According to the OECD review, what trade-offs arise when balancing resilience, efficiency and sustainability?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.2188186459553229,
+      "chunk_id": "oecd_scrr_2025:p0134:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 134,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "gies—such as smart grids or decentralised renewable energy systems —enhances both the reliability of energy supplies and environmental outcomes. Firms that build resilience through dynamic capabilities such as flexibility, agility and visibility in their supply chains are often better positioned to enhance efficiency as well (Sheffi, 2015[1]). Moreover, efforts to mitigate sustainability risks through responsible business conduct (RBC) and due diligence generally benefit firms’ sustainability performance and resilience (OECD, 2021[2]). 7.2. Trade-offs need to be addressed when balancing objectives Despite these synergies, achieving a balance between resilience, efficiency and sustainability often involves trade-offs (Ivanov, 2017[3]; Rajesh, 2021 [4]). Firms designing resilient supply chains must weigh the costs of redundancy against efficiency and environmental considerations. For instance, maintaining buffer stocks, diversifying supplie rs, or investing in additional production",
+      "char_count": 994
+    },
+    {
+      "rank": 2,
+      "score": 0.19030327606560063,
+      "chunk_id": "oecd_scrr_2025:p0009:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "n deal with uncertainty and change, while preserving the benefits of open trade 102 References 103 Note 104 6 Policy environments that enable agility, adaptability and alignment 105 6.1. Trade facilitation measures for goods increase the agility and adaptability of supply chains 106 6.2. Supporting services can underpin adaptable supply chains 114 6.3. Better digital transformation policies will make supply chains more resilient and agile 121 6.4. International co-operation, and co-ordination with the private sector bolster resilience 126 References 128 Notes 130 7 Policies can balance sustainability, efficiency and resilience 131 7.1. Synergies between resilience, efficiency and sustainability can be captured 132 7.2. Trade-offs need to be addressed when balancing objectives 132 7.3. Targeting sustainability requires protecting resilience and efficiency 133 References 134 Annex A. A guide to using the country by country data 135 Annex B. Country by country data 143 FIGURES Figure 1.1.",
+      "char_count": 1000
+    },
+    {
+      "rank": 3,
+      "score": 0.1854787428669203,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0004:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 4,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 3 Table of contents Introduction ................................ ................................ ................................ ................................ ........ 4 Multimodality and connectivity ................................ ................................ ................................ ........... 5 Supply chain risk and resilience ................................ ................................ ................................ ........... 6 Trade-off 1: Resilience-efficiency ................................ ................................ ................................ ......... 8 Trade-off 2: Efficiency-sustainability ................................ ................................ ................................ .... 9 Trade-off 3: Resilience-sustainability ................................ ................................",
+      "char_count": 978
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

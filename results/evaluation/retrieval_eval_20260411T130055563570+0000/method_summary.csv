@@ -1,0 +1,5 @@
+method_label,retrieval_method,embedding_model,question_count,wins,mean_relevance,mean_directness,mean_groundedness,mean_correctness_of_evidence,mean_overall,mean_collective_concept_coverage,mean_collective_relation_support,mean_collective_reasoning_support,top1_doc_accuracy,topk_gold_chunk_recall
+dense,baseline_dense,sentence-transformers/all-MiniLM-L6-v2,24,5,0.579054,0.521635,0.465103,0.496906,0.515675,0.498611,0.783003,0.474028,0.791667,0.458333
+graph,baseline_graph,graph_entity_relation_v3,24,7,0.506009,0.497572,0.408034,0.45225,0.465966,0.347222,0.878155,0.459928,0.625,0.375
+hybrid_graph,baseline_graph_hybrid,sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3,24,7,0.610369,0.567312,0.503113,0.535724,0.554129,0.546528,0.829898,0.524836,0.791667,0.541667
+tfidf,baseline_rag,tfidf_word_unigram_bigram_l2_v1,24,13,0.673269,0.6139,0.574584,0.600883,0.615659,0.636111,0.749143,0.537702,0.958333,0.625

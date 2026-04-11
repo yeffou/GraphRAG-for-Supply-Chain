@@ -1,0 +1,432 @@
+{
+  "run_id": "baseline_graph_hybrid_20260411T130203220204+0000_how_can_sustainability-oriented_supply-chain_regul",
+  "timestamp_utc": "2026-04-11T13:02:03.220204+00:00",
+  "method": "baseline_graph_hybrid",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2+graph_entity_relation_v3",
+  "query_text": "How can sustainability-oriented supply-chain regulations affect foreign suppliers and the inclusivity of global trade?",
+  "top_k": 3,
+  "index_dir": "dense=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense;graph=/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "dense_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "graph_index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::foreign_suppliers",
+      "canonical_name": "Foreign Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "foreign suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::actor::suppliers",
+      "canonical_name": "Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::policy::sustainability_regulations",
+      "canonical_name": "Sustainability Regulations",
+      "entity_type": "policy",
+      "matched_alias": "supply-chain regulations",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::global_trade",
+      "canonical_name": "Global Trade",
+      "entity_type": "system",
+      "matched_alias": "global trade",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "dense_candidate_count": 40,
+  "graph_candidate_count": 20,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.85498,
+      "chunk_id": "oecd_scrr_2025:p0091:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 91,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of adequate enforcement of sustainability laws by relevant authorities – might become more burdensome. In response, firms could choose to reorganise their supply chains to avoid any business partners that might lead to additional paperwork or other regulatory hurdles. These choices are not driven by the quality or price provided by sup pliers, but rather by avoidance of the transaction costs or potential uncertainty. Thus, production might be pushed to more inefficient locations and firms, negating the benefits of trade in ensuring that economic activity is allocated on the basis of productivity, as well as potentially reducing the inclusivity of the global economy. A second challenge is that the costs imposed by supply chain regulations appear unlikely to be distributed equally. In particular, firms in developing countries and small and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::policy::sustainability_regulations",
+          "canonical_name": "Sustainability Regulations",
+          "entity_type": "policy",
+          "matched_alias": "supply-chain regulations",
+          "specificity": 2.091907809288997,
+          "score_contribution": 8.367631,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::foreign_suppliers",
+          "canonical_name": "Foreign Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "foreign suppliers",
+          "specificity": 1.1805363756632625,
+          "score_contribution": 4.722146,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "suppliers",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::policy::sustainability_regulations",
+          "source_name": "Sustainability Regulations",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "costs",
+          "evidence_text": "A second challenge is that the costs imposed by supply chain regulations appear unlikely to be distributed equally.",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.601405
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::actor::foreign_suppliers",
+          "source_name": "Foreign Suppliers",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": null,
+          "evidence_text": "As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of adequate enforcement of sustainability laws by relevant authorities – might become more burdensome.",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.67849
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 14.504394,
+        "coverage_bonus": 10.125,
+        "sentence_alignment": 23.922513,
+        "direct_relation": 17.279895,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.466667,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 66.298469
+      },
+      "dense_rank": 1,
+      "dense_score": 0.759248,
+      "graph_rank": 11,
+      "graph_score": 66.298469,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 1.0,
+        "graph_score": 0.465511,
+        "dense_rank_signal": 1.0,
+        "graph_rank_signal": 0.52381,
+        "entity_coverage": 0.8,
+        "relation_signal": 0.675,
+        "total": 0.85498
+      }
+    },
+    {
+      "rank": 2,
+      "score": 0.607532,
+      "chunk_id": "oecd_scrr_2025:p0092:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 92,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "sulted in some firms avoiding artisanal and small-scale miners in conflict-affected and high-risk areas (OECD, 2021[22]). While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains. Their potential costs and negative impacts need to be carefully weighed against the good they can do, and their design and implementation must take these trade-offs into account. This includes careful consideration of the market failures and other forces that lead to unsustainable supply chain practices in the first place (Park, Lundquist and Stolzenburg, 2023[15]). As most supply chain sustainability laws have only been adopted relativel y recently, their practical impact on the structure of supply chains and the sustainability of production across the world remains largely unexplored. Little is known about the way firms alter their strategies in response to these new legal",
+      "char_count": 989,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::policy::sustainability_regulations",
+          "canonical_name": "Sustainability Regulations",
+          "entity_type": "policy",
+          "matched_alias": "sustainability regulations",
+          "specificity": 2.091907809288997,
+          "score_contribution": 8.367631,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::policy::sustainability_regulations",
+          "source_name": "Sustainability Regulations",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 7.909118
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::policy::sustainability_regulations",
+          "source_name": "Sustainability Regulations",
+          "target_entity_id": "entity::system::global_value_chain",
+          "target_name": "Global Value Chain",
+          "trigger": null,
+          "evidence_text": "While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.024076
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::policy::sustainability_regulations",
+          "source_name": "Sustainability Regulations",
+          "target_entity_id": "entity::system::value_chain",
+          "target_name": "Value Chain",
+          "trigger": null,
+          "evidence_text": "While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.024076
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::policy::sustainability_regulations",
+          "source_name": "Sustainability Regulations",
+          "target_entity_id": "entity::system::value_chains",
+          "target_name": "Value Chains",
+          "trigger": null,
+          "evidence_text": "While the creation of supply chain sustainability regulations is motivated by real and pressing concerns, their emergence may also pose an add itional stressor to global value chains.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.024076
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 8.481021,
+        "coverage_bonus": 1.125,
+        "sentence_alignment": 29.857891,
+        "direct_relation": 25.981346,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.311111,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.0,
+        "total": 60.206369
+      },
+      "dense_rank": 3,
+      "dense_score": 0.715004,
+      "graph_rank": 12,
+      "graph_score": 60.206369,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.673505,
+        "graph_score": 0.421637,
+        "dense_rank_signal": 0.846154,
+        "graph_rank_signal": 0.5,
+        "entity_coverage": 0.4,
+        "relation_signal": 0.55,
+        "total": 0.607532
+      }
+    },
+    {
+      "rank": 3,
+      "score": 0.520218,
+      "chunk_id": "oecd_scrr_2025:p0091:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 91,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 89 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 production practices, but additionally the pr ocess of verifying and documenting the activities at all stages of a supply chain also involves significant transaction costs. A recent study estimates, for example, that firms will face annual costs ranging from EUR 40 000 to EUR 320 000to comply with the European Corporate Sustainability Reporting Directive as well as one -off costs between 36 000 and 287 000 upon implementation of the legislation, depending on the size and complexity of a firm (CEPS, 2022[18]).6 This may also impact the possibility for developing countries with less developed institutions to benefit from global trade. While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::foreign_suppliers",
+          "canonical_name": "Foreign Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "foreign suppliers",
+          "specificity": 1.1805363756632625,
+          "score_contribution": 4.722146,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "suppliers",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::global_trade",
+          "canonical_name": "Global Trade",
+          "entity_type": "system",
+          "matched_alias": "global trade",
+          "specificity": 0.274496766092133,
+          "score_contribution": 1.097987,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::foreign_suppliers",
+          "target_name": "Foreign Suppliers",
+          "trigger": "help",
+          "evidence_text": "While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.993724
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "help",
+          "evidence_text": "While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of",
+          "sentence_index": 2,
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.504781
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::actor::foreign_suppliers",
+          "source_name": "Foreign Suppliers",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": null,
+          "evidence_text": "While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of",
+          "sentence_index": 2,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 5.67849
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::actor::foreign_suppliers",
+          "source_name": "Foreign Suppliers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of",
+            "While trade facilitation tools (Section 6.1) may help smooth the way in reducing frictions at the border, some transaction costs will nevertheless remain.7 As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of"
+          ],
+          "score_contribution": 4.30818
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 7.23475,
+        "coverage_bonus": 10.125,
+        "sentence_alignment": 25.659385,
+        "direct_relation": 22.176995,
+        "path_bonus": 4.30818,
+        "lexical_overlap": 0.311111,
+        "generic_penalty": 0.5,
+        "query_miss_penalty": 2.4,
+        "hub_penalty": 0.0,
+        "total": 66.915421
+      },
+      "dense_rank": 15,
+      "dense_score": 0.675833,
+      "graph_rank": 10,
+      "graph_score": 66.915421,
+      "hybrid_score_breakdown": {
+        "dense_similarity": 0.384446,
+        "graph_score": 0.469954,
+        "dense_rank_signal": 0.44,
+        "graph_rank_signal": 0.55,
+        "entity_coverage": 0.8,
+        "relation_signal": 0.9,
+        "total": 0.520218
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

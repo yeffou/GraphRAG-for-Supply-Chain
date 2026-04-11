@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115033145123+0000_how_does_trade_in_services_support_resilience_duri",
+  "timestamp_utc": "2026-04-11T11:50:33.145123+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How does trade in services support resilience during shocks according to the WTO and OECD reports?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.7315843105316162,
+      "chunk_id": "wto_wtr_2021:p0003:c000",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 3,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "Contents Acknowledgements and disclaimer 2 A bbreviations and symbols 3 F oreword by the WTO Director-General 4 E xecutive summary 6 A . Introduction 1 2 1 . V ulnerability and resilience: two sides of the same globalization coin 14 2 . M ore resilience requires more, not less, global economic cooperation 18 B . W hy economic resilience matters 2 0 1 . Introduction 22 2 . E conomies are exposed to risks and shocks 22 3 . D isruptions and shocks can cause significant loss of life and severe economic impact 29 4 . H ow do shocks impact international trade? 36 5 . E conomic and trade policy response to shocks 47 6 . B uilding and supporting economic resilience has become a key strategy t o reduce business interruptions and economic losses caused by shocks 55 7 . Conclusion 62 C . T he role of trade in economic resilience 6 4 1 . Introduction 6 6 2 . T rade can be a spreader of shocks 6 6 3 . T rade can enable countries to better prepare for, cope with, and recover from shocks 81 4 . T he",
+      "char_count": 999
+    },
+    {
+      "rank": 2,
+      "score": 0.7077643871307373,
+      "chunk_id": "wto_wtr_2021:p0008:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 8,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "d strength during the pandemic, helping countries cope by facilitating access to critical medical supplies, food and consumer goods, and by supporting their economic recovery (see Figure 1). According to the WTO’s most recent forecast, global economic output (at market exchange rates) is projected to recover by 5.3 per cent in 2021. This has been, in part, thanks to the robust recovery in merchandise trade, which is set to rise by 8 per cent in 2021. However, trade in services continues to remain depressed. The 2021 World Trade Report looks at why the interconnected global trading system is both vulnerable and resilient to crises, how it can help countries to be more economically resilient to shocks, and what can be done to make the system better prepared and more resilient in the future. These are pressing questions in light of the prospect of increasingly frequent and more intense natural and man-made disasters. For example, climate change is driving increases in extreme weather",
+      "char_count": 995
+    },
+    {
+      "rank": 3,
+      "score": 0.6932840347290039,
+      "chunk_id": "wto_wtr_2021:p0009:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 9,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": ". In global terms, economic disruptions tend to have a greater impact on developing countries, and in particular on smaller, poorer countries, than on advanced economies. This report assesses the relationship of trade, trade policy cooperation and the multilateral trading system to economic resilience. Although “economic resilience” has become a popular term to capture the broad and diverse factors and strategies needed to reduce business interruptions and economic losses caused by shocks, it lacks a common definition. This report defines “economic resilience” as the ability of a system, including households, firms, and governments, to prevent and prepare for, cope with and recover from shocks. Building economic resilience requires an understanding of economic challenges and opportunities, as well as the ability to anticipate, evaluate and manage risks. Although a broad range of economic resilience strategies and actions, including those related to trade policies, can be adopted by",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

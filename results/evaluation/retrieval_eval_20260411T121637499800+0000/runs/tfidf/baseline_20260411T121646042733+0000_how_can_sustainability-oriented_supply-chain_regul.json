@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121646042733+0000_how_can_sustainability-oriented_supply-chain_regul",
+  "timestamp_utc": "2026-04-11T12:16:46.042733+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How can sustainability-oriented supply-chain regulations affect foreign suppliers and the inclusivity of global trade?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.1622577639554139,
+      "chunk_id": "oecd_scrr_2025:p0091:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 91,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "As a result of these transaction costs, doing business with foreign suppliers – particularly those located in markets where there is no presumption of adequate enforcement of sustainability laws by relevant authorities – might become more burdensome. In response, firms could choose to reorganise their supply chains to avoid any business partners that might lead to additional paperwork or other regulatory hurdles. These choices are not driven by the quality or price provided by sup pliers, but rather by avoidance of the transaction costs or potential uncertainty. Thus, production might be pushed to more inefficient locations and firms, negating the benefits of trade in ensuring that economic activity is allocated on the basis of productivity, as well as potentially reducing the inclusivity of the global economy. A second challenge is that the costs imposed by supply chain regulations appear unlikely to be distributed equally. In particular, firms in developing countries and small and",
+      "char_count": 997
+    },
+    {
+      "rank": 2,
+      "score": 0.09287878956940059,
+      "chunk_id": "worldbank_scm_guidance_2023:p0104:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 104,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "SUPPL Y CHAIN MANAGEMENT: AN INTRODUCTION AND PRACTICAL TOOLSET FOR PROCUREMENT PRACTITIONERS 94 PRACTICAL TOOLBOX T: Supply chain SWOT analysis (continued) TABLE XVII Supply chain SWOT analysis Strengths Weaknesses ◾ What supply chain insights can we obtain from our external partners and stakeholders (that is, supervising engineers, Consultants, subject matter experts, Bank staff)? ◾ What supply chain insights and experience can we apply from prior projects (lessons learned)? ◾ How can we best leverage our good relationships with current Suppliers/Contractors? ◾ How can we improve our external relationships to obtain valuable supply chain information? ◾ What lessons can we apply from prior supply chain challenges that we have encountered? ◾ Can we mobilize the necessary resources to complete some/all of the SCM work needed? ◾ How can we improve our current relationships with Suppliers/Contractors? Opportunities Threats ◾ What resources have become available to better monitor and",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.08053274082056203,
+      "chunk_id": "unctad_gsc_2023:p0004:c002",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 4,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "(Research Network Sustainable Global Supply Chains, 2022). The report recommends strategic and actionable policies that various stakeholders in Africa – Governments, the private sector, regional institutions and trading and business partners – can apply to better integrate African countries in the new disruptive landscapes of global trade, business and finance. 1.2 Global supply chains Given that global supply chains are composed of innovators, companies, suppliers and service providers from around the world that interact through complex dynamic systems and networks, many factors can affect the stability or robustness of these interwoven relationships, thus creating shortages of certain goods, increasing the cost of certain processes or reducing responsiveness to consumers’ demand. To counter supply chain risks and vulnerabilities, a holistic approach that involves diversified",
+      "char_count": 889
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

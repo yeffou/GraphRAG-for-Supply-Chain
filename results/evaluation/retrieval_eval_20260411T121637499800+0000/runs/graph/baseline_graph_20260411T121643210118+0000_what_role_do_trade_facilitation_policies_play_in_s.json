@@ -1,0 +1,404 @@
+{
+  "run_id": "baseline_graph_20260411T121643210118+0000_what_role_do_trade_facilitation_policies_play_in_s",
+  "timestamp_utc": "2026-04-11T12:16:43.210118+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "What role do trade facilitation policies play in supply chain agility and adaptability?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::agility",
+      "canonical_name": "Agility",
+      "entity_type": "capability",
+      "matched_alias": "agility"
+    },
+    {
+      "entity_id": "entity::system::international_trade",
+      "canonical_name": "International Trade",
+      "entity_type": "system",
+      "matched_alias": "trade facilitation"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 75.60163403514701,
+      "chunk_id": "oecd_scrr_2025:p0111:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 111,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 109 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 6.1.1. Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains. Disruptions to maritime operations during the pandemic caused severe delays and congestion that rippled through global supply chains (for more on maritime transport, see the case study in Box 6.2). Exposure to shocks is also in creasingly affecting ports and shipping routes worldwide: for instance, in 2023, droughts reduced traffic through the Panama Canal by almost 40%. The Panama Canal’s diminished capacity also affected between 10% to 25% of trade flows across ports in Panama, Nicaragua, Ecuador, Peru, El Salvador and Jamaica in 2023. More recently, shipping through the Suez Canal, linking Europe to Asia, has come to a near standstill due to Houthis",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::agility",
+          "canonical_name": "Agility",
+          "entity_type": "capability",
+          "matched_alias": "agility",
+          "specificity": 0.559815066488196,
+          "score_contribution": 1.9593527327086862
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.475843
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.456911
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": null,
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.261046
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::pandemic",
+          "target_name": "Pandemic",
+          "trigger": null,
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.160357
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Agility in response to shocks and disruptions can be enhanced through streamlined, transparent and automated border processes Since the COVID -19 pandemic, disruptions to global logistics, in particular shipping and ports, have continued to impact trade flows and supply chains.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.460447,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 70.038965,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.488889,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 2.72,
+        "total": 75.601634
+      }
+    },
+    {
+      "rank": 2,
+      "score": 75.18893133781266,
+      "chunk_id": "oecd_scrr_2025:p0021:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 21,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "oviders of infrastructure and emergency resources in co-operation with the private sector. Government intervention is also required for major risks or disruptions that exceed firms’ capabilities of routine risk management. The following actions can have a high impact on the agility and adaptability of supply ch ains, as well in aligning interests among stakeholders. • Promote trade facilitation policies. These aim to make trade and customs laws, regulations, documents, and procedures simpler and more efficient. They play a key role in streamlining and simplifying the technical and legal procedures at the border for products to be traded internationally. Such policies: o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic. o help firms adapt to sustainability regulatory requirements and prove compliance at the border o support alignment across stakeholders through enhanced consultations with",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::agility",
+          "canonical_name": "Agility",
+          "entity_type": "capability",
+          "matched_alias": "agility",
+          "specificity": 0.559815066488196,
+          "score_contribution": 1.9593527327086862
+        },
+        {
+          "entity_id": "entity::system::international_trade",
+          "canonical_name": "International Trade",
+          "entity_type": "system",
+          "matched_alias": "trade facilitation",
+          "specificity": 0.18571843568225221,
+          "score_contribution": 0.6500145248878828
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.475843
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.456911
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": null,
+          "evidence_text": "o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.261046
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::pandemic",
+          "target_name": "Pandemic",
+          "trigger": null,
+          "evidence_text": "o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.160357
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "o enhance agility in the face of more frequent, high -impact supply chain shocks and disruptions – they proved essential during the COVID-19 pandemic.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 3.110461,
+        "coverage_bonus": 12.0,
+        "direct_relation": 60.13847,
+        "path_bonus": 0.0,
+        "lexical_overlap": 1.1,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.16,
+        "total": 75.188931
+      }
+    },
+    {
+      "rank": 3,
+      "score": 63.611887671145986,
+      "chunk_id": "oecd_scrr_2025:p0109:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 109,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "environmental and social sustainability – often enforced at the border – are increasingly impacting firms across their entire value chain (Chapter 4). Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways: • Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions. This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations. These approaches need to rely on transparent and predictable trade -related information, streamlined border processes, and co-operation between public and private stakeholders. Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions. • Being adaptable as sustainability regulatory requirements proliferate",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::agility",
+          "canonical_name": "Agility",
+          "entity_type": "capability",
+          "matched_alias": "agility",
+          "specificity": 0.559815066488196,
+          "score_contribution": 1.9593527327086862
+        },
+        {
+          "entity_id": "entity::system::international_trade",
+          "canonical_name": "International Trade",
+          "entity_type": "system",
+          "matched_alias": "trade facilitation",
+          "specificity": 0.18571843568225221,
+          "score_contribution": 0.6500145248878828
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.475843
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::agility",
+          "source_name": "Agility",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.456911
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "trigger": "disruptions",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "support_count": 5,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.184976
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::system::international_trade",
+          "source_name": "International Trade",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+            "• Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions."
+          ],
+          "score_contribution": 2.994666
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.110461,
+        "coverage_bonus": 12.0,
+        "direct_relation": 45.373427,
+        "path_bonus": 2.994666,
+        "lexical_overlap": 0.733333,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.6,
+        "total": 63.611888
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121639630404+0000_what_examples_of_early_warning_or_risk-reduction_s",
+  "timestamp_utc": "2026-04-11T12:16:39.630404+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "What examples of early warning or risk-reduction strategies does the WTO report mention for preparing for shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6204347014427185,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913
+    },
+    {
+      "rank": 2,
+      "score": 0.5991499423980713,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0006:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 6 When government intervention is required, early response procedures would enable policy makers to respond to evolving crises in a timely manner . Effective response strategies should be put in place prior to disruptions occurring and dependent on different types of potential shocks. Ministries and agencies should receive clear guidelines that define risk management processes, roles and responsibilities of different governmental and other public sector actors. The occurrence of a risk situation should immediately trigger a specific government intervention. These early response strategies aim to minimise the initial response time and are not meant to be set in stone. They should be reviewed and adapted as the situation develops. In order to be able to reassess and adjust the response in light of changing needs, policy makers will need to adopt data-driven monitoring and risk-assessment procedures. This will also require appropriate communication channels",
+      "char_count": 1000
+    },
+    {
+      "rank": 3,
+      "score": 0.5556710362434387,
+      "chunk_id": "oecd_preparedness_2024:p0036:c002",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 36,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "olicies that have a high impact to mitigate risks and ensure preparedness for future crises. While pointing out that not every disruption necessitates government intervention, the report underscores the crucial role of governments as facilitators and integrators, providing infrastructure and emergency resources in collaboration with the private sector. Government intervention should focus on significant risks or disruptions that exceed the capabilities of firms’ routine risk management practices. The report stresses the importance of strategic segmentation in resilience strategies, distinguishing between routine uncertainties and extreme ‘black swan’ events. Applying routine risk management tools, such as stockpiles, to major disruptions can lead to waste, environmental burden and underperformance. Instead, tailored strategies should address these distinct risk categories to ensure efficiency and effectiveness. A critical aspect of policymaking is the necessity for evidence -based",
+      "char_count": 995
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

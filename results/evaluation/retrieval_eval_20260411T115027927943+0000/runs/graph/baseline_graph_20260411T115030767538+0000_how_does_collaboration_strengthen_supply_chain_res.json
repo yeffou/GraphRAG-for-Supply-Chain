@@ -1,0 +1,386 @@
+{
+  "run_id": "baseline_graph_20260411T115030767538+0000_how_does_collaboration_strengthen_supply_chain_res",
+  "timestamp_utc": "2026-04-11T11:50:30.767538+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How does collaboration strengthen supply chain resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::strategy::collaboration",
+      "canonical_name": "Collaboration",
+      "entity_type": "strategy",
+      "matched_alias": "collaboration"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 88.5770476012802,
+      "chunk_id": "itf_collaboration_scm_2018:p0006:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster. Drivers of Supply Chain Collaboration Several authors have studied and mentioned the benefits of supply chain collaboration . Horvath (2001) has listed one benefit of collaboration in term s of information infrastucture such as theconnectivity network that will be opened at lower cost . This helps smaller firm s to access information at a lower investment cost. Min et al., (2005) studied supply chain collaboration by using a qualitative approach and observed that firms gain benefits from long-term collaboration as they are often not seen in the early period of collaboration . The usual consequence of collaboration is presented in the form of efficiency, effectiveness and profitability .The benefit of collaboration in term s of",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::collaboration",
+          "canonical_name": "Collaboration",
+          "entity_type": "strategy",
+          "matched_alias": "collaboration",
+          "specificity": 0.5933255849283894,
+          "score_contribution": 2.076639547249363
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.704327
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::risk::natural_disaster",
+          "target_name": "Natural Disaster",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.246928
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::natural_disaster",
+          "target_name": "Natural Disaster",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.217286
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::natural_disaster",
+          "source_name": "Natural Disaster",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 3.947972,
+        "coverage_bonus": 12.0,
+        "direct_relation": 72.949076,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.88,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.2,
+        "total": 88.577048
+      }
+    },
+    {
+      "rank": 2,
+      "score": 80.71198460128021,
+      "chunk_id": "itf_collaboration_scm_2018:p0015:c001",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 15,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness. A number of resilience scholars point to collaboration among the organisational capabilities that offer the potential for overcoming turbulence and disruption in the supply chain (Christopher and Peck, 2004; Sheffi, 2005; Juttner and Maklan, 2011 ). According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain. The exchange of information and application of shared knowledge reduces uncertainty at each level of organisational analysis (strategic, operational, and tactical ). Analogous to the notion of contextual knowledge described by Sanders and Ritzman (1995),",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::collaboration",
+          "canonical_name": "Collaboration",
+          "entity_type": "strategy",
+          "matched_alias": "collaboration",
+          "specificity": 0.5933255849283894,
+          "score_contribution": 2.076639547249363
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "enhances",
+          "evidence_text": "According to Christopher and Peck (2004), the core intuition regarding the relationship between collaboration and resilience is the notion that collaborative exchange enhances resilience by reducing uncertainty about the state of the supply chain.",
+          "support_count": 7,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.737099
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::capability::flexibility",
+          "target_name": "Flexibility",
+          "trigger": "enhancing",
+          "evidence_text": "boration should enable concerted efforts towards enhancing overall supply chain flexibility, visibility, and velocity individually, and the success of such collaboration should be measured in terms of overall performance and competitiveness.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.988841
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "A number of resilience scholars point to collaboration among the organisational capabilities that offer the potential for overcoming turbulence and disruption in the supply chain (Christopher and Peck, 2004;",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.704327
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "A number of resilience scholars point to collaboration among the organisational capabilities that offer the potential for overcoming turbulence and disruption in the supply chain (Christopher and Peck, 2004;",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "A number of resilience scholars point to collaboration among the organisational capabilities that offer the potential for overcoming turbulence and disruption in the supply chain (Christopher and Peck, 2004;",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 3.947972,
+        "coverage_bonus": 12.0,
+        "direct_relation": 64.124013,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.88,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.24,
+        "total": 80.711985
+      }
+    },
+    {
+      "rank": 3,
+      "score": 70.49497038736418,
+      "chunk_id": "worldbank_scm_guidance_2023:p0016:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 16,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "general overview of SCM functions and their objectives, please see Annex III): ◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+      "char_count": 580,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.532772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shortage",
+          "target_name": "Shortage",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.317975
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.871332,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 68.090305,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.44,
+        "query_miss_penalty": 4.0,
+        "hub_penalty": 1.24,
+        "total": 70.49497
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

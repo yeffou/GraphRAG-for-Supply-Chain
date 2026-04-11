@@ -1,0 +1,660 @@
+{
+  "run_id": "baseline_graph_20260411T130153158763+0000_how_are_critical_raw_material_concentration_and_ex",
+  "timestamp_utc": "2026-04-11T13:01:53.158763+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How are critical raw material concentration and export restrictions linked to supply-chain vulnerability in the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::policy::export_restrictions",
+      "canonical_name": "Export Restrictions",
+      "entity_type": "policy",
+      "matched_alias": "export restrictions",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::risk::concentration",
+      "canonical_name": "Concentration",
+      "entity_type": "risk",
+      "matched_alias": "concentration",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::risk::vulnerability",
+      "canonical_name": "Vulnerability",
+      "entity_type": "risk",
+      "matched_alias": "vulnerability",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::sector::critical_raw_materials",
+      "canonical_name": "Critical Raw Materials",
+      "entity_type": "sector",
+      "matched_alias": "critical raw material",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::sector::raw_materials",
+      "canonical_name": "Raw Materials",
+      "entity_type": "sector",
+      "matched_alias": "raw material",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 2152.0953764368637,
+      "chunk_id": "oecd_scrr_2025:p0146:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 146,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::concentration",
+          "canonical_name": "Concentration",
+          "entity_type": "risk",
+          "matched_alias": "concentrated",
+          "specificity": 0.4646852768183152,
+          "score_contribution": 1.858741,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::sector::raw_materials",
+          "canonical_name": "Raw Materials",
+          "entity_type": "sector",
+          "matched_alias": "raw materials",
+          "specificity": 0.3975624406313411,
+          "score_contribution": 1.59025,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.629651
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::raw_materials",
+          "source_name": "Raw Materials",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 8,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.867896
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 39,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.63767
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::raw_materials",
+          "source_name": "Raw Materials",
+          "target_entity_id": "entity::capability::alignmentease_of_border",
+          "target_name": "Alignmentease Of Border",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::raw_materials",
+          "source_name": "Raw Materials",
+          "target_entity_id": "entity::capability::alignmentease_of_border_processes",
+          "target_name": "Alignmentease Of Border Processes",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::raw_materials",
+          "source_name": "Raw Materials",
+          "target_entity_id": "entity::capability::concentrated_exports_agile",
+          "target_name": "Concentrated Exports Agile",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptability",
+          "via_name": "Adaptability",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptable_and_aligned",
+          "via_name": "Adaptable And Aligned",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptable_and_aligned_supply",
+          "via_name": "Adaptable And Aligned Supply",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::agile_adaptable",
+          "via_name": "Agile Adaptable",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 0.169 0.05 0.1 0.15 0.2 0.02 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Infrastructure Raw materials Raw materials Raw materials Non-strategic Non-strategic Non-strategic Strategic Strategic Strategic Australia OECD OECD Australia Other OECD countries 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111"
+          ],
+          "score_contribution": 3.407147
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.639622,
+        "coverage_bonus": 3.6,
+        "sentence_alignment": 1008.722624,
+        "direct_relation": 1006.943305,
+        "path_bonus": 177.171644,
+        "lexical_overlap": 0.318182,
+        "generic_penalty": 33.5,
+        "query_miss_penalty": 7.2,
+        "hub_penalty": 7.6,
+        "total": 2152.095376
+      }
+    },
+    {
+      "rank": 2,
+      "score": 1923.8415594368637,
+      "chunk_id": "oecd_scrr_2025:p0149:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 149,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::concentration",
+          "canonical_name": "Concentration",
+          "entity_type": "risk",
+          "matched_alias": "concentrated",
+          "specificity": 0.4646852768183152,
+          "score_contribution": 1.858741,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::sector::raw_materials",
+          "canonical_name": "Raw Materials",
+          "entity_type": "sector",
+          "matched_alias": "raw materials",
+          "specificity": 0.3975624406313411,
+          "score_contribution": 1.59025,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.629651
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::raw_materials",
+          "source_name": "Raw Materials",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 8,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.867896
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 39,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.63767
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::airairair_distributiondistributiondistribution_couriercouriercourier_logisticslogisticslogistics",
+          "source_name": "Airairair Distributiondistributiondistribution Couriercouriercourier Logisticslogisticslogistics",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::couriercouriercourier_logisticslogisticslogistics",
+          "source_name": "Couriercouriercourier Logisticslogisticslogistics",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::sector::couriercouriercourier_logisticslogisticslogistics_telecommunicationtelecommunicationtelecommunication",
+          "source_name": "Couriercouriercourier Logisticslogisticslogistics Telecommunicationtelecommunicationtelecommunication",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "trigger": "concentrated",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.636709
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptability",
+          "via_name": "Adaptability",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptable_and_aligned",
+          "via_name": "Adaptable And Aligned",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::adaptable_and_aligned_supply",
+          "via_name": "Adaptable And Aligned Supply",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw"
+          ],
+          "score_contribution": 3.407147
+        },
+        {
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "via_entity_id": "entity::capability::agile_adaptable",
+          "via_name": "Agile Adaptable",
+          "target_entity_id": "entity::sector::raw_materials",
+          "target_name": "Raw Materials",
+          "relation_chain": [
+            "CONSTRAINS",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw",
+            "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 400 300 200 100 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products Agile, adaptable and aligned supply chains Transparency of regulations 0 0 0.1 0.2 0.3 0.148 0.05 0.1 0.15 0.2 Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignment 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad Ease of border processes OECD Supply Chain Resilience Review 2025 0% 0% 20% 20% 40% 40% 60% 60% Knowledge-intensive Knowledge-intensive Infrastructure Infrastructure Raw materials Raw"
+          ],
+          "score_contribution": 3.407147
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.639622,
+        "coverage_bonus": 3.6,
+        "sentence_alignment": 897.406436,
+        "direct_relation": 895.627117,
+        "path_bonus": 166.950203,
+        "lexical_overlap": 0.318182,
+        "generic_penalty": 30.0,
+        "query_miss_penalty": 7.2,
+        "hub_penalty": 6.5,
+        "total": 1923.841559
+      }
+    },
+    {
+      "rank": 3,
+      "score": 667.5796182255461,
+      "chunk_id": "oecd_scrr_2025:p0147:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 147,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+      "char_count": 995,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::concentration",
+          "canonical_name": "Concentration",
+          "entity_type": "risk",
+          "matched_alias": "concentrated",
+          "specificity": 0.4646852768183152,
+          "score_contribution": 1.858741,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 39,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.63767
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::capability::concentrated_exports_agile",
+          "target_name": "Concentrated Exports Agile",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 36,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.759651
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::capability::concentrated_exports_agile_adaptable",
+          "target_name": "Concentrated Exports Agile Adaptable",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 36,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.759651
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::capability::exports_agile_adaptable",
+          "target_name": "Exports Agile Adaptable",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 36,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.759651
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::capability::significantly_concentrated_exports_agile",
+          "target_name": "Significantly Concentrated Exports Agile",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 36,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.759651
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::concentration",
+          "source_name": "Concentration",
+          "target_entity_id": "entity::capability::alignmentease_of_border",
+          "target_name": "Alignmentease Of Border",
+          "trigger": "barriers",
+          "evidence_text": "Monitoring supply chain interdependencies Global linkages of key industries Significantly concentrated imports Significantly concentrated exports Agile, adaptable and aligned supply chains Transparency of regulations Digital trade integration & opennessBarriers to digital services trade Barriers to trade in GVC-enabling services Regulatory alignmentEase of border processes OECD Supply Chain Resilience Review 2025 000 0.20.20.2 0.40.40.4 0.6 0.60.6 0.8 0.80.8 111 AirAirAir DistributionDistributionDistribution CourierCourierCourier LogisticsLogisticsLogistics TelecommunicationTelecommunicationTelecommunication MaritimeMaritimeMaritime RailRailRail RoadRoadRoad 0.137 0.05 0.1 0.15 0.2 0.16 0 0.1 0.2 0.3 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 200 100 50 150 Number of products 1997-99 2002-04 2007-09 2012-14 2017-19 2020-22 0 500 400 300 200 100 Number of products Austria 0% 0% 0% 20% 20% 20% 40% 40% 40% 60% 60% 60% Knowledge-intensive Knowledge-intensive Knowledge-intensive",
+          "sentence_index": 0,
+          "support_count": 37,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.757214
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.049372,
+        "coverage_bonus": 0.9,
+        "sentence_alignment": 347.406067,
+        "direct_relation": 346.43327,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.190909,
+        "generic_penalty": 12.5,
+        "query_miss_penalty": 9.6,
+        "hub_penalty": 7.3,
+        "total": 667.579618
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

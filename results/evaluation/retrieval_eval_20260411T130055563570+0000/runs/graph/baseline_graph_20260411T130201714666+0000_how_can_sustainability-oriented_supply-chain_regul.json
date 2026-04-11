@@ -1,0 +1,461 @@
+{
+  "run_id": "baseline_graph_20260411T130201714666+0000_how_can_sustainability-oriented_supply-chain_regul",
+  "timestamp_utc": "2026-04-11T13:02:01.714666+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How can sustainability-oriented supply-chain regulations affect foreign suppliers and the inclusivity of global trade?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::foreign_suppliers",
+      "canonical_name": "Foreign Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "foreign suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::actor::suppliers",
+      "canonical_name": "Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::policy::sustainability_regulations",
+      "canonical_name": "Sustainability Regulations",
+      "entity_type": "policy",
+      "matched_alias": "supply-chain regulations",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::global_trade",
+      "canonical_name": "Global Trade",
+      "entity_type": "system",
+      "matched_alias": "global trade",
+      "source": "mined",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 140.51345443541828,
+      "chunk_id": "itf_collaboration_scm_2018:p0028:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 28,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+      "char_count": 975,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "supplier",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience_perspective",
+          "source_name": "Resilience Perspective",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience_perspective_discussion",
+          "source_name": "Resilience Perspective Discussion",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::chain_collaboration",
+          "source_name": "Chain Collaboration",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::collaboration",
+          "source_name": "Collaboration",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::collaboration_in_supply",
+          "source_name": "Collaboration In Supply",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "buffer",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 27 Notes 1 https://blogs.sap.com/2013/12/27/resilience-in-the-supply-chain-supply-chain-collaboration/ (accessed January 15, 2018) 2 https://blogs.sap.com/2013/12/20/resilience-in-the-supply-chain-supplier-collaboration-and-supplier-relationship- management/ (accessed January 15, 2018) 3 https://web.archive.org/web/20140706101452/http://www.myclouddoor.com/web/documents/The%20New%20 Digital%20Economy.pdf (accessed February10, 2018) 4 https://www.weforum.org/agenda/2015/06/the-next-big-thing-in-the-sharing- economy/?utm_content=buffer869f1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer (accessed January 28, 2018) 5 http://cerasis.com/2016/06/24/gainsharing-in-logistics/ (accessed January 12, 2018) 6 http://www.supplychain247.com/article/vested_outsourcing_five_rules_that_will_transform_outsourcing (accessed February 11, 2018) 7",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.039164
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.414617,
+        "coverage_bonus": 1.125,
+        "sentence_alignment": 72.993584,
+        "direct_relation": 72.352476,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.077778,
+        "generic_penalty": 2.25,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.4,
+        "total": 140.513454
+      }
+    },
+    {
+      "rank": 2,
+      "score": 117.03202342639216,
+      "chunk_id": "unctad_gsc_2023:p0015:c000",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 15,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 35 return to its original state after a disruptive event. By diversifying suppliers, and goods and services, firms can readily absorb shocks such as the shortage of entrants and soaring prices of a product, overcoming the complete disruption of activities (figure 1). 1.5 What does supply chain diversification mean for Africa? Global supply chains were designed to operate with high reliability and at the lowest possible cost (Gandhi, 2022). Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets. Some of these measures include support programmes and incentives",
+      "char_count": 998,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "suppliers",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chains",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "dependence",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 10,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.724646
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "dependence",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.539164
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::sector::global_financial",
+          "target_name": "Global Financial",
+          "trigger": "dependence",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.539164
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "cost",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.439164
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::governments",
+          "source_name": "Governments",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "dependence",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.431451
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "cost",
+          "evidence_text": "Yet the impact of global shocks and other geopolitical dynamics – the global financial and economic crisis, the pandemic and the war in Ukraine – on the reliability, cost-effectiveness and resilience of supply chains resulted in many companies and Governments adopting measures aimed at securing the supply of components in critical industries and reducing their dependence on a few suppliers and source markets.",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.331451
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.414617,
+        "coverage_bonus": 1.125,
+        "sentence_alignment": 61.612311,
+        "direct_relation": 60.27454,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.155556,
+        "generic_penalty": 2.25,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.5,
+        "total": 117.032023
+      }
+    },
+    {
+      "rank": 3,
+      "score": 92.54800842639216,
+      "chunk_id": "worldbank_scm_guidance_2023:p0029:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 29,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "SECTION III: STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain. Borrowers can encourage Suppliers/Contractors to provide information obtained through their own supply chain assessment and due diligence, gathered, for instance, via supply chain mapping. Borrowers may have discovered potential risks through these assessments, which they can communi- cate to Suppliers/Contractors, together with ideas or",
+      "char_count": 992,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "suppliers",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.06299468437002319,
+          "score_contribution": 0.11339,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 10,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.724646
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::capability::transparency",
+          "target_name": "Transparency",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.539164
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::governments",
+          "source_name": "Governments",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.431451
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::supplier_contractor",
+          "source_name": "Supplier Contractor",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.204781
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::actor::suppliers_contractors",
+          "target_name": "Suppliers Contractors",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 4,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.084766
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::risk::vulnerability",
+          "target_name": "Vulnerability",
+          "trigger": "vulnerable",
+          "evidence_text": "STRATEGY DEVELOPMENT AND PROCUREMENT PLANNING 19 ◾ Inadequate labor laws and regulations, or lack of enforcement ◾ Presence of cheap labor and a high number of vulnerable workers ◾ Lack of business or government transparency or accountability A Borrower’s ability to influence Suppliers/Contractors to successfully manage environmental and social risks will ultimately depend on, amongst other things, the capability of the Supplier/Contractor, the importance of the project to the Supplier/Contractor, the sphere of control the Supplier/Contractor has, and the extent to which the Supplier/Contractor can influence their own supply chain.",
+          "sentence_index": 1,
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.860317
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.414617,
+        "coverage_bonus": 1.125,
+        "sentence_alignment": 47.974501,
+        "direct_relation": 48.428335,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.155556,
+        "generic_penalty": 1.75,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.0,
+        "total": 92.548008
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

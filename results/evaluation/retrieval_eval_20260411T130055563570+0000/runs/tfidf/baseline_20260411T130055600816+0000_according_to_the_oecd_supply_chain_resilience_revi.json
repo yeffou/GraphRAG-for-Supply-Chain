@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T130055600816+0000_according_to_the_oecd_supply_chain_resilience_revi",
+  "timestamp_utc": "2026-04-11T13:00:55.600816+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "According to the OECD Supply Chain Resilience Review, what share of inputs for strategic manufacturing industries in the OECD are sourced from abroad?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.28914392443653847,
+      "chunk_id": "oecd_scrr_2025:p0017:c003",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 17,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ffer broader adjustment and diversification options than domestic ones. Sectors vary in their exposure to foreign markets. The strategic manufacturing sector (of critical importance for national and economic security, such as petroleum or electronics) has one of the highest levels of upstream and downstream foreign product exposure. In the OECD, 26% of inputs for strategic manufacturing industries are sourced from abroad, and 27% of t heir output depends on foreign final demand. These supply chains are highly complex, often requiring more production steps and border crossings.",
+      "char_count": 583
+    },
+    {
+      "rank": 2,
+      "score": 0.23523825244192625,
+      "chunk_id": "oecd_scrr_2025:p0012:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 12,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "xported products are subject to high levels of concentration in few trading partners. That said, import concentration is on the rise, as countries are increasingly sourcing products from fewer suppliers than is globally possible. The number of cases of suboptimal diversification is 50% higher in the 2020s than it was in the late 1990s. Some sectors and countries may be more exposed to shocks than others Economies with strong vertical links to major foreign economies tend to be more exposed to international supply chain shocks. However, impacts of shocks occurring in domestic sectors tend to be larger than impacts of shocks occurring in foreign sectors. Industries also vary in their exposure to foreign markets. For example, the strategic manufacturing sector (including industries such as petroleum and electronics) has one of the highest levels of upstream and d ownstream foreign product exposure. In the OECD, 26% of inputs for strategic manufacturing industries are sourced from abroad,",
+      "char_count": 999
+    },
+    {
+      "rank": 3,
+      "score": 0.23294409061631924,
+      "chunk_id": "oecd_scrr_2025:p0012:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 12,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "evels of upstream and d ownstream foreign product exposure. In the OECD, 26% of inputs for strategic manufacturing industries are sourced from abroad, and 27% of their output depends on foreign final demand. These supply chains are highly complex, often requiring more production steps and border crossings. Relocalising supply chains can come at a high economic cost Modelling presented in the report demonstrates that re -localisation could decrease global trade by more than 18% and global real GDP by more than 5%, with no consisten t improvements in resilience. GDP stability would decrease in more than half of the economies analysed.",
+      "char_count": 640
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

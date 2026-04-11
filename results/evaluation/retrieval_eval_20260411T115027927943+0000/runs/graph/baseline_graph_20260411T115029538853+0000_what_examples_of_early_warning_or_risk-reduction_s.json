@@ -1,0 +1,336 @@
+{
+  "run_id": "baseline_graph_20260411T115029538853+0000_what_examples_of_early_warning_or_risk-reduction_s",
+  "timestamp_utc": "2026-04-11T11:50:29.538853+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "What examples of early warning or risk-reduction strategies does the WTO report mention for preparing for shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::wto",
+      "canonical_name": "WTO",
+      "entity_type": "organization",
+      "matched_alias": "wto"
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks"
+    },
+    {
+      "entity_id": "entity::strategy::early_warning",
+      "canonical_name": "Early Warning",
+      "entity_type": "strategy",
+      "matched_alias": "early warning"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 38.305975138889615,
+      "chunk_id": "wto_gvc_2025:p0011:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 11,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "k of reassessing their position within GVCs. While rapid trade liberalization, technological change and a rules-based international system fuelled the expansion of GVCs in previous decades, the “hyper-globalization” model has slowed since the global financial crisis of 2008 (IMF 2025). A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean). Figure 2.7: Simulated Unit Labor Cost Differences, By Macro-Region and Scenario Note: Simulated differences in unit labor costs across",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::preparedness",
+          "source_name": "Preparedness",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_supply_chain",
+          "target_name": "Global Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::global_value_chain",
+          "target_name": "Global Value Chain",
+          "trigger": "shocks",
+          "evidence_text": "A succession of economic and geopolitical shocks has exposed critical vulnerabilities, accelerating a shift towards supply chain resilience, diversification and strategic reconfiguration of sourcing (IMF 2024a).1 1 This section draws on the background paper prepared by Antoni Estevadeordal for Chapter 2 of the Global Value Chain Development Report 2025, subsequently published as Estevadeordal, Kahn, and Werner (2024), Latin America in the New Geometry of Global Supply Chains (Georgetown Americas Institute and CAF – Development Bank of Latin America and the Caribbean).",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 1.522238,
+        "coverage_bonus": 1.333333,
+        "direct_relation": 47.530404,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.2,
+        "query_miss_penalty": 11.0,
+        "hub_penalty": 1.28,
+        "total": 38.305975
+      }
+    },
+    {
+      "rank": 2,
+      "score": 37.38814954663408,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.978542
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::risk_management",
+          "source_name": "Risk Management",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.154889
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disrupt",
+          "evidence_text": "Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::strategy::early_warning",
+          "source_name": "Early Warning",
+          "target_entity_id": "entity::strategy::risk_management",
+          "target_name": "Risk Management",
+          "trigger": null,
+          "evidence_text": "While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 2.650768
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.500931,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 26.253885,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.5,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.2,
+        "total": 37.38815
+      }
+    },
+    {
+      "rank": 3,
+      "score": 32.137523546634085,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::early_warning",
+          "canonical_name": "Early Warning",
+          "entity_type": "strategy",
+          "matched_alias": "early warning",
+          "specificity": 1.1367695450698536,
+          "score_contribution": 3.9786934077444878
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.43492508730179025,
+          "score_contribution": 1.5222378055562658
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.369686
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": null,
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.054201
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.469686
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.500931,
+        "coverage_bonus": 5.333333,
+        "direct_relation": 28.263259,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.8,
+        "query_miss_penalty": 7.0,
+        "hub_penalty": 0.76,
+        "total": 32.137524
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121642615367+0000_what_policies_can_strengthen_key_supply_chain_serv",
+  "timestamp_utc": "2026-04-11T12:16:42.615367+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What policies can strengthen key supply chain service sectors, and why do they matter for resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.16563756064343066,
+      "chunk_id": "oecd_scrr_2025:p0013:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 13,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "urces, in co -operation with the private sector. While these resilience strategies can be implemented at the country level, they are more efficient if co-ordinated internationally. Policy can: • Promote trade facilitation policies: Reduce frictions to trade and create a stable, transparent and predictable regulatory framework for businesses. • Strengthen key supply chain service sectors : Remove market access barriers for critical services sectors, and work towards greater regulatory interoperability across countries. • Facilitate the digitalisation of supply chain operations: Enable firms to digitise processes and be more agile in responding to supply chain shocks by lowering tariffs on ICT goods, streamlining regulations and co-operating on international regulations for digital trade. • Support international co -operation, and co -ordination with the private sector : Use multi - government trade agreements and supply chain partnerships to set rules, co -ordinate and reduce regulatory",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.10918716783589999,
+      "chunk_id": "oecd_scrr_2025:p0022:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 22,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "20  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 • Strengthen key supply chain service secto rs. Services play a crucial role in supporting agile, adaptable and aligned global supply chains by enhancing efficiency, reducing costs, and ensuring seamless connectivity from manufacturers to consumers. Air, sea, road and rail transport help carry goods across countries, while logistics services help manage the complex flow of goods, optimising inventory management and allocation of capacity and resources. However, evidence from the OECD’s Services Trade Restrictiveness Index (STRI) shows substantial bar riers to trade across these sectors. Key actions include: o Remove market access barriers for critical services sectors, notably transport, financial and telecommunications services. o Work towards greater regulatory interoperability across countries by streng thening common regulatory standards and expanding tools such as mutual recognition of qualifications and permits. o Foster",
+      "char_count": 993
+    },
+    {
+      "rank": 3,
+      "score": 0.10305670345806758,
+      "chunk_id": "wto_wtr_2021:p0003:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 3,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "n 6 6 2 . T rade can be a spreader of shocks 6 6 3 . T rade can enable countries to better prepare for, cope with, and recover from shocks 81 4 . T he role of trade diversification in resilience 10 7 5 . Conclusion 11 6 D . T he role of international cooperation in building economic resilience 1 22 1 . Introduction 12 4 2 . W hy does international cooperation matter for economic resilience and what forms does it take? 12 4 3 . I nternational cooperation on non-trade policies can help reduce risk and v ulnerabilities and enhance resilience 12 8 4 . I nternational cooperation on trade policies can reduce risk and vulnerabilities 13 2 5 . I nternational cooperation on trade policies can help cope with shocks 14 9 6 . I nternational cooperation on trade policies can help recover after shocks 16 5 7 . Conclusion 16 8 E . Conclusion 1 75 Opinion pieces S tephane Hallegatte, “Beyond the aggregate: defining and measuring households’ resilience” 58 R alph Ossa, “A simple measure of economic",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

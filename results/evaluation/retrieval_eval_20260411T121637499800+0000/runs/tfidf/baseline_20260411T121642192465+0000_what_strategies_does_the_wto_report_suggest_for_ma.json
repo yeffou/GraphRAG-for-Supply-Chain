@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121642192465+0000_what_strategies_does_the_wto_report_suggest_for_ma",
+  "timestamp_utc": "2026-04-11T12:16:42.192465+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What strategies does the WTO report suggest for managing or mitigating supply chain shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.11637371189706758,
+      "chunk_id": "worldbank_scm_guidance_2023:p0105:c001",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 105,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "d what implications does this have for the supply chain? ◾ What is the level of bureaucracy? What is the level of fraud and corruption? To what degree does the rule of law apply? ◾ Are there any current or developing geopolitical tensions that may impact current/ future trading relationships? Economic ◾ What are current and anticipated future interest rates, tax systems, economic growth dynamics, inflation pressures, and exchange rates? ◾ What implications does this have on workforce availability, commodity prices, and economic health in the states, regions and/or countries involved? Social ◾ What are the dominant social trends that could influence demand for the products or services (for instance, population growth/decline, change in behaviors/tastes)? ◾ What can influence the ability or willingness of employees to work? ◾ What are typical employment structures in the supply chain (for example, temporary vs. full-time employment, hiring of foreign workers)? ◾ What social standards are",
+      "char_count": 1000
+    },
+    {
+      "rank": 2,
+      "score": 0.10642946502873445,
+      "chunk_id": "worldbank_scm_guidance_2023:p0101:c000",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 101,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "ANNEX V: SCM AND THE BANK’S PROCUREMENT PRINCIPLES 91 Transparency ◾ To what degree does the Supplier/Contractor disclose its SCM practices and provide appropriate documentation (for instance, in terms of ensuring environmental and social sustainability through its supply chain(s))? ◾ How responsive is the Supplier/Contractor to requests for SCM information? Fairness ◾ How is the Supplier/Contractor evaluating, selecting, and managing its Suppliers/Subcontractors? ◾ To what degree is there an equitable distribution of rights and obligations among the Supplier/ Contractor and its supply chain members? ◾ To what degree does the Supplier/Contractor have mechanisms in place through which their Suppliers/Subcontractors can raise complaints?",
+      "char_count": 745
+    },
+    {
+      "rank": 3,
+      "score": 0.10161084553104122,
+      "chunk_id": "wto_wtr_2021:p0004:c000",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 4,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "WORLD TRADE REPORT 2021 2 Disclaimer The World Trade Report and its contents are the sole responsibility of the WTO Secretariat, except for the opinion pieces written by the external contributors and the boxes prepared by the WTO Chairs, which are the sole responsibility of their respective authors. The Report does not reflect the opinions or views of members of the WTO. The authors of the Report also wish to exonerate those who have commented upon it from responsibility for any outstanding errors or omissions. Acknowledgements The World Trade Report 2021 was prepared under the general responsibility and guidance of Anabel González, WTO Deputy Director-General, and Robert Koopman, Director of the Economic Research and Statistics Division. The report was coordinated by Eddy Bekkers and José-Antonio Monteiro. The authors of the report are Marc Auboin, Marc Bacchetta, Francesco Bellelli, Cosimo Beverelli, Eddy Bekkers, Emmanuelle Ganne, John Hancock, Katharina Laengle, Kathryn Lundquist,",
+      "char_count": 999
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "run_id": "baseline_graph_20260411T115033011520+0000_how_can_sustainability-oriented_supply-chain_regul",
+  "timestamp_utc": "2026-04-11T11:50:33.011520+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "How can sustainability-oriented supply-chain regulations affect foreign suppliers and the inclusivity of global trade?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 29.492327080216093,
+      "chunk_id": "oecd_preparedness_2024:p0009:c000",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "8  OECD TRADE POLICY PAPER NO. 286 © OECD 2024 makers can find themselves called -upon to provide oversight of private sector operations to assure the resilience adequate to support economic or national security. As can be seen on Figure 2, the level of global supply chain pressure2 is now back to its historical average. As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore. Decisions of supply chain managers will be guided by long -term strategic considerations that include not only a more uncertain global environment but also the continuing challenges of climate change or poverty in some parts of the world. Building resilient and sustainable supply chains will remain a key objective for policy makers. Figure 2. The reduction in supply chain disruptions after COVID-19 Global Supply Chain Pressure Index, standard deviations from average value Source: Federal Reserve Bank of New York. The aim of this report is to",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shock",
+          "evidence_text": "As supply chains have recovered from the pandemic shock, the main driver of GVC reconfigurations might not be COVID-19 anymore.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "The reduction in supply chain disruptions after COVID-19 Global Supply Chain Pressure Index, standard deviations from average value Source:",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::climate_change",
+          "source_name": "Climate Change",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Decisions of supply chain managers will be guided by long -term strategic considerations that include not only a more uncertain global environment but also the continuing challenges of climate change or poverty in some parts of the world.",
+          "support_count": 6,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.502763
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 4.0,
+        "direct_relation": 25.911233,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.4,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.32,
+        "total": 29.492327
+      }
+    },
+    {
+      "rank": 2,
+      "score": 29.472952080216096,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0016:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 16,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 16 While firms generally strive for economic efficiency, they also manage business risks. Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions. This benefits business operations, as well as broader supply chains. Supply chain resilience is built at the firm level through efforts to gain greater visibility of the supply chain, agility and flexibility. As firms need to balance the economic consequences of disruptions with the costs of mitigating risks, they are often required to decide on the acceptable level of risk and to organise the production process accordingly. Governments can support firms’ risk management strategies by creating the right policy framework for them to operate in as well as by offering help and guidance with the implementation of internal risk-management strategies. This",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to Resilient Supply Chains 16 While firms generally strive for economic efficiency, they also manage business risks.",
+          "support_count": 68,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Keys to Resilient Supply Chains 16 While firms generally strive for economic efficiency, they also manage business risks.",
+          "support_count": 474,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::risk_management",
+          "source_name": "Risk Management",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Risk management, scenario planning and increasing supply chain visibility are part of best practices firms have been using to anticipate, prevent, prepare for , and respond to shocks, helping firms minimise disruptions.",
+          "support_count": 52,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 4.0,
+        "direct_relation": 25.651858,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.2,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.88,
+        "total": 29.472952
+      }
+    },
+    {
+      "rank": 3,
+      "score": 29.378155080216096,
+      "chunk_id": "unctad_gsc_2023:p0014:c000",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 14,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "Economic Development in Africa Report 2023 34 more goods or services than they are expected to sell (United We Care, 2022). This management strategy aims to minimize the risk for a company to run out of stock of a specific product and be in a position to respond to consumer demand, even during unpredictable times, such as during shocks or supply chain disruptions. As both strategies present advantages and risks, it is important to adopt a balanced approach. For example, in a hybrid push-pull inventory system, some of the supply chain processes employ a just-in-time strategy, while others operate under a just-in-case system. This can be conducive to building a more flexible supply chain and optimizing inventories, that is, having a more accurate demand forecast than a just-in-case system but not aiming to keep standing inventory at zero, as in just-in-case systems (Jenkins, 2021). Supply chain diversification has proven an effective means of strengthening supply chain resilience while",
+      "char_count": 998,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "This management strategy aims to minimize the risk for a company to run out of stock of a specific product and be in a position to respond to consumer demand, even during unpredictable times, such as during shocks or supply chain disruptions.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "This management strategy aims to minimize the risk for a company to run out of stock of a specific product and be in a position to respond to consumer demand, even during unpredictable times, such as during shocks or supply chain disruptions.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.521694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::just_in_time",
+          "source_name": "Just-in-Time",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "For example, in a hybrid push-pull inventory system, some of the supply chain processes employ a just-in-time strategy, while others operate under a just-in-case system.",
+          "support_count": 9,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::flexibility",
+          "source_name": "Flexibility",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "This can be conducive to building a more flexible supply chain and optimizing inventories, that is, having a more accurate demand forecast than a just-in-case system but not aiming to keep standing inventory at zero, as in just-in-case systems (Jenkins, 2021).",
+          "support_count": 27,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "Supply chain diversification has proven an effective means of strengthening supply chain resilience while",
+          "support_count": 474,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 0.501094,
+        "coverage_bonus": 4.0,
+        "direct_relation": 25.437061,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.2,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.76,
+        "total": 29.378155
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

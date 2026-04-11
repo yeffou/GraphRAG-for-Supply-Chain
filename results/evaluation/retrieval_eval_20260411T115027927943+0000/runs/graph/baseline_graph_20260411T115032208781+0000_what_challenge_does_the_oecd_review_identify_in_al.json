@@ -1,0 +1,499 @@
+{
+  "run_id": "baseline_graph_20260411T115032208781+0000_what_challenge_does_the_oecd_review_identify_in_al",
+  "timestamp_utc": "2026-04-11T11:50:32.208781+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "What challenge does the OECD review identify in aligning sustainability and efficiency with resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::efficiency",
+      "canonical_name": "Efficiency",
+      "entity_type": "capability",
+      "matched_alias": "efficiency"
+    },
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 76.2612918447648,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0017:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 17,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption. Many companies and governments are still not doing enough to monitor changing supply chain risk profiles and to update their contingency planning. Organisations such as the ITF have a key role to play in keeping risk and resilience high on the agenda of senior executives and public policy makers. The Roundtable extended previous discussion of the subject into a closer examination of the trade -offs between resilience, efficiency and sustainab ility. The title of the event referred to the ‘balancing’ of these objectives, suggesting that the y might be given equal weight. In practice, their relative weighting has to vary in the light of economic and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 1.7658616503898519
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "balancing",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 34,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 9.061624
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.428852
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::recovery",
+          "target_name": "Recovery",
+          "trigger": "balancing",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.171454
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption."
+          ],
+          "score_contribution": 3.334173
+        },
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption."
+          ],
+          "score_contribution": 3.198531
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.511577,
+        "coverage_bonus": 12.0,
+        "direct_relation": 54.284511,
+        "path_bonus": 6.532704,
+        "lexical_overlap": 0.4125,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.48,
+        "total": 76.261292
+      }
+    },
+    {
+      "rank": 2,
+      "score": 66.47446384476481,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0008:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 8,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions. Over the past couple of decades, other trends have complicated the management of supply chains while extending the economic impact of any interruption to freight flows. Supply chain processes hav e been complicated by increases in the degree of product customisation, with more goods being made to order and having to be delivered to specific customers. In some sectors the process of ‘servitis ation’ is linking products to a broader range of value -adding services, strengthening the connection between the physical flow of goods and a n array of service activities. Disruption of that flow can cause negative impacts to ripple across the service sector. Some of the participants at the roundtable characterised the situation today as a “VUCA era ” characterised by",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 1.7658616503898519
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "balancing",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+          "support_count": 34,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 9.061624
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.428852
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruptions",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::system::logistics",
+          "target_name": "Logistics",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+          "support_count": 15,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.628852
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions."
+          ],
+          "score_contribution": 3.334173
+        },
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 7 and logistics operations, despite numerous exampl es it constraining their ability to respond to disruptions."
+          ],
+          "score_contribution": 3.198531
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.511577,
+        "coverage_bonus": 12.0,
+        "direct_relation": 44.337683,
+        "path_bonus": 6.532704,
+        "lexical_overlap": 0.4125,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.32,
+        "total": 66.474464
+      }
+    },
+    {
+      "rank": 3,
+      "score": 59.55283984476482,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0007:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 7,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area. The centralisation of logistics capacity has been one of the main trends increasing the vulnerability of supply networks. On the other hand, if used effectively , multimodality and intermodality can improve supply chain resilience by giving carriers and shi ppers more modal options when disaster strikes. If only one modal network or service is disrupted, it may be possible to divert traffic to another at short notice, particularly where the principles of synchromodality have been applied. The greater the inte r-connectivity between different modal networks the more robust should be the supply chains using them. A Dutch study has modelled the relationship between the density of links in",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::capability::efficiency",
+          "canonical_name": "Efficiency",
+          "entity_type": "capability",
+          "matched_alias": "efficiency",
+          "specificity": 0.5045319001113863,
+          "score_contribution": 1.7658616503898519
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "balancing",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+          "support_count": 34,
+          "direct_query_pair": true,
+          "query_aligned": false,
+          "score_contribution": 9.061624
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.428852
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+          "support_count": 74,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+          "support_count": 68,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.628852
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area."
+          ],
+          "score_contribution": 3.334173
+        },
+        {
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "relation_chain": [
+            "MITIGATES",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area.",
+            "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 6 © OECD/ITF 2018 have become points of convergence for tens of thousands of separate supply cha ins any disruption to their operation can have a huge economic and social impact over a wide area."
+          ],
+          "score_contribution": 3.198531
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.511577,
+        "coverage_bonus": 12.0,
+        "direct_relation": 37.176059,
+        "path_bonus": 6.532704,
+        "lexical_overlap": 0.4125,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.08,
+        "total": 59.55284
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

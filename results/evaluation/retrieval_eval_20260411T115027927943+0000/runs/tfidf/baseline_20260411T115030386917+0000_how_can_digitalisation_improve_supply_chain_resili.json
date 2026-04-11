@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115030386917+0000_how_can_digitalisation_improve_supply_chain_resili",
+  "timestamp_utc": "2026-04-11T11:50:30.386917+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How can digitalisation improve supply chain resilience according to the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.14153698791435365,
+      "chunk_id": "oecd_scrr_2025:p0014:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "12  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 1 Overview",
+      "char_count": 63
+    },
+    {
+      "rank": 2,
+      "score": 0.13875387536235845,
+      "chunk_id": "unctad_gsc_2023:p0016:c003",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 16,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "tructure their supply ecosystems to reduce vulnerability and strengthen resilience. According to McKinsey and Company (2020a) and various data sources (see table 1), pharmaceutical goods, transportation equipment, computers and electronics, communication equipment,",
+      "char_count": 265
+    },
+    {
+      "rank": 3,
+      "score": 0.1352605701622996,
+      "chunk_id": "oecd_scrr_2025:p0001:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 1,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "OECD Supply Chain Resilience Review Navigating Risks OECD Supply Chain Resilience Review Navigating Risks",
+      "char_count": 105
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "run_id": "baseline_graph_20260411T130120073108+0000_how_can_trade_cooperation_improve_resilience_to_sh",
+  "timestamp_utc": "2026-04-11T13:01:20.073108+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How can trade cooperation improve resilience to shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::strategy::international_cooperation",
+      "canonical_name": "International Cooperation",
+      "entity_type": "strategy",
+      "matched_alias": "trade cooperation",
+      "source": "base",
+      "is_generic": false
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 109.29363744871384,
+      "chunk_id": "wto_wtr_2021:p0013:c000",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 13,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "11 EXECUTIVE SUMMARY human capital available and improving the efficiency of the labour force. Strengthening economic resilience will require more global cooperation. More trade cooperation at the multilateral or regional level, backed by strong international trade rules, can support the various domestic strategies deployed to avoid and mitigate risks and to prepare for, manage and recover from shocks. Risk reduction measures and resilience policies in one country can have positive spillovers in other countries, but in the absence of global coordination, the adoption of such policies by individual countries is likely to be less than optimal from a global perspective. Cooperation also can help to limit the use of policies that can have negative spillovers for trading partners, such as export restrictions or subsidies. Trade cooperation can help to achieve more open markets and more inclusive, stable and predictable trade that promotes the diversification of products, suppliers and",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::international_cooperation",
+          "canonical_name": "International Cooperation",
+          "entity_type": "strategy",
+          "matched_alias": "global cooperation",
+          "specificity": 1.16961373575384,
+          "score_contribution": 4.678455,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "avoid",
+          "evidence_text": "More trade cooperation at the multilateral or regional level, backed by strong international trade rules, can support the various domestic strategies deployed to avoid and mitigate risks and to prepare for, manage and recover from shocks.",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.224049
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": "strengthening",
+          "evidence_text": "Strengthening economic resilience will require more global cooperation.",
+          "sentence_index": 1,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.156004
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::recovery",
+          "source_name": "Recovery",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": "support",
+          "evidence_text": "More trade cooperation at the multilateral or regional level, backed by strong international trade rules, can support the various domestic strategies deployed to avoid and mitigate risks and to prepare for, manage and recover from shocks.",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.978979
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::system::international_trade",
+          "target_name": "International Trade",
+          "trigger": "support",
+          "evidence_text": "More trade cooperation at the multilateral or regional level, backed by strong international trade rules, can support the various domestic strategies deployed to avoid and mitigate risks and to prepare for, manage and recover from shocks.",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.978979
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "help",
+          "evidence_text": "Trade cooperation can help to achieve more open markets and more inclusive, stable and predictable trade that promotes the diversification of products, suppliers and",
+          "sentence_index": 5,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.978979
+        },
+        {
+          "relation_type": "CO_OCCURS_WITH",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": null,
+          "evidence_text": "Trade cooperation can help to achieve more open markets and more inclusive, stable and predictable trade that promotes the diversification of products, suppliers and",
+          "sentence_index": 5,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.878979
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.287094,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 46.750574,
+        "direct_relation": 53.195969,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 1.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 109.293637
+      }
+    },
+    {
+      "rank": 2,
+      "score": 97.30111844871382,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::international_cooperation",
+          "canonical_name": "International Cooperation",
+          "entity_type": "strategy",
+          "matched_alias": "trade cooperation",
+          "specificity": 1.16961373575384,
+          "score_contribution": 4.678455,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "sentence_index": 2,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.156004
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "improving",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "sentence_index": 2,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 9.478979
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "exposed",
+          "evidence_text": "It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike.",
+          "sentence_index": 1,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.639395
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "shocks",
+          "evidence_text": "The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets.",
+          "sentence_index": 2,
+          "support_count": 23,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.134069
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::actor::firms",
+          "target_name": "Firms",
+          "trigger": null,
+          "evidence_text": "It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation.",
+          "sentence_index": 3,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.778979
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::strategy::international_cooperation",
+          "source_name": "International Cooperation",
+          "target_entity_id": "entity::actor::governments",
+          "target_name": "Governments",
+          "trigger": null,
+          "evidence_text": "It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation.",
+          "sentence_index": 3,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 4.778979
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.287094,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 42.237619,
+        "direct_relation": 45.966405,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 0.75,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.5,
+        "total": 97.301118
+      }
+    },
+    {
+      "rank": 3,
+      "score": 76.62927544871383,
+      "chunk_id": "wto_wtr_2021:p0009:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 9,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "ed by presenting them as an either-or choice – and argues that trade is a means to build and support economic resilience, particularly if it is backed by relevant domestic policies as well as effective global cooperation and rules. The report conveys three main messages: first, today’s hyper-connected global economy, characterized by deep trade links, has made the world more vulnerable to shocks, but also more resilient to them when they strike; second, policies which aim to increase economic resilience by unwinding trade integration – for example, by re-shoring production and promoting self-sufficiency – can often have the opposite effect, effectively reducing economic resilience; and third, strengthening economic resilience will require more global cooperation. Today’s hyper-connected global economy, characterized by deep trade links, has made the world more vulnerable to shocks, but also more resilient to them when they strike. Trade can increase countries’ vulnerabilities and",
+      "char_count": 994,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::strategy::international_cooperation",
+          "canonical_name": "International Cooperation",
+          "entity_type": "strategy",
+          "matched_alias": "global cooperation",
+          "specificity": 1.16961373575384,
+          "score_contribution": 4.678455,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.15659862557882873,
+          "score_contribution": 0.281878,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": "strengthening",
+          "evidence_text": "and third, strengthening economic resilience will require more global cooperation.",
+          "sentence_index": 4,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.156004
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::strategy::international_cooperation",
+          "target_name": "International Cooperation",
+          "trigger": "support",
+          "evidence_text": "ed by presenting them as an either-or choice – and argues that trade is a means to build and support economic resilience, particularly if it is backed by relevant domestic policies as well as effective global cooperation and rules.",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.990387
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "vulnerable",
+          "evidence_text": "first, today’s hyper-connected global economy, characterized by deep trade links, has made the world more vulnerable to shocks, but also more resilient to them when they strike;",
+          "sentence_index": 2,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.639395
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "vulnerable",
+          "evidence_text": "Today’s hyper-connected global economy, characterized by deep trade links, has made the world more vulnerable to shocks, but also more resilient to them when they strike.",
+          "sentence_index": 5,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.639395
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 5.287094,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 26.857,
+        "direct_relation": 39.425181,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.56,
+        "generic_penalty": 0.0,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 76.629275
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

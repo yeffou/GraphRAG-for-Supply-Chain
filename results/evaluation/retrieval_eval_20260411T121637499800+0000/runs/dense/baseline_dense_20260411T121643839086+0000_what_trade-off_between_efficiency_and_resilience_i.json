@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121643839086+0000_what_trade-off_between_efficiency_and_resilience_i",
+  "timestamp_utc": "2026-04-11T12:16:43.839086+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "What trade-off between efficiency and resilience is discussed in the ITF paper on multimodal supply chains?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.8231993317604065,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0018:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 18,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 17 Notes 1 This still represented only 2.5% of journal papers published on supply chain topics in 2017. Statistics quoted in presentation delivered at the Roundtable by Dr. Igor Linkov entitled ‘Planning for Efficiency, Risk and Resilience in Supply Chains’. 2 Sustainability was not in the original title of the Roundtable though was covered in one of the briefing papers and generated a significant amount of discussion during the event. 3 Beyond the sections of rail network already electrified and the use of electric vans in urban areas.",
+      "char_count": 662
+    },
+    {
+      "rank": 2,
+      "score": 0.8154541850090027,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0017:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 17,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption. Many companies and governments are still not doing enough to monitor changing supply chain risk profiles and to update their contingency planning. Organisations such as the ITF have a key role to play in keeping risk and resilience high on the agenda of senior executives and public policy makers. The Roundtable extended previous discussion of the subject into a closer examination of the trade -offs between resilience, efficiency and sustainab ility. The title of the event referred to the ‘balancing’ of these objectives, suggesting that the y might be given equal weight. In practice, their relative weighting has to vary in the light of economic and",
+      "char_count": 997
+    },
+    {
+      "rank": 3,
+      "score": 0.8076856136322021,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0019:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 19,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 18 © OECD/ITF 2018 References Banomyong, R. (2018), “Collaboration in Supply Chain Management: A Resilience Perspective”, Discussion Paper, International Transport Forum, Paris. Christopher, M. (2018), “Risk Mitigation in Resilient Supply Chains”, Discussion Paper, International Transport Forum, Paris. Rodrigue, J.P. (2018), “Efficiency and Sustainability in Multimodal Supply Chains”, Discussion Paper, International Transport Forum, Paris. Tavasszy, L. (2018), “Innovation and Technology in Multimodal Supply Chains”, Discussion Paper, International Transport Forum, Paris.",
+      "char_count": 681
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

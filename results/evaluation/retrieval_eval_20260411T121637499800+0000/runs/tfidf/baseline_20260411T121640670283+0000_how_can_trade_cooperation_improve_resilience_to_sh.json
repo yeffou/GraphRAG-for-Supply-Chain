@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121640670283+0000_how_can_trade_cooperation_improve_resilience_to_sh",
+  "timestamp_utc": "2026-04-11T12:16:40.670283+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How can trade cooperation improve resilience to shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.1711202066879663,
+      "chunk_id": "wto_wtr_2021:p0006:c003",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 6,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "of natural and man-made disasters, including the COVID-19 pandemic. It finds that today’s highly connected global economy is more exposed to risks and vulnerable to shocks, from supply chain cut-offs to infectious disease outbreaks, but that it is also more resilient to shocks when they do strike. The report finds that trade cooperation is instrumental in improving resilience to shocks, because it promotes greater diversification of products, suppliers and markets. It points to ways in which trade can sustain economic resilience for households, firms and governments, particularly when supported by complementary domestic policies and effective global cooperation. Anticipating, evaluating and managing risks is key to preparing for shocks. Diversifying supply sources and destination markets are two strategies for doing so, as is building inventory stocks of critical inputs. Other risk reduction and early warning strategies, such as weather forecasting, insurance, telecommunications and",
+      "char_count": 997
+    },
+    {
+      "rank": 2,
+      "score": 0.16800753005791452,
+      "chunk_id": "wto_wtr_2021:p0013:c000",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 13,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "11 EXECUTIVE SUMMARY human capital available and improving the efficiency of the labour force. Strengthening economic resilience will require more global cooperation. More trade cooperation at the multilateral or regional level, backed by strong international trade rules, can support the various domestic strategies deployed to avoid and mitigate risks and to prepare for, manage and recover from shocks. Risk reduction measures and resilience policies in one country can have positive spillovers in other countries, but in the absence of global coordination, the adoption of such policies by individual countries is likely to be less than optimal from a global perspective. Cooperation also can help to limit the use of policies that can have negative spillovers for trading partners, such as export restrictions or subsidies. Trade cooperation can help to achieve more open markets and more inclusive, stable and predictable trade that promotes the diversification of products, suppliers and",
+      "char_count": 994
+    },
+    {
+      "rank": 3,
+      "score": 0.13323237304337557,
+      "chunk_id": "wto_wtr_2021:p0003:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 3,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "n 6 6 2 . T rade can be a spreader of shocks 6 6 3 . T rade can enable countries to better prepare for, cope with, and recover from shocks 81 4 . T he role of trade diversification in resilience 10 7 5 . Conclusion 11 6 D . T he role of international cooperation in building economic resilience 1 22 1 . Introduction 12 4 2 . W hy does international cooperation matter for economic resilience and what forms does it take? 12 4 3 . I nternational cooperation on non-trade policies can help reduce risk and v ulnerabilities and enhance resilience 12 8 4 . I nternational cooperation on trade policies can reduce risk and vulnerabilities 13 2 5 . I nternational cooperation on trade policies can help cope with shocks 14 9 6 . I nternational cooperation on trade policies can help recover after shocks 16 5 7 . Conclusion 16 8 E . Conclusion 1 75 Opinion pieces S tephane Hallegatte, “Beyond the aggregate: defining and measuring households’ resilience” 58 R alph Ossa, “A simple measure of economic",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

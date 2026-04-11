@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T115032714292+0000_how_do_information-sharing_and_visibility_help_fir",
+  "timestamp_utc": "2026-04-11T11:50:32.714292+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How do information-sharing and visibility help firms identify disruptions early and respond more effectively?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6280825734138489,
+      "chunk_id": "itf_collaboration_scm_2018:p0014:c003",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 14,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "information -sharing in gaining supply chain visibility, helping early identification of impending disruptions . Subsequently this enables flexibility through allowing sufficient time to coordinate other supply chain resources to achieve the desired outcome. Communication facilitates the streamlining of supply chain processes, thereby enhancing the ve locity of subsequent supply chain responses to a disruptive event . Another managerial contribution directly relates to supplier management through collaborative supply chain efforts and the leveraging of supply chain members ’ capabilities. Managers can enh ance supply chain flexibility through the reciprocal leveraging of partners ’ resources to respond to a disruptive event under capacity limitations . Internal",
+      "char_count": 771
+    },
+    {
+      "rank": 2,
+      "score": 0.616765022277832,
+      "chunk_id": "itf_collaboration_scm_2018:p0009:c004",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "scope of the study focused on the quality of information . Findings are that information sharing plays an important role and has a positive impact on operational firm performance even with low or high quality of information.",
+      "char_count": 224
+    },
+    {
+      "rank": 3,
+      "score": 0.6112015247344971,
+      "chunk_id": "worldbank_scm_guidance_2023:p0045:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 45,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "was, for instance, addressed by companies strengthening their Supplier relationships, which can be done via greater information sharing in the form of the synchronized capacity planning, increasing planning reliability, and transparency. ◾ Information visibility: Information is power. Vulnerabilities can be better managed and mitigated with better data. This can be in the form of tracking and tracing shipments, early warning systems, and frequent status reports. Contracts with Suppliers/Contractors should set out requirements on what data should be made available and when, and set out clearly the Borrower’s right to conduct inspections or audits. Commercial software solutions that provide this visibility are also available.",
+      "char_count": 733
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

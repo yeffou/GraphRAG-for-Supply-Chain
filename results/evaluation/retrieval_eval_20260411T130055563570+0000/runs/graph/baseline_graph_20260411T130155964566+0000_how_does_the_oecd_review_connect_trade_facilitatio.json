@@ -1,0 +1,722 @@
+{
+  "run_id": "baseline_graph_20260411T130155964566+0000_how_does_the_oecd_review_connect_trade_facilitatio",
+  "timestamp_utc": "2026-04-11T13:01:55.964566+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v3",
+  "query_text": "How does the OECD review connect trade facilitation with finding new suppliers or buyers during shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::actor::buyers",
+      "canonical_name": "Buyers",
+      "entity_type": "actor",
+      "matched_alias": "buyers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::actor::new_suppliers",
+      "canonical_name": "New Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "new suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::actor::suppliers",
+      "canonical_name": "Suppliers",
+      "entity_type": "actor",
+      "matched_alias": "suppliers",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd",
+      "source": "base",
+      "is_generic": true
+    },
+    {
+      "entity_id": "entity::policy::trade_facilitation",
+      "canonical_name": "Trade Facilitation",
+      "entity_type": "policy",
+      "matched_alias": "trade facilitation",
+      "source": "base",
+      "is_generic": false
+    },
+    {
+      "entity_id": "entity::risk::shock",
+      "canonical_name": "Shock",
+      "entity_type": "risk",
+      "matched_alias": "shocks",
+      "source": "base",
+      "is_generic": true
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 231.8933025856493,
+      "chunk_id": "oecd_scrr_2025:p0109:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 109,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "environmental and social sustainability – often enforced at the border – are increasingly impacting firms across their entire value chain (Chapter 4). Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways: • Enhancing agility in the face of more frequent, high -impact supply chain shocks and disruptions. This can be done by designing co-ordinated approaches between points of entry and exit, such as ports, in response to shocks or prolonged disruptions to logistics operations. These approaches need to rely on transparent and predictable trade -related information, streamlined border processes, and co-operation between public and private stakeholders. Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions. • Being adaptable as sustainability regulatory requirements proliferate",
+      "char_count": 1000,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::new_suppliers",
+          "canonical_name": "New Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "new suppliers",
+          "specificity": 0.9764068505025263,
+          "score_contribution": 3.905627,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::policy::trade_facilitation",
+          "canonical_name": "Trade Facilitation",
+          "entity_type": "policy",
+          "matched_alias": "trade facilitation",
+          "specificity": 0.6460759484896875,
+          "score_contribution": 2.584304,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::buyers",
+          "canonical_name": "Buyers",
+          "entity_type": "actor",
+          "matched_alias": "buyers",
+          "specificity": 0.5902681878316313,
+          "score_contribution": 2.361073,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "suppliers",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "trigger": "support",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "sentence_index": 5,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.282639
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::buyers",
+          "target_name": "Buyers",
+          "trigger": "support",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "sentence_index": 5,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.761352
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "support",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "sentence_index": 5,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.176984
+        },
+        {
+          "relation_type": "CONSTRAINS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "trigger": "costs",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "sentence_index": 5,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.318149
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::new_buyers",
+          "target_name": "New Buyers",
+          "trigger": "support",
+          "evidence_text": "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+          "sentence_index": 5,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.272203
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::capability::adaptability",
+          "source_name": "Adaptability",
+          "target_entity_id": "entity::policy::trade_facilitation",
+          "target_name": "Trade Facilitation",
+          "trigger": "enable",
+          "evidence_text": "Against this background, trade facilitation measures can contribute to policy environments that enable agility, adaptability and alignment in three main ways:",
+          "sentence_index": 1,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 8.16449
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions."
+          ],
+          "score_contribution": 4.393345
+        },
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "relation_chain": [
+            "CONSTRAINS",
+            "CONSTRAINS"
+          ],
+          "evidence_texts": [
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions."
+          ],
+          "score_contribution": 4.393345
+        },
+        {
+          "source_entity_id": "entity::actor::new_suppliers",
+          "source_name": "New Suppliers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions."
+          ],
+          "score_contribution": 4.022399
+        },
+        {
+          "source_entity_id": "entity::actor::new_suppliers",
+          "source_name": "New Suppliers",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "CONSTRAINS",
+            "CONSTRAINS"
+          ],
+          "evidence_texts": [
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions.",
+            "Reducing costs and frictions through trade facilitation reforms will also support traders in identifying new suppliers or new buyers when confronted with disruptions."
+          ],
+          "score_contribution": 4.022399
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 10.478992,
+        "coverage_bonus": 18.0,
+        "sentence_alignment": 93.865327,
+        "direct_relation": 87.783886,
+        "path_bonus": 23.795098,
+        "lexical_overlap": 0.42,
+        "generic_penalty": 1.75,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.7,
+        "total": 231.893303
+      }
+    },
+    {
+      "rank": 2,
+      "score": 167.7965265856493,
+      "chunk_id": "oecd_scrr_2025:p0113:c001",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 113,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": ". Border agency co -operation is bas ed on the average of TFI (I) Internal border agency co-operation and TFI (J) External border agency co-operation. Source: OECD Trade Facilitation Indicators, https://sim.oecd.org/default.ashx?ds=TFI. Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse). OECD TFI analysis shows that, on average, a 10% improvement in trade facilitation policies is associated with an increase in the number of export mar kets",
+      "char_count": 754,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::new_suppliers",
+          "canonical_name": "New Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "new supplier",
+          "specificity": 0.9764068505025263,
+          "score_contribution": 3.905627,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::policy::trade_facilitation",
+          "canonical_name": "Trade Facilitation",
+          "entity_type": "policy",
+          "matched_alias": "trade facilitation",
+          "specificity": 0.6460759484896875,
+          "score_contribution": 2.584304,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::buyers",
+          "canonical_name": "Buyers",
+          "entity_type": "actor",
+          "matched_alias": "buyer",
+          "specificity": 0.5902681878316313,
+          "score_contribution": 2.361073,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "supplier",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::risk::shock",
+          "canonical_name": "Shock",
+          "entity_type": "risk",
+          "matched_alias": "shocks",
+          "specificity": 0.18153394948248638,
+          "score_contribution": 0.326761,
+          "is_generic": true
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.042911682349738266,
+          "score_contribution": 0.077241,
+          "is_generic": true
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "trigger": "enable",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 11.282639
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::buyers",
+          "target_name": "Buyers",
+          "trigger": "enable",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 2,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.761352
+        },
+        {
+          "relation_type": "ENABLES",
+          "source_entity_id": "entity::policy::trade_facilitation",
+          "source_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "enable",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 3,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 10.176984
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "trigger": "shocks",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.06322
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::actor::buyers",
+          "target_name": "Buyers",
+          "trigger": "shocks",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 1,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 8.541933
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "shocks",
+          "evidence_text": "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+          "sentence_index": 4,
+          "support_count": 11,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 7.46715
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::new_suppliers",
+          "target_name": "New Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse)."
+          ],
+          "score_contribution": 4.393345
+        },
+        {
+          "source_entity_id": "entity::actor::new_suppliers",
+          "source_name": "New Suppliers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse)."
+          ],
+          "score_contribution": 4.022399
+        },
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::policy::trade_facilitation",
+          "via_name": "Trade Facilitation",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "ENABLES",
+            "ENABLES"
+          ],
+          "evidence_texts": [
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse).",
+            "Trade facilitation policies can also help maintain supply in case of shocks and enable new trade relationships The ability to identify and rely on a new supplier or buyer is not automatic when importing and exporting involve a wide range of documents, pro cesses and agencies, and goods cross borders multiple times (increasingly to include recycling and reuse)."
+          ],
+          "score_contribution": 3.481805
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 10.556233,
+        "coverage_bonus": 18.0,
+        "sentence_alignment": 66.662093,
+        "direct_relation": 60.580652,
+        "path_bonus": 11.897549,
+        "lexical_overlap": 0.35,
+        "generic_penalty": 0.25,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.0,
+        "total": 167.796527
+      }
+    },
+    {
+      "rank": 3,
+      "score": 159.04731484018188,
+      "chunk_id": "wto_gvc_2025:p0029:c001",
+      "doc_id": "wto_gvc_2025",
+      "title": "Resilience and Reglobalization: Global Value Chain Trends and New Opportunities",
+      "publisher": "WTO",
+      "page_number": 29,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/gvcreport2025-02_e.pdf",
+      "local_path": "data/raw/gvcreport2025-02_e.pdf",
+      "year": 2025,
+      "text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::actor::buyers",
+          "canonical_name": "Buyers",
+          "entity_type": "actor",
+          "matched_alias": "buyers",
+          "specificity": 0.5902681878316313,
+          "score_contribution": 2.361073,
+          "is_generic": false
+        },
+        {
+          "entity_id": "entity::actor::suppliers",
+          "canonical_name": "Suppliers",
+          "entity_type": "actor",
+          "matched_alias": "supplier",
+          "specificity": 0.3253067233805354,
+          "score_contribution": 1.301227,
+          "is_generic": false
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 4,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.681628
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "target_entity_id": "entity::capability::alignment",
+          "target_name": "Alignment",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.896862
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "target_entity_id": "entity::sector::copper",
+          "target_name": "Copper",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.896862
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "target_entity_id": "entity::system::logistics",
+          "target_name": "Logistics",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.789149
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "target_entity_id": "entity::system::port_infrastructure",
+          "target_name": "Port Infrastructure",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 2,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.789149
+        },
+        {
+          "relation_type": "EXPOSES",
+          "source_entity_id": "entity::actor::suppliers",
+          "source_name": "Suppliers",
+          "target_entity_id": "entity::capability::alignment",
+          "target_name": "Alignment",
+          "trigger": "exposed",
+          "evidence_text": "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+          "sentence_index": 0,
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.539164
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::capability::alignment",
+          "via_name": "Alignment",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "EXPOSES",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors"
+          ],
+          "score_contribution": 3.481805
+        },
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::sector::copper",
+          "via_name": "Copper",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "EXPOSES",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors"
+          ],
+          "score_contribution": 3.481805
+        },
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::system::logistics",
+          "via_name": "Logistics",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "EXPOSES",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors"
+          ],
+          "score_contribution": 3.481805
+        },
+        {
+          "source_entity_id": "entity::actor::buyers",
+          "source_name": "Buyers",
+          "via_entity_id": "entity::system::port_infrastructure",
+          "via_name": "Port Infrastructure",
+          "target_entity_id": "entity::actor::suppliers",
+          "target_name": "Suppliers",
+          "relation_chain": [
+            "EXPOSES",
+            "EXPOSES"
+          ],
+          "evidence_texts": [
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors",
+            "een standards • Energy ministry • Customs • Standards body Critical minerals & processing • Develop lithium/copper value added hubs (Chile, Argentina, Peru, Bolivia) • Regional ESG protocols • Open access logistics from Andean & Southern Cone to ports • Share of minerals processed domestically • Adoption of ESG/traceability standards • Corridor throughput • Mining and industry ministries • Ports authority Attracting investment • Onestop FDI window • Beneficialownership registry linked to customs risk • Port proximate SEZ/bonded zones (Santos, Callao, Colón, Cartagena) • Unified permits and eprocurement • FDI approval SLA • BO matches in risk engine • SEZ/bonded site count • Share of tenders via eprocurement • Investment agency • Justice and customs US/EU industrial policy alignment • Conclude MRAs for conformity assessment, adopt ISO/IEC & cybersecurity baselines, CBAM readiness in exposed sectors, supplier compliance programmes for USMCA/ EU buyers • MRA coverage • CBAM ready sectors"
+          ],
+          "score_contribution": 3.481805
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 3.6623,
+        "coverage_bonus": 4.5,
+        "sentence_alignment": 72.692915,
+        "direct_relation": 70.99488,
+        "path_bonus": 13.92722,
+        "lexical_overlap": 0.07,
+        "generic_penalty": 2.0,
+        "query_miss_penalty": 4.8,
+        "hub_penalty": 0.0,
+        "total": 159.047315
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

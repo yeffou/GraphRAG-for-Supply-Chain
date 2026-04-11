@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T121641919297+0000_how_does_collaboration_strengthen_supply_chain_res",
+  "timestamp_utc": "2026-04-11T12:16:41.919297+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "How does collaboration strengthen supply chain resilience?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.8591057658195496,
+      "chunk_id": "itf_collaboration_scm_2018:p0006:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster. Drivers of Supply Chain Collaboration Several authors have studied and mentioned the benefits of supply chain collaboration . Horvath (2001) has listed one benefit of collaboration in term s of information infrastucture such as theconnectivity network that will be opened at lower cost . This helps smaller firm s to access information at a lower investment cost. Min et al., (2005) studied supply chain collaboration by using a qualitative approach and observed that firms gain benefits from long-term collaboration as they are often not seen in the early period of collaboration . The usual consequence of collaboration is presented in the form of efficiency, effectiveness and profitability .The benefit of collaboration in term s of",
+      "char_count": 996
+    },
+    {
+      "rank": 2,
+      "score": 0.856478214263916,
+      "chunk_id": "itf_collaboration_scm_2018:p0027:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 27,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 26 © OECD/ITF 2018 Conclusions Collaboration between supply chain members is critical for the improvement of its performance and competitiveness. The link between supply chain collaboration and resilience has yet to be fully explored. Nonetheless there are already clear benefits of collaboration in relation to resilience. Defining the scope of collaboration is important as a framework is needed to explain the drivers of collaboration. In order to achieve collaboration in supply chains, members need to trust each other . This is one of th e biggest hurdles and often due to difference s in bargaining power. Members with less bargaining power tend not to trust those with stronger power . The win -win situation needs to be demonstrated by the member with stronger bargaining power who are often referred to as the “focal” firm in a supply chain. However, having trust is not sufficient.",
+      "char_count": 998
+    },
+    {
+      "rank": 3,
+      "score": 0.8519365191459656,
+      "chunk_id": "itf_collaboration_scm_2018:p0036:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 36,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "Collaboration in Supply Chain Management: A Resilience Perspective Published: 10/2018 | Photo credit: Slavomir Kubes/CTK Photo This paper investigates how collaboration between stakeholders can help make supply chains more resilient. It explores innovative ways to operate supply chains and reinforce their resilience, for instance through crowd shipping or gainsharing. The paper also includes a case study on how multi-stakeholder initiatives and public-private partnership can help foster collaboration in supply chains for increased efficiency. International Transport Forum 2 rue André Pascal F-75775 Paris Cedex 16 +33 (0)1 45 24 97 10 contact@itf-oecd.org www.itf-oecd.org",
+      "char_count": 679
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

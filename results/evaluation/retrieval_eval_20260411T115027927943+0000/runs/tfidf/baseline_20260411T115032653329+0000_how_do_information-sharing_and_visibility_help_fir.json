@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T115032653329+0000_how_do_information-sharing_and_visibility_help_fir",
+  "timestamp_utc": "2026-04-11T11:50:32.653329+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "How do information-sharing and visibility help firms identify disruptions early and respond more effectively?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.12198718822297343,
+      "chunk_id": "itf_collaboration_scm_2018:p0009:c003",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "have studied the importance of information sharing on collaboration (Barratt, 2004; Simatupang and Sridharan, 2005; Min et al ., 2005; Slone et al ., 2007; Simatupang and Sridharan, 2008; Wiengarten et al ., 2010 ). Information sharing can be done in many forms such as marketing promotion plans, inventory level partnering, and the sharing of point of sales data (Min et al ., 2005). An information sharing process is required for routine operations but also for tactical and strategic decisions between supply chain partners. This sharing of information would improve supply chain performance (Barratt, 2004; Min et al ., 2005). Wiengarten et al ., (2010) have expanded the collaborative concept from Simatupang and Sridaharan (2005) by investigating the impact of information sharing, incentive alignment and decision synchronisation. The scope of the study focused on the quality of information . Findings are that information sharing plays an important role and has a positive impact on",
+      "char_count": 991
+    },
+    {
+      "rank": 2,
+      "score": 0.10057120100409817,
+      "chunk_id": "itf_collaboration_scm_2018:p0009:c002",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 9,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "t . Incentive alignment can be defined as \"The degree to which supply chain members share costs, risks and benefits\" (Simatupang and Sridharan, 2005). Incentive alignment can also be referred to as mutually sharing risk and reward . Sharing risk and reward is a vital element for collaboration in long-term relationships (Mentzer et al., 2001). There are empirical studies which suggest that incentive alignment significantly impacts a supply chain’s operational performance (Simatupang and Sridharan, 2005; Cao et al., 2010). Information sharing Information sharing is a vital part of the collaborative process . Information sharing has been defined by the Global Lo gistics Research team at Michigan State University (1995) as \"the willingness to make strategic and tactical data available to other member s of the supply chain \". Many authors have studied the importance of information sharing on collaboration (Barratt, 2004; Simatupang and Sridharan, 2005; Min et al ., 2005; Slone et al .,",
+      "char_count": 995
+    },
+    {
+      "rank": 3,
+      "score": 0.0955115285483182,
+      "chunk_id": "wto_wtr_2021:p0013:c001",
+      "doc_id": "wto_wtr_2021",
+      "title": "World Trade Report 2021: Economic resilience and trade",
+      "publisher": "WTO",
+      "page_number": 13,
+      "source_url": "https://www.wto.org/english/res_e/booksp_e/wtr21_e/01_wtr21_e.pdf",
+      "local_path": "data/raw/01_wtr21_e.pdf",
+      "year": 2021,
+      "text": "on can help to achieve more open markets and more inclusive, stable and predictable trade that promotes the diversification of products, suppliers and markets, thus improving resilience to shocks. Cooperation can also promote greater transparency, information-sharing and predictability in the global marketplace, helping countries to better assess production capacities, avoid bottlenecks, manage inventory stocks and prevent excessive stockpiling, enhancing the ability to respond to crises. One example of resilience-enhancing information- sharing is the Agricultural Market Information System (AMIS), a platform of international agencies including the WTO, that tracks supplies of key agricultural commodities, reassuring countries when supplies are adequate and providing a forum for coordinated policy responses when needed. International cooperation on trade takes place at the multilateral, plurilateral and regional levels. In this context, the WTO actively helps to advance trade",
+      "char_count": 989
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

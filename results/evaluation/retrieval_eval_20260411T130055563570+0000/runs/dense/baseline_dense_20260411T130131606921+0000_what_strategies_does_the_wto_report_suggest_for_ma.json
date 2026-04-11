@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T130131606921+0000_what_strategies_does_the_wto_report_suggest_for_ma",
+  "timestamp_utc": "2026-04-11T13:01:31.606921+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "What strategies does the WTO report suggest for managing or mitigating supply chain shocks?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6434601545333862,
+      "chunk_id": "oecd_keys_resilient_supply_chains_2024:p0003:c000",
+      "doc_id": "oecd_keys_resilient_supply_chains_2024",
+      "title": "Keys to resilient supply chains",
+      "publisher": "OECD",
+      "page_number": 3,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/global-value-and-supply-chains/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "local_path": "data/raw/Resilient-Supply-Chains-Brochure-2024.pdf",
+      "year": 2024,
+      "text": "Keys to Resilient Supply Chains 3 Understanding the diverse nature of potential disruptions can help governments anticipate the costly and disruptive effects of external risks and undertake early response planning. Given the diverse nature of shocks that have the potential to disrupt modern supply chains, the first step for policy makers is to understand how the various types of developments are likely to impact domestic and international stakeholders. While it is impossible to fully predict future shocks, risk management strategies could involve 1) identification of possible risks and their likelihood, 2) early warning and detection metrics, and 3) early response procedures. These steps can help policy makers to respond to the first signs in a timely and efficient manner . Data and scenario analysis are important to construct these strategies Anticipate risks: Understanding the nature of disruptions",
+      "char_count": 913
+    },
+    {
+      "rank": 2,
+      "score": 0.6267892122268677,
+      "chunk_id": "oecd_preparedness_2024:p0041:c002",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 41,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "ld with global value chains, Washington, DC: International Monetary Fund. [13] Inoue, H. and Y. Todo (2019), “Firm-level propagation of shocks through supply-chain networks”, Nature Sustainability, Vol. 2/9, pp. 841-847, https://doi.org/10.1038/s41893-019-0351-x. [53] Interos (2022), Resilience 2022. The Interos Annual Global Supply Chain Report, http://www.interos.ai. [95] Jaax, A., S. Miroudot and E. van Lieshout (2023), “Deglobalisation? The reorganisation of global value chains in a changing world”, OECD Trade Policy Papers, No. 272, OECD Publishing, Paris, https://doi.org/10.1787/b15b74fe-en. [80] Jain, N., K. Girotra and S. Netessine (2022), “Recovering Global Supply Chains from Sourcing Interruptions: The Role of Sourcing Strategy”, Manufacturing &amp; Service Operations Management, Vol. 24/2, pp. 846-863, https://doi.org/10.1287/msom.2021.0967. [78] Javorcik, B. et al. (2023), “Economic costs of friend-shoring”, EBRD Working Paper, No. 274, European Bank for Reconstruction and",
+      "char_count": 999
+    },
+    {
+      "rank": 3,
+      "score": 0.614680290222168,
+      "chunk_id": "unctad_gsc_2023:p0007:c000",
+      "doc_id": "unctad_gsc_2023",
+      "title": "Economic Development in Africa Report 2023 - Chapter 1: Global supply chains: Turning disruption into opportunity",
+      "publisher": "UNCTAD",
+      "page_number": 7,
+      "source_url": "https://unctad.org/system/files/official-document/aldcafrica2023_Ch1_en.pdf",
+      "local_path": "data/raw/aldcafrica2023_Ch1_en.pdf",
+      "year": 2023,
+      "text": "The Potential of Africa to Capture Technology-Intensive Global Supply Chains 27 Supply chain components Product development Sourcing procurement Manufacturing Logistics Distribution Customer service CustomersOrder fulﬁlment or sales and product delivery Distributors, wholesalers, retailers Transport and warehouses Tier 1 suppliers combine them to create a product Tier 2 suppliers reﬁne them into basic parts Tier 3 suppliers source raw materials Public or private research based on market needs 1.3 The spectre of the impact of global shocks on supply chains It is important to understand the nature of recent systemic events and their impact on global supply chains (see table 1). The 2008–2009 global financial and economic crisis, which began with the collapse of large investment banks based in the United States (for example, Lehman Brothers) and an unprecedented deterioration of the world economy, resulted in the tightening of credit and a fall in demand for certain goods and services",
+      "char_count": 996
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

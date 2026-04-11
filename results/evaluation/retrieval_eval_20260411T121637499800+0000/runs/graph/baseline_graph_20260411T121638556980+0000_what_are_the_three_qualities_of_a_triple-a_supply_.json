@@ -1,0 +1,486 @@
+{
+  "run_id": "baseline_graph_20260411T121638556980+0000_what_are_the_three_qualities_of_a_triple-a_supply_",
+  "timestamp_utc": "2026-04-11T12:16:38.556980+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "What are the three qualities of a triple-A supply chain according to the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::organization::oecd",
+      "canonical_name": "OECD",
+      "entity_type": "organization",
+      "matched_alias": "oecd"
+    },
+    {
+      "entity_id": "entity::system::supply_chain",
+      "canonical_name": "Supply Chain",
+      "entity_type": "system",
+      "matched_alias": "supply chain"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 57.911829300776304,
+      "chunk_id": "oecd_preparedness_2024:p0006:c000",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": " 5 OECD TRADE POLICY PAPER NO. 286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods. Resilience of global supply chains was therefore elevated to a new priority in policymaking. Resilience means that the next crisis should be man aged to minimise losses to society, while ensuring a rapid return to normal. This report contributes to the debate on effective solutions for, and the appropriate role of government in , assuring the resilience of critical global supply chains by undertaking a review of both the supply chain management literature and recent actions by firms and governments to strengthen the resilience of supply chains. The global supply chains that produce most goods today incorporate inputs from globally diverse sources. These linkages enable participation in a system of enhanced productivity, quality, and innovation. The same linkages can also represent a country’s exposure to",
+      "char_count": 993,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shortage",
+          "source_name": "Shortage",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+          "support_count": 19,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruptions",
+          "evidence_text": "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+          "support_count": 21,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruptions",
+          "evidence_text": "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::covid_19",
+          "via_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods."
+          ],
+          "score_contribution": 2.900539
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::shortage",
+          "via_name": "Shortage",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods."
+          ],
+          "score_contribution": 2.900539
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods.",
+            "286 © OECD 2024 Executive Summary The COVID-19 crisis created awareness of how supply chain disruptions can trigger shortages of essential goods."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 0.876571,
+        "coverage_bonus": 8.0,
+        "direct_relation": 40.423641,
+        "path_bonus": 8.701617,
+        "lexical_overlap": 0.55,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.64,
+        "total": 57.911829
+      }
+    },
+    {
+      "rank": 2,
+      "score": 54.3609933007763,
+      "chunk_id": "oecd_scrr_2025:p0045:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 45,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ure developments, show increases in both business and consumer uncertainty for the OECD area in the aftermath of 9/11 and the global financial crisis, at the beginning of the COVID -19 pandemic and, particularly for consumers, following Russia’s war of aggression against Ukraine (Figure 3.2). While assessing the resilience of global supply chains, it is important to keep in mind that the period 2020- 2022 posed challenges of a previously unseen magnitude. This is apparent in Figure 3.3. It displays the Federal Reserve Bank of New York’s Global Supply Chain Pressure Index (GSCPI), a summary measure of supply chain disruption. The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g. the earthquake in Japan and the floods in Thailand in 2011). Despite continuing geopolitical tensions, the GSCPI has been below its long-term average since",
+      "char_count": 999,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "It displays the Federal Reserve Bank of New York’s Global Supply Chain Pressure Index (GSCPI), a summary measure of supply chain disruption.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g.",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::pandemic",
+          "source_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g.",
+          "support_count": 38,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::shock",
+          "source_name": "Shock",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "shocks",
+          "evidence_text": "The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g.",
+          "support_count": 79,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::covid_19",
+          "source_name": "COVID-19",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": null,
+          "evidence_text": "ure developments, show increases in both business and consumer uncertainty for the OECD area in the aftermath of 9/11 and the global financial crisis, at the beginning of the COVID -19 pandemic and, particularly for consumers, following Russia’s war of aggression against Ukraine (Figure 3.2).",
+          "support_count": 21,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::covid_19",
+          "via_name": "COVID-19",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "ure developments, show increases in both business and consumer uncertainty for the OECD area in the aftermath of 9/11 and the global financial crisis, at the beginning of the COVID -19 pandemic and, particularly for consumers, following Russia’s war of aggression against Ukraine (Figure 3.2).",
+            "The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g."
+          ],
+          "score_contribution": 2.900539
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::pandemic",
+          "via_name": "Pandemic",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "ure developments, show increases in both business and consumer uncertainty for the OECD area in the aftermath of 9/11 and the global financial crisis, at the beginning of the COVID -19 pandemic and, particularly for consumers, following Russia’s war of aggression against Ukraine (Figure 3.2).",
+            "The values of the GSCPI observed at the height of the COVID -19 pandemic crisis dwarfe d anything seen in the previous two decades, a period which itself had witnessed some significant supply chain shocks (e.g."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 0.876571,
+        "coverage_bonus": 8.0,
+        "direct_relation": 40.590844,
+        "path_bonus": 5.801078,
+        "lexical_overlap": 0.4125,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.32,
+        "total": 54.360993
+      }
+    },
+    {
+      "rank": 3,
+      "score": 48.2235953007763,
+      "chunk_id": "itf_collaboration_scm_2018:p0006:c000",
+      "doc_id": "itf_collaboration_scm_2018",
+      "title": "Collaboration in Supply Chain Management",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/collaboration-in-supply-chain-management_37d84b56/7001c5d6-en.pdf",
+      "local_path": "data/raw/collaboration-supply-chain-management.pdf",
+      "year": 2018,
+      "text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster. Drivers of Supply Chain Collaboration Several authors have studied and mentioned the benefits of supply chain collaboration . Horvath (2001) has listed one benefit of collaboration in term s of information infrastucture such as theconnectivity network that will be opened at lower cost . This helps smaller firm s to access information at a lower investment cost. Min et al., (2005) studied supply chain collaboration by using a qualitative approach and observed that firms gain benefits from long-term collaboration as they are often not seen in the early period of collaboration . The usual consequence of collaboration is presented in the form of efficiency, effectiveness and profitability .The benefit of collaboration in term s of",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::system::supply_chain",
+          "canonical_name": "Supply Chain",
+          "entity_type": "system",
+          "matched_alias": "supply chain",
+          "specificity": 0.14316973720459816,
+          "score_contribution": 0.5010940802160936
+        },
+        {
+          "entity_id": "entity::organization::oecd",
+          "canonical_name": "OECD",
+          "entity_type": "organization",
+          "matched_alias": "oecd",
+          "specificity": 0.10727920587434565,
+          "score_contribution": 0.37547722056020977
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::natural_disaster",
+          "source_name": "Natural Disaster",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 7,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.221694
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.191187
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::natural_disaster",
+          "source_name": "Natural Disaster",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 1,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 5.733789
+        },
+        {
+          "relation_type": "APPLIES_TO",
+          "source_entity_id": "entity::capability::recovery",
+          "source_name": "Recovery",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": null,
+          "evidence_text": "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+          "support_count": 13,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 3.321694
+        }
+      ],
+      "supporting_paths": [
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::natural_disaster",
+          "via_name": "Natural Disaster",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster."
+          ],
+          "score_contribution": 2.900539
+        },
+        {
+          "source_entity_id": "entity::organization::oecd",
+          "source_name": "OECD",
+          "via_entity_id": "entity::risk::supply_chain_disruption",
+          "via_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "relation_chain": [
+            "AFFECTS",
+            "AFFECTS"
+          ],
+          "evidence_texts": [
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster.",
+            "COLLABORATION IN SUPPLY CHAIN MANAGEMENT A RESILIENCE PERSPECTIVE | DISCUSSION PAPER | ITF ROUNDTABLE 171 © OECD/ITF 2018 5 all stakeholders on making supply chains resilient and hastening the pace of recovery in the event of a disruption or natural disaster."
+          ],
+          "score_contribution": 2.900539
+        }
+      ],
+      "score_breakdown": {
+        "entity_match": 0.876571,
+        "coverage_bonus": 8.0,
+        "direct_relation": 34.333446,
+        "path_bonus": 5.801078,
+        "lexical_overlap": 0.4125,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.2,
+        "total": 48.223595
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_dense_20260411T130121777228+0000_why_can_relocalising_or_localising_supply_chains_r",
+  "timestamp_utc": "2026-04-11T13:01:21.777228+00:00",
+  "method": "baseline_dense",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "query_text": "Why can relocalising or localising supply chains reduce resilience rather than improve it?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_dense",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.6998999714851379,
+      "chunk_id": "oecd_scrr_2025:p0103:c002",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 103,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "ve resilience (Mizgier, Wagner and Jüttner, 2015[10]). For example, geographic de -risking, such as re -shoring, friend-shoring or near -shoring, aims to reduce dependency on high-risk regions but often falls short of expectations. The reason is that only one segment of the supply chain ( such as the final assembly) is generally re -shored or moved to another location, just pushing the risk associated with foreign supply upstream (Choudhary et al., 2022 [11]). It is generally not possible to re-shore the whole supply chain (because there are many companies and industries involved, located in different countries, each with its own challenges when it comes to reshoring). Moreover, concentrating all production stages in the same location would create even higher levels of risks. There are similar considerations regarding dual sourcing or diversification of supply at the firm level. On the one hand, it is useful to have several suppliers to ensure the security of supply for essential",
+      "char_count": 994
+    },
+    {
+      "rank": 2,
+      "score": 0.6652637720108032,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0006:c002",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 6,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "ssociated fragmentation of value-adding processes has resulted in value being added incrementally in many more locations and more movement of products between these locations, much of it across international borders. The average distance between the nodes at which products are processed, assembled, customised, stored and handled has also substantially increased. Other things being equal, this increase in the length and complexity of supply chains is likely to have increased their vulnerability. However, other things have not been equal, however. The locations through which many of the chains are now routed are inherently more risky because of their climate, geophysics, political instability, poor infrastructure, etc. Much more of the freight has to cross in ternational frontiers where it can be held up, sometimes for several days, by administrative procedures. The globali sation of supply chains has also increased companies’ dependence on multimodality as no single transport mode can",
+      "char_count": 998
+    },
+    {
+      "rank": 3,
+      "score": 0.6589177250862122,
+      "chunk_id": "oecd_scrr_2025:p0043:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 43,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": " 41 OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Recent shocks and disruptions have sharpened awareness of the potential risks associated with reliance on international supply. This chapter explores these concerns and uses modelling to understand where vulnerabilities may lie and the possible effects of shocks. It also assesses the likely economic impacts of attempts to “re-localise” production. 3 Understanding trade dependency and the impacts of disruptions",
+      "char_count": 466
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

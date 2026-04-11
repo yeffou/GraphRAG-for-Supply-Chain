@@ -1,0 +1,364 @@
+{
+  "run_id": "baseline_graph_20260411T121639328761+0000_which_four_types_of_external_disruptions_does_the_",
+  "timestamp_utc": "2026-04-11T12:16:39.328761+00:00",
+  "method": "baseline_graph",
+  "embedding_model": "graph_entity_relation_v2",
+  "query_text": "Which four types of external disruptions does the transport resilience report focus on?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_graph",
+  "query_entities": [
+    {
+      "entity_id": "entity::capability::resilience",
+      "canonical_name": "Resilience",
+      "entity_type": "capability",
+      "matched_alias": "resilience"
+    },
+    {
+      "entity_id": "entity::risk::supply_chain_disruption",
+      "canonical_name": "Supply Chain Disruption",
+      "entity_type": "risk",
+      "matched_alias": "disruptions"
+    }
+  ],
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 68.24651599524648,
+      "chunk_id": "worldbank_scm_guidance_2023:p0016:c003",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 16,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "general overview of SCM functions and their objectives, please see Annex III): ◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+      "char_count": 580,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "supply chain disruptions",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilient",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 74,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.76783
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::covid_19",
+          "target_name": "COVID-19",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 18,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shock",
+          "target_name": "Shock",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 41,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.332772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::shortage",
+          "target_name": "Shortage",
+          "trigger": "withstand",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 3,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.117975
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::logistics",
+          "target_name": "Logistics",
+          "trigger": "disruptions",
+          "evidence_text": "◾ Making the supply chain more resilient (e.g., creating a supply chain that can withstand shocks and disruptions) ◾ Responding to supply chain disruptions (e.g., caused by COVID-19, natural catastrophes, delays at customs) and market distortions (e.g., a constrained global supply) ◾ Addressing transportation challenges and delays (e.g., posed by more complex logistics arrange- ments and higher costs) ◾ Managing increased delivery lead times (e.g., due to supply shortages or capacity limitations)",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 58.492183,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.244444,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 1.24,
+        "total": 68.246516
+      }
+    },
+    {
+      "rank": 2,
+      "score": 67.92739899524646,
+      "chunk_id": "oecd_preparedness_2024:p0026:c002",
+      "doc_id": "oecd_preparedness_2024",
+      "title": "Promoting resilience and preparedness in supply chains",
+      "publisher": "OECD",
+      "page_number": 26,
+      "source_url": "https://www.oecd.org/en/publications/promoting-resilience-and-preparedness-in-supply-chains_be692d01-en.html",
+      "local_path": "data/raw/be692d01-en.pdf",
+      "year": 2024,
+      "text": "is the Supply Chain Resilience Initiative between Australia, India and Japan.24 Two Ministerial meetings took place in April 2021 and March 2022. The initiative encourages the sharing of best practices on supply chain resilience and the support of trade and investment diversification. The US Supply Chain initiative also put the emphasis on international co-operation to decrease global vulnerabilities. In October 2021, the United States organised a Summit on Global Supply Chain Resilience with the European Union and 14 like-minded countries.25 A follow-up dialogue took place in July 2022 with the organisation of a Supply Chain Ministerial where 17 countries (and the European Union) joined the Joint Statement of Cooperation on Global Supply Chains .26 Participants intend to work together on crisis response to mitigate supply chain disruptions and to build collective, long -term resilience through a set of principles, such as transparency, diversification, security and sustainability.",
+      "char_count": 996,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "supply chain disruptions",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "mitigate",
+          "evidence_text": "In October 2021, the United States organised a Summit on Global Supply Chain Resilience with the European Union and 14 like-minded countries.25 A follow-up dialogue took place in July 2022 with the organisation of a Supply Chain Ministerial where 17 countries (and the European Union) joined the Joint Statement of Cooperation on Global Supply Chains .26 Participants intend to work together on crisis response to mitigate supply chain disruptions and to build collective, long -term resilience through a set of principles, such as transparency, diversification, security and sustainability.",
+          "support_count": 74,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.76783
+        },
+        {
+          "relation_type": "STRENGTHENS",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "direct_pair",
+          "evidence_text": "The initiative encourages the sharing of best practices on supply chain resilience and the support of trade and investment diversification.",
+          "support_count": 47,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.932772
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::strategy::diversification",
+          "source_name": "Diversification",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "mitigate",
+          "evidence_text": "In October 2021, the United States organised a Summit on Global Supply Chain Resilience with the European Union and 14 like-minded countries.25 A follow-up dialogue took place in July 2022 with the organisation of a Supply Chain Ministerial where 17 countries (and the European Union) joined the Joint Statement of Cooperation on Global Supply Chains .26 Participants intend to work together on crisis response to mitigate supply chain disruptions and to build collective, long -term resilience through a set of principles, such as transparency, diversification, security and sustainability.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.335058
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::global_supply_chain",
+          "target_name": "Global Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "In October 2021, the United States organised a Summit on Global Supply Chain Resilience with the European Union and 14 like-minded countries.25 A follow-up dialogue took place in July 2022 with the organisation of a Supply Chain Ministerial where 17 countries (and the European Union) joined the Joint Statement of Cooperation on Global Supply Chains .26 Participants intend to work together on crisis response to mitigate supply chain disruptions and to build collective, long -term resilience through a set of principles, such as transparency, diversification, security and sustainability.",
+          "support_count": 12,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::system::supply_chain",
+          "target_name": "Supply Chain",
+          "trigger": "disruptions",
+          "evidence_text": "In October 2021, the United States organised a Summit on Global Supply Chain Resilience with the European Union and 14 like-minded countries.25 A follow-up dialogue took place in July 2022 with the organisation of a Supply Chain Ministerial where 17 countries (and the European Union) joined the Joint Statement of Cooperation on Global Supply Chains .26 Participants intend to work together on crisis response to mitigate supply chain disruptions and to build collective, long -term resilience through a set of principles, such as transparency, diversification, security and sustainability.",
+          "support_count": 164,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 57.453066,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.244444,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.52,
+        "total": 67.927399
+      }
+    },
+    {
+      "rank": 3,
+      "score": 66.17386277302424,
+      "chunk_id": "itf_balance_efficiency_resilience_2018:p0017:c000",
+      "doc_id": "itf_balance_efficiency_resilience_2018",
+      "title": "Balancing Efficiency and Resilience in Multimodal Supply Chains",
+      "publisher": "OECD/ITF",
+      "page_number": 17,
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/10/balancing-efficiency-and-resilience-in-multimodal-supply-chains_f089d44f/c55d2768-en.pdf",
+      "local_path": "data/raw/c55d2768-en.pdf",
+      "year": 2018,
+      "text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption. Many companies and governments are still not doing enough to monitor changing supply chain risk profiles and to update their contingency planning. Organisations such as the ITF have a key role to play in keeping risk and resilience high on the agenda of senior executives and public policy makers. The Roundtable extended previous discussion of the subject into a closer examination of the trade -offs between resilience, efficiency and sustainab ility. The title of the event referred to the ‘balancing’ of these objectives, suggesting that the y might be given equal weight. In practice, their relative weighting has to vary in the light of economic and",
+      "char_count": 997,
+      "contributing_entities": [
+        {
+          "entity_id": "entity::risk::supply_chain_disruption",
+          "canonical_name": "Supply Chain Disruption",
+          "entity_type": "risk",
+          "matched_alias": "disruption",
+          "specificity": 0.3941858791392229,
+          "score_contribution": 1.37965057698728
+        },
+        {
+          "entity_id": "entity::capability::resilience",
+          "canonical_name": "Resilience",
+          "entity_type": "capability",
+          "matched_alias": "resilience",
+          "specificity": 0.3914965639470718,
+          "score_contribution": 1.3702379738147512
+        }
+      ],
+      "contributing_relations": [
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::resilience",
+          "source_name": "Resilience",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 74,
+          "direct_query_pair": true,
+          "query_aligned": true,
+          "score_contribution": 9.76783
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 10,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.335058
+        },
+        {
+          "relation_type": "MITIGATES",
+          "source_entity_id": "entity::capability::recovery",
+          "source_name": "Recovery",
+          "target_entity_id": "entity::risk::supply_chain_disruption",
+          "target_name": "Supply Chain Disruption",
+          "trigger": "recover",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 30,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 7.335058
+        },
+        {
+          "relation_type": "TRADE_OFF_WITH",
+          "source_entity_id": "entity::capability::efficiency",
+          "source_name": "Efficiency",
+          "target_entity_id": "entity::capability::resilience",
+          "target_name": "Resilience",
+          "trigger": "balancing",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 34,
+          "direct_query_pair": false,
+          "query_aligned": false,
+          "score_contribution": 6.532772
+        },
+        {
+          "relation_type": "AFFECTS",
+          "source_entity_id": "entity::risk::supply_chain_disruption",
+          "source_name": "Supply Chain Disruption",
+          "target_entity_id": "entity::organization::oecd",
+          "target_name": "OECD",
+          "trigger": "disruption",
+          "evidence_text": "BALANCING EFFICIENCY AND RESILIENCE IN MULTIMODAL SUPPLY CHAINS | DISCUSSION PAPER | ITF ROUNDTABLE 171 16 © OECD/ITF 2018 Conclusions Supply chain resilience has been much researched, written -about and discussed for many years but many supply chains remain relatively frag ile and would take a long time to recover from a major disruption.",
+          "support_count": 31,
+          "direct_query_pair": false,
+          "query_aligned": true,
+          "score_contribution": 6.435058
+        }
+      ],
+      "supporting_paths": [],
+      "score_breakdown": {
+        "entity_match": 2.749889,
+        "coverage_bonus": 8.0,
+        "direct_relation": 55.781752,
+        "path_bonus": 0.0,
+        "lexical_overlap": 0.122222,
+        "query_miss_penalty": 0.0,
+        "hub_penalty": 0.48,
+        "total": 66.173863
+      }
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}

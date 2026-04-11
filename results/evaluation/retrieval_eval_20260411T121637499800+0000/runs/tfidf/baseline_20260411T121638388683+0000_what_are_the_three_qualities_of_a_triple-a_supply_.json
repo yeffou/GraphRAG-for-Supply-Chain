@@ -1,0 +1,62 @@
+{
+  "run_id": "baseline_20260411T121638388683+0000_what_are_the_three_qualities_of_a_triple-a_supply_",
+  "timestamp_utc": "2026-04-11T12:16:38.388683+00:00",
+  "method": "baseline_rag",
+  "embedding_model": "tfidf_word_unigram_bigram_l2_v1",
+  "query_text": "What are the three qualities of a triple-A supply chain according to the OECD review?",
+  "top_k": 3,
+  "index_dir": "/Users/jaafaryeffou/Desktop/GraphRAG Domain-Specific LLMs/results/indexes/baseline_tfidf",
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "score": 0.14399851324458543,
+      "chunk_id": "oecd_scrr_2025:p0100:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 100,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "98  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 Supply chains are created and managed by firms, which are well positioned to provide insights on effective approaches to build resilience to shocks and disruptions. This chapter analyses the types of risks faced by firms and identifies successful practices. It highlights the role of “triple-A” supply chains – agile, adaptable and aligned – as a reliable source of resilience. 5 Risk management at the firm-level",
+      "char_count": 466
+    },
+    {
+      "rank": 2,
+      "score": 0.13420511965459855,
+      "chunk_id": "oecd_scrr_2025:p0104:c000",
+      "doc_id": "oecd_scrr_2025",
+      "title": "OECD Supply Chain Resilience Review: Navigating Risks",
+      "publisher": "OECD",
+      "page_number": 104,
+      "source_url": "https://www.oecd.org/en/publications/oecd-supply-chain-resilience-review_94e3a8ea-en.html",
+      "local_path": "data/raw/94e3a8ea-en.pdf",
+      "year": 2025,
+      "text": "102  OECD SUPPLY CHAIN RESILIENCE REVIEW © OECD 2025 market arbitrage, shifting production and exploiting opportunities in local markets. During COVID-19, GVC firms were more resilient due to this capacity to shift production (Giglioli et al., 2021 [19]; Bonadio et al., 2021[20]). Global firms with the best risk management strategies generally benefit from crises because they respond faster than their competition to disruptions (Sheffi, 2015[2]; Sheffi, 2020[4]). 5.3. Triple-A supply chains can deal with uncertainty and change, while preserving the benefits of open trade Top-performing firms tend to have supply chains that possess three different qualities. Described as “triple- A” supply chains (Lee, 2004[21]), they are (1) agile, meaning that they can react quickly to any change in demand or supply; (2) they are adaptable, as they can adjust over time to structural changes and evolving strategies; and (3) they align the interests of all suppliers in the production network,",
+      "char_count": 990
+    },
+    {
+      "rank": 3,
+      "score": 0.13087441264696262,
+      "chunk_id": "worldbank_scm_guidance_2023:p0105:c001",
+      "doc_id": "worldbank_scm_guidance_2023",
+      "title": "Supply Chain Management Guidance",
+      "publisher": "World Bank",
+      "page_number": 105,
+      "source_url": "https://thedocs.worldbank.org/en/doc/1c3b517f003b53a2e2e170e93124be84-0290032023/original/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "local_path": "data/raw/World-Bank-Supply-Chain-Management-Guidance.pdf",
+      "year": 2023,
+      "text": "d what implications does this have for the supply chain? ◾ What is the level of bureaucracy? What is the level of fraud and corruption? To what degree does the rule of law apply? ◾ Are there any current or developing geopolitical tensions that may impact current/ future trading relationships? Economic ◾ What are current and anticipated future interest rates, tax systems, economic growth dynamics, inflation pressures, and exchange rates? ◾ What implications does this have on workforce availability, commodity prices, and economic health in the states, regions and/or countries involved? Social ◾ What are the dominant social trends that could influence demand for the products or services (for instance, population growth/decline, change in behaviors/tastes)? ◾ What can influence the ability or willingness of employees to work? ◾ What are typical employment structures in the supply chain (for example, temporary vs. full-time employment, hiring of foreign workers)? ◾ What social standards are",
+      "char_count": 1000
+    }
+  ],
+  "generation": {
+    "attempted": false,
+    "status": "skipped",
+    "reason": "generation not requested",
+    "model": null,
+    "prompt_template_version": null,
+    "answer": null,
+    "error": null
+  }
+}
