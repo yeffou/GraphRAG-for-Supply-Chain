@@ -188,11 +188,11 @@ def run_hybrid_graph_query(
         relation_signal = _relation_signal(graph_chunk)
 
         total = (
-            0.50 * dense_similarity
-            + 0.10 * graph_score
-            + 0.10 * dense_rank_signal
-            + 0.06 * graph_rank_signal
-            + 0.12 * entity_coverage
+            0.38 * dense_similarity
+            + 0.18 * graph_score
+            + 0.08 * dense_rank_signal
+            + 0.10 * graph_rank_signal
+            + 0.14 * entity_coverage
             + 0.12 * relation_signal
         )
 

@@ -39,3 +39,6 @@ results/runs/*
 results/evaluations/*
 results/answers/*
 results/answer_evaluation/*
+results/animations/*
+results/demo_runs/*
+.claude/

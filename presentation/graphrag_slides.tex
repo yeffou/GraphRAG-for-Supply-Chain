@@ -1,0 +1,786 @@
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% ── Theme: clean, minimal, Canva-inspired ───────────────────────
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{itemize items}[circle]
+\setbeamersize{text margin left=1.2cm, text margin right=1.2cm}
+
+% ── Packages ────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, calc, backgrounds, fit, decorations.soft, shadows.blur}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+% ── Color Palette (dark modern) ─────────────────────────────────
+\definecolor{bg}{HTML}{0F0F1A}
+\definecolor{card}{HTML}{1A1A2E}
+\definecolor{cardborder}{HTML}{2A2A44}
+\definecolor{pink}{HTML}{E94560}
+\definecolor{blue}{HTML}{4DA8FF}
+\definecolor{purple}{HTML}{A855F7}
+\definecolor{green}{HTML}{34D399}
+\definecolor{orange}{HTML}{FB923C}
+\definecolor{yellow}{HTML}{FACC15}
+\definecolor{cyan}{HTML}{22D3EE}
+\definecolor{whitetext}{HTML}{F0F0F5}
+\definecolor{graytext}{HTML}{9CA3AF}
+\definecolor{dimtext}{HTML}{6B7280}
+\definecolor{softpink}{HTML}{FDE8EC}
+\definecolor{softblue}{HTML}{DBEAFE}
+\definecolor{softgreen}{HTML}{D1FAE5}
+\definecolor{softorange}{HTML}{FED7AA}
+\definecolor{softpurple}{HTML}{EDE9FE}
+
+% ── Beamer overrides ────────────────────────────────────────────
+\setbeamercolor{background canvas}{bg=bg}
+\setbeamercolor{normal text}{fg=whitetext}
+\setbeamercolor{frametitle}{fg=whitetext}
+\setbeamercolor{itemize item}{fg=pink}
+\setbeamercolor{itemize subitem}{fg=blue}
+\setbeamerfont{frametitle}{size=\LARGE, series=\bfseries}
+
+% ── Custom card / badge macros ──────────────────────────────────
+\tikzset{
+  maincard/.style={
+    draw=cardborder, rounded corners=8pt, fill=card,
+    inner sep=10pt, text=whitetext,
+  },
+  badge/.style 2 args={
+    rounded corners=4pt, fill=#1!18, draw=#1!40, text=#1,
+    font=\footnotesize\bfseries, inner sep=3pt 6pt,
+  },
+  flowbox/.style={
+    draw=cardborder, rounded corners=6pt, fill=card,
+    minimum width=2.8cm, minimum height=0.9cm,
+    font=\small, text=whitetext, align=center,
+  },
+  flowarrow/.style={-{Stealth[length=5pt]}, thick, pink!70},
+  entity/.style={
+    circle, draw=#1, fill=#1!20, minimum size=1.1cm,
+    font=\tiny\bfseries, text=whitetext, align=center, inner sep=1pt,
+  },
+  entitylarge/.style={
+    circle, draw=#1, fill=#1!25, minimum size=1.5cm,
+    font=\scriptsize\bfseries, text=whitetext, align=center, inner sep=1pt,
+  },
+  relation/.style={-{Stealth[length=4pt]}, thick, #1},
+}
+
+% slide counter in bottom right (subtle)
+\addtobeamertemplate{footline}{}{%
+  \hfill\raisebox{4pt}{\color{dimtext}\scriptsize\insertframenumber/\inserttotalframenumber\hspace{8pt}}%
+  \vspace{3pt}
+}
+
+% ════════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── SLIDE 1: Title ──────────────────────────────────────────────
+{
+\setbeamertemplate{footline}{}
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[bg] (current page.south west) rectangle (current page.north east);
+    % glow circles
+    \fill[pink, opacity=0.08] ([xshift=-2cm, yshift=-1cm]current page.north east) circle (6cm);
+    \fill[blue, opacity=0.06] ([xshift=3cm, yshift=2cm]current page.south west) circle (5cm);
+    \fill[purple, opacity=0.05] (current page.center) circle (3.5cm);
+    % badge
+    \node[badge={pink}{}, font=\small\bfseries] at ([yshift=2.8cm]current page.center) {GENERATIVE AI --- FINAL PROJECT};
+    % title
+    \node[anchor=center, text=whitetext, font=\fontsize{30}{34}\bfseries\selectfont, text width=13cm, align=center]
+      at ([yshift=1.2cm]current page.center) {GraphRAG for Domain-Specific LLMs};
+    % subtitle
+    \node[anchor=center, text=graytext, font=\large, text width=11cm, align=center]
+      at ([yshift=-0.3cm]current page.center)
+      {How a Knowledge Graph beats Vector Search\\on Complex Supply-Chain Questions};
+    % line
+    \draw[pink, line width=1.5pt] ([xshift=-2.5cm, yshift=-1.2cm]current page.center)
+      -- ([xshift=2.5cm, yshift=-1.2cm]current page.center);
+    % author
+    \node[anchor=center, text=whitetext, font=\Large]
+      at ([yshift=-2cm]current page.center) {Jaafar Yeffou};
+    \node[anchor=center, text=dimtext, font=\small]
+      at ([yshift=-2.7cm]current page.center) {2025\,/\,2026};
+  \end{tikzpicture}
+\end{frame}
+}
+
+% ── SLIDE 2: The Problem ────────────────────────────────────────
+\begin{frame}{}
+  \centering
+  \begin{tikzpicture}
+    % Left card
+    \node[maincard, text width=5.5cm, align=left] (problem) at (-4,0) {
+      {\color{pink}\large\bfseries\faIcon{exclamation-triangle}~~The Problem}\\[8pt]
+      {\color{graytext}\small
+        10 supply-chain reports\\
+        = thousands of pages\\[4pt]
+        Analysts need answers about\\
+        \textbf{\color{whitetext}risks}, \textbf{\color{whitetext}strategies}, \textbf{\color{whitetext}trade-offs}\\[4pt]
+        Standard search finds \textit{words},\\
+        not \textit{relationships}.
+      }
+    };
+    % Right card
+    \node[maincard, text width=5.5cm, align=left] (solution) at (4,0) {
+      {\color{green}\large\bfseries\faIcon{lightbulb}~~Our Approach}\\[8pt]
+      {\color{graytext}\small
+        Build a \textbf{\color{whitetext}Knowledge Graph}\\
+        of entities \& relations\\[4pt]
+        Then \textbf{\color{whitetext}traverse the graph}\\
+        to find evidence that matches\\
+        the \textit{structure} of the question.\\[4pt]
+        {\color{green}Graph understands \textbf{why},}\\
+        {\color{green}not just \textbf{what}.}
+      }
+    };
+    % vs badge
+    \node[circle, draw=pink, fill=pink!20, minimum size=0.9cm, font=\bfseries, text=pink] at (0,0) {vs};
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 3: End-to-End Pipeline ────────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries End-to-End Pipeline}\\[4pt]
+  {\color{graytext}\small From raw PDFs to grounded answers}\\[12pt]
+  \begin{tikzpicture}[node distance=0.25cm and 0.6cm]
+    \node[flowbox] (pdf)   {\faIcon{file-pdf}\\[-1pt]{\tiny 10 PDFs}};
+    \node[flowbox, right=of pdf] (ingest) {\faIcon{cogs}\\[-1pt]{\tiny Ingestion}};
+    \node[flowbox, right=of ingest] (chunk) {\faIcon{puzzle-piece}\\[-1pt]{\tiny 2,022 Chunks}};
+    \node[flowbox, right=of chunk, fill=card, draw=pink!40] (graph) {{\color{pink}\faIcon{project-diagram}}\\[-1pt]{\tiny\color{pink} Graph Build}};
+    \node[flowbox, right=of graph, fill=card, draw=pink!40] (query) {{\color{pink}\faIcon{search}}\\[-1pt]{\tiny\color{pink} Graph Query}};
+    \node[flowbox, right=of query] (llm) {\faIcon{robot}\\[-1pt]{\tiny LLM Answer}};
+
+    \draw[flowarrow] (pdf) -- (ingest);
+    \draw[flowarrow] (ingest) -- (chunk);
+    \draw[flowarrow] (chunk) -- (graph);
+    \draw[flowarrow] (graph) -- (query);
+    \draw[flowarrow] (query) -- (llm);
+
+    % annotations
+    \node[font=\tiny, text=dimtext, below=0.35cm of pdf] {PyPDF};
+    \node[font=\tiny, text=dimtext, below=0.35cm of ingest] {Page-level text};
+    \node[font=\tiny, text=dimtext, below=0.35cm of chunk] {1000c / 150c overlap};
+    \node[font=\tiny, text=pink!70, below=0.35cm of graph] {258 entities, 8{,}453 rels};
+    \node[font=\tiny, text=pink!70, below=0.35cm of query] {Scored \& ranked};
+    \node[font=\tiny, text=dimtext, below=0.35cm of llm] {Grounded + cited};
+
+    % focus bracket
+    \draw[pink, thick, decorate, decoration={brace, amplitude=6pt, mirror}]
+      ([yshift=-1.2cm]graph.south west) -- ([yshift=-1.2cm]query.south east)
+      node[midway, below=8pt, font=\footnotesize\bfseries, text=pink] {This presentation's focus};
+  \end{tikzpicture}
+
+  \vspace{14pt}
+  \begin{tikzpicture}
+    \node[maincard, text width=13cm, align=center] {
+      {\color{graytext}\small\faIcon{info-circle}~~Baselines (TF-IDF \& Dense Embeddings) retrieve by word/meaning similarity.}\\
+      {\color{graytext}\small GraphRAG retrieves by \textbf{\color{pink}entity connections} and \textbf{\color{pink}relation structure}.}
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 4: Baselines in 60 seconds ───────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Baselines at a Glance}\\[14pt]
+  \begin{tikzpicture}
+    % TF-IDF card
+    \node[maincard, text width=5.2cm, align=center] (tfidf) at (-4,0) {
+      {\color{blue}\Large\bfseries\faIcon{sort-alpha-down}~~TF-IDF}\\[8pt]
+      {\color{graytext}\small
+        Counts word frequency\\
+        Unigrams + Bigrams, L2-norm\\[4pt]
+        \textbf{\color{whitetext}Strength:} exact keyword match\\
+        \textbf{\color{orange}Weakness:} no synonyms, no reasoning
+      }\\[8pt]
+      \tikz\node[badge={blue}{}] {sparse vectors};
+    };
+    % Dense card
+    \node[maincard, text width=5.2cm, align=center] (dense) at (4,0) {
+      {\color{purple}\Large\bfseries\faIcon{brain}~~Dense Semantic}\\[8pt]
+      {\color{graytext}\small
+        MiniLM-L6-v2 $\to$ 384-dim\\
+        FAISS nearest-neighbor search\\[4pt]
+        \textbf{\color{whitetext}Strength:} captures meaning\\
+        \textbf{\color{orange}Weakness:} no structural reasoning
+      }\\[8pt]
+      \tikz\node[badge={purple}{}] {dense embeddings};
+    };
+    % Both miss arrow
+    \node[text=orange, font=\footnotesize\bfseries, text width=4cm, align=center]
+      at (0,-2.5) {\faIcon{exclamation-circle}~~Both treat text as flat bags ---\\they cannot reason about \textit{connections}};
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 5: Domain Schema ──────────────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries The Domain Schema}\\[3pt]
+  {\color{graytext}\small 8 entity types with domain-specific importance weights}\\[10pt]
+  \begin{tikzpicture}
+    % Entity type bars (horizontal, sorted by weight)
+    \foreach \etype/\w/\col/\ypos in {
+      strategy/3.0/pink/4.2,
+      policy/2.9/pink/3.5,
+      capability/2.6/blue/2.8,
+      risk/2.4/blue/2.1,
+      actor/1.9/purple/1.4,
+      sector/1.9/purple/0.7,
+      system/1.1/graytext/0.0,
+      organization/0.7/graytext/-0.7%
+    } {
+      \fill[\col!30, rounded corners=2pt] (-5,\ypos-0.15) rectangle (-5+\w*1.5,\ypos+0.15);
+      \draw[\col!60, rounded corners=2pt] (-5,\ypos-0.15) rectangle (-5+\w*1.5,\ypos+0.15);
+      \node[font=\small\bfseries, text=\col, anchor=east] at (-5.2,\ypos) {\etype};
+      \node[font=\scriptsize, text=whitetext] at (-5+\w*1.5+0.3,\ypos) {\w};
+    }
+    % Examples card on right
+    \node[maincard, text width=5.2cm, align=left] at (5,1.8) {
+      {\color{pink}\footnotesize\bfseries EXAMPLES}\\[6pt]
+      {\color{whitetext}\scriptsize
+        \textbf{\color{pink}strategy:} Diversification, Reshoring,\\
+        ~~~~Just-in-Time, Nearshoring\\[3pt]
+        \textbf{\color{blue}risk:} COVID-19, Bottleneck,\\
+        ~~~~Concentration, Cyberattack\\[3pt]
+        \textbf{\color{blue}capability:} Resilience, Flexibility,\\
+        ~~~~Visibility, Agility\\[3pt]
+        \textbf{\color{purple}policy:} Trade Facilitation,\\
+        ~~~~Export Restrictions\\[3pt]
+        \textbf{\color{purple}sector:} Semiconductors, Food,\\
+        ~~~~Pharmaceuticals
+      }
+    };
+    % why it matters
+    \node[maincard, text width=5.2cm, align=center] at (5,-1.5) {
+      {\color{green}\scriptsize\bfseries WHY WEIGHTS?}\\[4pt]
+      {\color{graytext}\scriptsize
+        A ``strategy'' match (3.0) is \textbf{4$\times$} more\\
+        valuable than an ``organization'' match (0.7).\\
+        Domain knowledge encoded directly.
+      }
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 6: Entity Extraction ──────────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Entity Extraction}\\[3pt]
+  {\color{graytext}\small Deterministic, reproducible, no LLM calls}\\[10pt]
+  \begin{tikzpicture}
+    % Input sentence
+    \node[maincard, text width=13cm, align=left] (sent) at (0,2.5) {
+      {\color{dimtext}\tiny SENTENCE FROM CHUNK}\\[3pt]
+      {\small ``\textbf{\color{pink}Diversification} of suppliers \textbf{\color{blue}strengthens}
+      \textbf{\color{green}resilience} against \textbf{\color{orange}supply chain disruptions}.''}
+    };
+
+    % Step 1: alias matching
+    \node[maincard, text width=3.8cm, align=center] (s1) at (-5,0) {
+      {\color{pink}\scriptsize\bfseries\faIcon{search}~~ALIAS MATCHING}\\[4pt]
+      {\color{graytext}\tiny
+        ``diversification'' $\to$\\
+        {\color{whitetext}Diversification} (strategy)\\[2pt]
+        ``resilience'' $\to$\\
+        {\color{whitetext}Resilience} (capability)\\[2pt]
+        ``supply chain disruptions'' $\to$\\
+        {\color{whitetext}SC Disruption} (risk)
+      }
+    };
+    % Step 2: trigger detection
+    \node[maincard, text width=3.8cm, align=center] (s2) at (0,0) {
+      {\color{blue}\scriptsize\bfseries\faIcon{bolt}~~TRIGGER DETECTION}\\[4pt]
+      {\color{graytext}\tiny
+        ``strengthens'' detected $\to$\\
+        {\color{whitetext}STRENGTHENS} relation\\[2pt]
+        7 relation types checked:\\
+        {\color{whitetext}improve, mitigate, enable,}\\
+        {\color{whitetext}constrain, expose, affect,}\\
+        {\color{whitetext}trade-off}
+      }
+    };
+    % Step 3: relation output
+    \node[maincard, text width=3.8cm, align=center] (s3) at (5,0) {
+      {\color{green}\scriptsize\bfseries\faIcon{project-diagram}~~RELATION OUTPUT}\\[4pt]
+      {\color{graytext}\tiny
+        \color{pink}Diversification\\
+        $\xrightarrow{\text{\tiny\color{blue}STRENGTHENS}}$\\
+        \color{green}Resilience\\[4pt]
+        + evidence sentence\\
+        + trigger word\\
+        + sentence index
+      }
+    };
+
+    % Flow arrows
+    \draw[flowarrow] (sent.south -| s1.north) -- (s1.north);
+    \draw[flowarrow] (s1) -- (s2);
+    \draw[flowarrow] (s2) -- (s3);
+
+    % Bottom note
+    \node[font=\tiny, text=dimtext, text width=10cm, align=center] at (0,-1.8) {
+      Also uses a \textbf{2-sentence sliding window} to catch cross-sentence relations.\\
+      + \textbf{Corpus mining}: TF-IDF discovers up to 160 additional domain entities not in the base vocabulary.
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 7: Relation Types ────────────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries 7 Relation Types}\\[3pt]
+  {\color{graytext}\small Each detected by domain-specific trigger words}\\[12pt]
+  \begin{tikzpicture}
+    \foreach \rtype/\w/\triggers/\col/\ypos in {
+      STRENGTHENS/3.2/{enhance, boost, reinforce, build resilience}/pink/3.6,
+      IMPROVES/3.0/{improve, increase, elevate, amplify}/pink/2.7,
+      MITIGATES/2.9/{reduce, buffer, shield, hedge, withstand}/blue/1.8,
+      TRADE\_OFF/2.8/{trade-off, tension between, balancing}/orange/0.9,
+      ENABLES/2.7/{facilitate, support, foster, allow}/green/0.0,
+      EXPOSES/2.6/{vulnerable, exposure, concentrated}/purple/-0.9,
+      CONSTRAINS/2.5/{barrier, limit, restriction, cost}/graytext/-1.8%
+    } {
+      % weight bubble
+      \node[circle, fill=\col!20, draw=\col!50, minimum size=0.7cm, font=\tiny\bfseries, text=\col]
+        at (-5.5,\ypos) {\w};
+      % relation name
+      \node[font=\small\bfseries, text=\col, anchor=west] at (-4.8,\ypos) {\rtype};
+      % triggers
+      \node[font=\tiny, text=graytext, anchor=west] at (-1.5,\ypos) {\triggers};
+    }
+
+    % Side card: direction rules
+    \node[maincard, text width=4.2cm, align=left] at (7.5,1.2) {
+      {\color{pink}\scriptsize\bfseries DIRECTION RULES}\\[6pt]
+      {\color{graytext}\tiny
+        \textbf{\color{whitetext}STRENGTHENS:}\\
+        strategy/policy $\to$ capability\\[2pt]
+        \textbf{\color{whitetext}MITIGATES:}\\
+        strategy/policy $\to$ risk\\[2pt]
+        \textbf{\color{whitetext}EXPOSES:}\\
+        risk $\to$ sector/system\\[2pt]
+        \textbf{\color{whitetext}AFFECTS:}\\
+        risk $\to$ system/capability
+      }
+    };
+
+    \node[maincard, text width=4.2cm, align=center] at (7.5,-1.5) {
+      {\color{green}\scriptsize\bfseries 8{,}453 relations extracted}\\[3pt]
+      {\color{graytext}\tiny across 2{,}022 chunks\\avg.\ 61.6 relations/chunk}
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 8: Knowledge Graph Structure ──────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries The Knowledge Graph}\\[3pt]
+  {\color{graytext}\small NetworkX MultiDiGraph --- 3 node types, 4 edge types}\\[8pt]
+  \begin{tikzpicture}[scale=0.88, transform shape]
+    % ENTITY NODES
+    \node[entitylarge=pink] (div) at (-1,3.5) {Diversi-\\fication};
+    \node[entitylarge=green] (res) at (4,4) {Resilience};
+    \node[entitylarge=blue] (eff) at (9,3.5) {Efficiency};
+    \node[entity=orange] (covid) at (1.5,6) {COVID-19};
+    \node[entity=purple] (jit) at (7,6) {Just-in-\\Time};
+    \node[entity=cyan] (vis) at (11,5.5) {Visibility};
+    \node[entity=pink] (nsh) at (-3,5.5) {Near-\\shoring};
+
+    % RELATIONS
+    \draw[relation=pink, line width=1.5pt] (div) -- node[above, font=\tiny\bfseries, text=pink, fill=bg, inner sep=1pt] {STRENGTHENS} (res);
+    \draw[relation=orange] (res) -- node[above, font=\tiny\bfseries, text=orange, fill=bg, inner sep=1pt] {TRADE\_OFF} (eff);
+    \draw[relation=blue] (jit) -- node[right, font=\tiny\bfseries, text=blue, fill=bg, inner sep=1pt] {IMPROVES} (eff);
+    \draw[relation=orange] (covid) -- node[left, font=\tiny\bfseries, text=orange, fill=bg, inner sep=1pt] {AFFECTS} (div);
+    \draw[relation=purple] (covid) -- node[above, font=\tiny\bfseries, text=purple, fill=bg, inner sep=1pt] {EXPOSES} (jit);
+    \draw[relation=green] (vis) -- node[right, font=\tiny\bfseries, text=green, fill=bg, inner sep=1pt] {ENABLES} (res);
+    \draw[relation=cyan] (nsh) -- node[left, font=\tiny\bfseries, text=cyan, fill=bg, inner sep=1pt] {MITIGATES} (covid);
+
+    % CHUNK NODES (lower area)
+    \node[flowbox, minimum width=1.6cm, minimum height=0.55cm, font=\tiny] (c1) at (0,1) {Chunk p12:c02};
+    \node[flowbox, minimum width=1.6cm, minimum height=0.55cm, font=\tiny] (c2) at (4,1) {Chunk p45:c01};
+    \node[flowbox, minimum width=1.6cm, minimum height=0.55cm, font=\tiny] (c3) at (8,1) {Chunk p78:c00};
+
+    % MENTIONED_IN edges
+    \draw[dashed, graytext!50] (div) -- (c1);
+    \draw[dashed, graytext!50] (div) -- (c2);
+    \draw[dashed, graytext!50] (res) -- (c2);
+    \draw[dashed, graytext!50] (res) -- (c3);
+    \draw[dashed, graytext!50] (eff) -- (c3);
+    \draw[dashed, graytext!50] (jit) -- (c3);
+
+    % Stats box
+    \node[maincard, text width=2.4cm, align=center, inner sep=6pt] at (12.5,2) {
+      {\color{pink}\tiny\bfseries GRAPH STATS}\\[4pt]
+      {\tiny
+        {\color{whitetext}258} entities\\
+        {\color{whitetext}14{,}889} sentences\\
+        {\color{whitetext}2{,}022} chunks\\
+        {\color{whitetext}8{,}453} relations\\
+        {\color{whitetext}16{,}658} mention edges
+      }
+    };
+
+    % Legend
+    \node[maincard, text width=2.4cm, align=left, inner sep=6pt] at (12.5,-0.2) {
+      {\color{graytext}\tiny\bfseries LEGEND}\\[3pt]
+      {\tiny
+        \tikz\fill[pink!25] circle(3pt); Entity\\
+        \tikz\draw[cardborder, fill=card] (0,0) rectangle(6pt,4pt); Chunk\\
+        \tikz\draw[dashed, graytext!50] (0,0) -- (0.4,0); MENTIONED\_IN\\
+        \tikz\draw[pink, thick, -{Stealth}] (0,0) -- (0.4,0); Relation
+      }
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 9: Query Intent Detection ────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Query Intent Detection}\\[3pt]
+  {\color{graytext}\small The system reads your question before searching}\\[12pt]
+  \begin{tikzpicture}
+    % Three query examples
+    \node[maincard, text width=4cm, align=center] (q1) at (-4.5,1.5) {
+      {\color{green}\scriptsize\bfseries CAUSAL}\\[4pt]
+      {\color{graytext}\tiny ``\textbf{\color{whitetext}How does} diversification\\
+      \textbf{\color{whitetext}reduce} supply chain risk?''}\\[4pt]
+      {\color{green}\tiny Prefers: STRENGTHENS,\\MITIGATES, ENABLES}
+    };
+    \node[maincard, text width=4cm, align=center] (q2) at (0,1.5) {
+      {\color{orange}\scriptsize\bfseries TRADE-OFF}\\[4pt]
+      {\color{graytext}\tiny ``What is the \textbf{\color{whitetext}trade-off}\\
+      between efficiency \& resilience?''}\\[4pt]
+      {\color{orange}\tiny Prefers: TRADE\_OFF,\\CONSTRAINS, EXPOSES}
+    };
+    \node[maincard, text width=4cm, align=center] (q3) at (4.5,1.5) {
+      {\color{blue}\scriptsize\bfseries EXPLANATION}\\[4pt]
+      {\color{graytext}\tiny ``\textbf{\color{whitetext}Why} are global supply\\
+      chains vulnerable to shocks?''}\\[4pt]
+      {\color{blue}\tiny Prefers: EXPOSES,\\CONSTRAINS, AFFECTS}
+    };
+
+    % Arrow to scoring
+    \draw[flowarrow] (0,0) -- (0,-0.8);
+
+    % Bottom result
+    \node[maincard, text width=12cm, align=center] at (0,-1.8) {
+      {\color{pink}\small\bfseries Intent shapes scoring}\\[4pt]
+      {\color{graytext}\small
+        Causal query + STRENGTHENS relation $\to$ {\color{green}\textbf{+1.1 bonus}}
+        \quad|\quad
+        Trade-off query + TRADE\_OFF relation $\to$ {\color{orange}\textbf{+2.2 bonus}}
+      }\\[2pt]
+      {\color{graytext}\small
+        Trade-off query + STRENGTHENS relation $\to$ {\color{pink}\textbf{--2.4 penalty}} {\color{dimtext}(wrong intent)}
+      }
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 10: Entity Specificity ────────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Entity Specificity}\\[3pt]
+  {\color{graytext}\small Rare concepts are stronger signals than generic ones}\\[12pt]
+  \begin{tikzpicture}
+    % Formula
+    \node[maincard, text width=10cm, align=center] (formula) at (0,2.2) {
+      {\color{pink}\normalsize
+        $\text{specificity} = \dfrac{\text{entity\_type\_weight}}{\log(1 + \text{mention\_count})}$
+        \quad $\times$\quad
+        $\begin{cases} 0.40 & \text{if generic} \\ 1.0 & \text{otherwise} \end{cases}$
+      }
+    };
+
+    % Examples side by side
+    \node[maincard, text width=5.5cm, align=center] at (-3.8,-0.8) {
+      {\color{green}\scriptsize\bfseries HIGH SPECIFICITY}\\[6pt]
+      {\color{graytext}\tiny
+        \textbf{\color{whitetext}Nearshoring} (strategy, appears in 5 chunks)}\\[2pt]
+        $3.0 \,/\, \log(6) = \mathbf{1.67}$\\[6pt]
+        \textbf{\color{whitetext}Semiconductors} (sector, 12 chunks)}\\[2pt]
+        $1.9 \,/\, \log(13) = \mathbf{0.74}$\\[6pt]
+        {\color{green}\tiny Finding these in a chunk is a strong signal}
+      }
+    };
+    \node[maincard, text width=5.5cm, align=center] at (3.8,-0.8) {
+      {\color{orange}\scriptsize\bfseries LOW SPECIFICITY}\\[6pt]
+      {\color{graytext}\tiny
+        \textbf{\color{whitetext}Supply Chain} (system, 90\% of chunks, generic)}\\[2pt]
+        $1.1 \,/\, \log(1820) \times 0.40 = \mathbf{0.058}$\\[6pt]
+        \textbf{\color{whitetext}OECD} (organization, 70\% of chunks, generic)}\\[2pt]
+        $0.7 \,/\, \log(1416) \times 0.40 = \mathbf{0.039}$\\[6pt]
+        {\color{orange}\tiny These are everywhere --- almost worthless as signals}
+      }
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 11: Full Scoring Formula ──────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Graph Scoring --- The Full Formula}\\[10pt]
+  \begin{tikzpicture}[
+    pos/.style={maincard, text width=3.5cm, align=center, inner sep=6pt},
+    neg/.style={draw=pink!40, rounded corners=8pt, fill=pink!5, text width=3.2cm, align=center, inner sep=6pt, text=whitetext},
+  ]
+    % POSITIVE signals (left side)
+    \node[pos] (em) at (-4.5, 2.5) {
+      {\color{green}\tiny\bfseries ENTITY MATCH}\\
+      {\color{graytext}\tiny $5.0 \times \text{specificity}$ per entity}
+    };
+    \node[pos] (cb) at (-4.5, 1.1) {
+      {\color{green}\tiny\bfseries COVERAGE BONUS}\\
+      {\color{graytext}\tiny $5.5 \times \frac{\text{matched}}{\text{query entities}}$}
+    };
+    \node[pos] (sa) at (0, 2.5) {
+      {\color{blue}\tiny\bfseries SENTENCE ALIGN}\\
+      {\color{graytext}\tiny Top-2 sentences scored}
+    };
+    \node[pos] (dr) at (0, 1.1) {
+      {\color{blue}\tiny\bfseries DIRECT RELATION}\\
+      {\color{graytext}\tiny Weight + intent + rarity}
+    };
+    \node[pos] (pb) at (4.5, 2.5) {
+      {\color{purple}\tiny\bfseries PATH BONUS}\\
+      {\color{graytext}\tiny 2-hop: $A \to X \to B$}
+    };
+    \node[pos] (lo) at (4.5, 1.1) {
+      {\color{cyan}\tiny\bfseries LEXICAL OVERLAP}\\
+      {\color{graytext}\tiny Word match safety net}
+    };
+
+    % Plus signs
+    \node[font=\Large\bfseries, text=green] at (-2.25,2.5) {+};
+    \node[font=\Large\bfseries, text=green] at (-2.25,1.1) {+};
+    \node[font=\Large\bfseries, text=green] at (2.25,2.5) {+};
+    \node[font=\Large\bfseries, text=green] at (2.25,1.1) {+};
+
+    % NEGATIVE signals (bottom row)
+    \node[neg] (gp) at (-4, -0.5) {
+      {\color{pink}\tiny\bfseries GENERIC PENALTY}\\
+      {\color{graytext}\tiny +1.6 if only generic matches}
+    };
+    \node[neg] (qm) at (0, -0.5) {
+      {\color{pink}\tiny\bfseries QUERY MISS}\\
+      {\color{graytext}\tiny $1.2 \times$ missing important entities}
+    };
+    \node[neg] (hp) at (4, -0.5) {
+      {\color{pink}\tiny\bfseries HUB PENALTY}\\
+      {\color{graytext}\tiny $0.05 \times \max(0,\, n{-}12)$}
+    };
+
+    % Minus signs
+    \node[font=\Large\bfseries, text=pink] at (-2,-0.5) {--};
+    \node[font=\Large\bfseries, text=pink] at (2,-0.5) {--};
+
+    % TOTAL
+    \node[draw=pink, rounded corners=8pt, fill=pink!10, inner sep=8pt,
+          font=\small\bfseries, text=whitetext, minimum width=10cm]
+      at (0,-1.8) {total = {\color{green}positives} $-$ {\color{pink}penalties} \quad\quad {\color{graytext}\small(if $\leq$ 0, chunk is discarded)}};
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 12: 2-Hop Path Reasoning ─────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries 2-Hop Path Reasoning}\\[3pt]
+  {\color{graytext}\small The graph's unique advantage --- indirect evidence}\\[12pt]
+  \begin{tikzpicture}[scale=0.9, transform shape]
+    % Query
+    \node[maincard, text width=10cm, align=center] (query) at (3.5,4.5) {
+      {\color{dimtext}\tiny QUERY}\\[2pt]
+      {\small ``How does \textbf{\color{pink}COVID-19} affect \textbf{\color{green}Resilience}?''}
+    };
+
+    % Direct: COVID -> Resilience (no direct edge)
+    \node[entitylarge=orange] (covid) at (0,1.5) {COVID-19};
+    \node[entitylarge=green] (res) at (10,1.5) {Resilience};
+
+    % No direct edge
+    \draw[dashed, graytext!30, line width=1.5pt] (covid) -- node[above, font=\small, text=graytext] {\faIcon{times}~~no direct relation} (res);
+
+    % Intermediate entities
+    \node[entity=pink] (div) at (3.5,0) {Diversi-\\fication};
+    \node[entity=blue] (jit) at (6.5,0) {Just-in-\\Time};
+
+    % 2-hop paths
+    \draw[relation=orange, line width=1.3pt] (covid) -- node[below left, font=\tiny\bfseries, text=orange, fill=bg, inner sep=1pt] {AFFECTS} (div);
+    \draw[relation=green, line width=1.3pt] (div) -- node[below right, font=\tiny\bfseries, text=green, fill=bg, inner sep=1pt] {STRENGTHENS} (res);
+
+    \draw[relation=purple, line width=1.3pt] (covid) -- node[below right, font=\tiny\bfseries, text=purple, fill=bg, inner sep=1pt] {EXPOSES} (jit);
+    \draw[relation=blue, line width=1.3pt] (jit) -- node[below left, font=\tiny\bfseries, text=blue, fill=bg, inner sep=1pt] {IMPROVES} (res);
+
+    % Path score
+    \node[maincard, text width=8cm, align=center] at (5,-1.8) {
+      {\color{pink}\scriptsize\bfseries PATH SCORE:} {\color{graytext}\scriptsize $1.4 \times (\text{specificity}_A + \text{specificity}_B) + 1.1 \times \text{aligned\_relations}$}\\[3pt]
+      {\color{green}\scriptsize TF-IDF and Dense \textbf{cannot} do this --- they have no graph to traverse}
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 13: Hybrid Fusion + LLM ──────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Hybrid Fusion \& LLM Answer}\\[10pt]
+  \begin{tikzpicture}
+    % Fusion diagram
+    \node[maincard, text width=2.5cm, align=center] (dense) at (-4.5,1.5) {
+      {\color{purple}\small\bfseries Dense}\\
+      {\color{graytext}\tiny similarity}\\
+      {\color{purple}\tiny weight: 0.38}
+    };
+    \node[maincard, text width=2.5cm, align=center] (graph) at (-4.5,-0.5) {
+      {\color{pink}\small\bfseries Graph}\\
+      {\color{graytext}\tiny scoring}\\
+      {\color{pink}\tiny weight: 0.54 total}
+    };
+    \node[draw=orange!40, rounded corners=8pt, fill=orange!10, minimum width=2.2cm, minimum height=1.5cm, align=center, font=\small\bfseries, text=orange]
+      (fuse) at (-1,0.5) {Weighted\\Fusion};
+    \draw[flowarrow] (dense) -- (fuse);
+    \draw[flowarrow] (graph) -- (fuse);
+
+    % Arrow to LLM
+    \node[draw=green!40, rounded corners=8pt, fill=green!10, minimum width=2.5cm, minimum height=1.5cm, align=center, font=\small\bfseries, text=green]
+      (llm) at (3,0.5) {\faIcon{robot}\\LLM};
+    \draw[flowarrow] (fuse) -- node[above, font=\tiny, text=graytext] {top-k chunks} (llm);
+
+    % Answer output
+    \node[maincard, text width=4.5cm, align=left] at (7.5,0.5) {
+      {\color{green}\scriptsize\bfseries GROUNDED ANSWER}\\[4pt]
+      {\color{graytext}\tiny
+        \faIcon{check}~Only uses retrieved evidence\\
+        \faIcon{check}~Cites chunk IDs: [chunk\_id]\\
+        \faIcon{check}~Says ``insufficient'' if needed\\
+        \faIcon{check}~Temperature = 0.0
+      }
+    };
+
+    % Judge
+    \node[maincard, text width=11cm, align=center] at (1.5,-2) {
+      {\color{orange}\scriptsize\bfseries\faIcon{gavel}~~LLM JUDGE} {\color{graytext}\scriptsize scores each answer on 5 dimensions:}\\[4pt]
+      {\scriptsize
+        \tikz\node[badge={pink}{}, font=\tiny\bfseries] {correctness 0.35};~~
+        \tikz\node[badge={blue}{}, font=\tiny\bfseries] {completeness 0.25};~~
+        \tikz\node[badge={green}{}, font=\tiny\bfseries] {groundedness 0.25};~~
+        \tikz\node[badge={purple}{}, font=\tiny\bfseries] {reasoning 0.10};~~
+        \tikz\node[badge={cyan}{}, font=\tiny\bfseries] {clarity 0.05};
+      }
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 14: Results --- The Story ─────────────────────────────
+\begin{frame}{}
+  \centering
+  {\color{whitetext}\LARGE\bfseries Results --- Where the Graph Shines}\\[6pt]
+  \begin{tikzpicture}
+    % Bar chart - per category
+    \begin{axis}[
+      at={(-0.5cm,0)},
+      ybar,
+      bar width=0.22cm,
+      width=8.5cm,
+      height=5.5cm,
+      enlarge x limits=0.12,
+      ylabel={\tiny\color{graytext} Mean Overall Score},
+      ylabel style={text=graytext},
+      symbolic x coords={Factual, Causal, Multi-hop, Trade-off},
+      xtick=data,
+      x tick label style={font=\tiny, text=graytext},
+      y tick label style={font=\tiny, text=graytext},
+      ymin=0, ymax=0.85,
+      axis line style={graytext!50},
+      tick style={graytext!50},
+      every axis plot/.append style={fill opacity=0.9},
+      nodes near coords={\pgfmathprintnumber[fixed, precision=2]{\pgfplotspointmeta}},
+      every node near coord/.append style={font=\tiny, text=graytext, rotate=90, anchor=west},
+      grid=major,
+      grid style={graytext!10},
+      legend style={at={(0.5,-0.2)}, anchor=north, legend columns=4,
+                     font=\tiny, text=graytext, draw=none, fill=none},
+    ]
+      \addplot[fill=blue!70]     coordinates {(Factual,0.686) (Causal,0.540) (Multi-hop,0.605) (Trade-off,0.730)};
+      \addplot[fill=purple!70]   coordinates {(Factual,0.439) (Causal,0.531) (Multi-hop,0.623) (Trade-off,0.703)};
+      \addplot[fill=green!70]    coordinates {(Factual,0.251) (Causal,0.640) (Multi-hop,0.606) (Trade-off,0.660)};
+      \addplot[fill=orange!70]   coordinates {(Factual,0.499) (Causal,0.522) (Multi-hop,0.701) (Trade-off,0.733)};
+      \legend{TF-IDF, Dense, Graph, Hybrid}
+    \end{axis}
+
+    % Story cards on right
+    \node[maincard, text width=4.5cm, align=left, inner sep=6pt] at (9,3.5) {
+      {\color{blue}\tiny\bfseries\faIcon{trophy}~~TF-IDF WINS FACTUAL}\\[2pt]
+      {\color{graytext}\tiny 0.686 --- exact keywords dominate\\when questions are simple \& direct}
+    };
+    \node[maincard, text width=4.5cm, align=left, inner sep=6pt] at (9,1.8) {
+      {\color{green}\tiny\bfseries\faIcon{trophy}~~GRAPH WINS CAUSAL}\\[2pt]
+      {\color{graytext}\tiny 0.640 vs 0.540 TF-IDF {\color{green}(+18.5\%)}\\
+      Relations match question structure}
+    };
+    \node[maincard, text width=4.5cm, align=left, inner sep=6pt] at (9,0.1) {
+      {\color{orange}\tiny\bfseries\faIcon{trophy}~~HYBRID WINS MULTI-HOP}\\[2pt]
+      {\color{graytext}\tiny 0.701 --- best overall\\
+      Dense recall + Graph reasoning}
+    };
+    \node[draw=pink!40, rounded corners=6pt, fill=pink!8, text width=4.5cm, align=center, inner sep=6pt] at (9,-1.6) {
+      {\color{pink}\tiny\bfseries KEY INSIGHT}\\[3pt]
+      {\color{graytext}\tiny TF-IDF initially outperformed overall because\\
+      evaluation was mostly \textbf{factual} questions.\\
+      When we added \textbf{causal}, \textbf{multi-hop} \&\\
+      \textbf{trade-off} questions, the \textbf{\color{green}graph effect}\\
+      \textbf{\color{green}became clear}.}
+    };
+  \end{tikzpicture}
+\end{frame}
+
+% ── SLIDE 15: Thank You ────────────────────────────────────────
+{
+\setbeamertemplate{footline}{}
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[bg] (current page.south west) rectangle (current page.north east);
+    % Glow
+    \fill[pink, opacity=0.06] ([xshift=4cm, yshift=3cm]current page.south west) circle (7cm);
+    \fill[blue, opacity=0.05] ([xshift=-3cm, yshift=-2cm]current page.north east) circle (5cm);
+    \fill[green, opacity=0.04] (current page.center) circle (3cm);
+    % Thank you
+    \node[anchor=center, text=whitetext, font=\fontsize{36}{40}\bfseries\selectfont]
+      at ([yshift=2cm]current page.center) {Thank You};
+    % Divider
+    \draw[pink, line width=1.5pt] ([xshift=-2cm, yshift=0.9cm]current page.center)
+      -- ([xshift=2cm, yshift=0.9cm]current page.center);
+    % Questions
+    \node[anchor=center, text=graytext, font=\large]
+      at ([yshift=0.1cm]current page.center) {Questions \& Discussion};
+    % Key takeaway
+    \node[maincard, text width=9cm, align=center, inner sep=10pt]
+      at ([yshift=-1.5cm]current page.center) {
+        {\color{pink}\small\bfseries Key Takeaway}\\[4pt]
+        {\color{graytext}\small
+          Vector search finds \textit{similar text}.\\
+          GraphRAG finds \textit{connected evidence}.\\
+          Complex questions need \textit{structured reasoning}.
+        }
+      };
+    % Author
+    \node[anchor=center, text=pink, font=\Large\bfseries]
+      at ([yshift=-3.2cm]current page.center) {Jaafar Yeffou};
+  \end{tikzpicture}
+\end{frame}
+}
+
+\end{document}

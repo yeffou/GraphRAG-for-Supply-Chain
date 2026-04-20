@@ -237,10 +237,24 @@ RELATION_TYPE_WEIGHTS = {
 }
 
 IMPROVEMENT_TRIGGERS = (
+    "accelerate",
+    "amplify",
+    "augment",
+    "bolster",
+    "build",
+    "cultivate",
+    "deepen",
+    "elevate",
+    "expand",
     "improve",
     "improves",
     "improved",
     "improving",
+    "increase",
+    "increases",
+    "lift",
+    "raise",
+    "reinforce",
     "strengthen",
     "strengthens",
     "strengthened",
@@ -259,33 +273,52 @@ IMPROVEMENT_TRIGGERS = (
 ENABLEMENT_TRIGGERS = (
     "allow",
     "allows",
+    "contribute",
+    "contributes",
     "enable",
     "enables",
     "enabled",
+    "ensuring",
     "facilitate",
     "facilitates",
     "facilitated",
+    "foster",
+    "fosters",
     "help",
     "helps",
     "make it possible",
+    "promote",
+    "promotes",
     "support",
     "supports",
+    "underpin",
+    "underpins",
 )
 
 MITIGATION_TRIGGERS = (
+    "absorb",
     "avoid",
     "buffer",
     "cope with",
+    "counter",
     "de-risk",
     "de-risking",
+    "guard",
     "hedge",
+    "insulate",
+    "lessen",
+    "minimise",
+    "minimize",
     "mitigate",
     "mitigates",
+    "offset",
     "prepare",
+    "prevent",
     "protect",
     "recover",
     "reduce",
     "reduces",
+    "shield",
     "surmount",
     "withstand",
 )
@@ -319,20 +352,38 @@ EXPOSURE_TRIGGERS = (
 
 AFFECT_TRIGGERS = (
     "affect",
+    "affects",
     "bottleneck",
     "bottlenecks",
+    "cascade",
+    "cascading",
+    "cause",
+    "caused",
+    "damage",
     "delay",
     "delays",
+    "destabilise",
+    "destabilize",
+    "disrupt",
+    "disrupted",
     "disruption",
     "disruptions",
     "expose",
+    "hamper",
+    "hinder",
     "impact",
+    "impair",
+    "interrupt",
+    "jeopardise",
     "loss",
     "pressure",
+    "ripple",
     "shortage",
     "shortages",
     "shock",
     "shocks",
+    "threaten",
+    "undermine",
 )
 
 TRADE_OFF_TRIGGERS = (
@@ -732,21 +783,66 @@ def extract_sentence_records(
     text: str,
     entity_specs: tuple[EntitySpec, ...] | None = None,
 ) -> list[SentenceExtractionRecord]:
-    """Extract sentence-level entities and relations for one chunk."""
+    """Extract sentence-level entities and relations for one chunk.
+
+    Uses a sliding 2-sentence window for cross-sentence relation extraction
+    in addition to single-sentence extraction.  This captures implicit
+    relations that span sentence boundaries (e.g. "X improves Y. This is
+    especially important for Z." where the X→Z link would otherwise be lost).
+    """
+
+    sentences = split_text_into_sentences(text)
+
+    # Per-sentence entity extraction
+    per_sentence_entities: list[list[EntityMention]] = []
+    for sentence_text in sentences:
+        per_sentence_entities.append(
+            extract_entities(
+                text=sentence_text,
+                domain_tags=None,
+                allow_domain_tag_backfill=False,
+                entity_specs=entity_specs,
+            )
+        )
 
     records: list[SentenceExtractionRecord] = []
-    for sentence_index, sentence_text in enumerate(split_text_into_sentences(text)):
-        sentence_entities = extract_entities(
-            text=sentence_text,
-            domain_tags=None,
-            allow_domain_tag_backfill=False,
-            entity_specs=entity_specs,
-        )
+    seen_relation_keys: set[tuple[str, str, str]] = set()
+
+    for sentence_index, sentence_text in enumerate(sentences):
+        sentence_entities = per_sentence_entities[sentence_index]
+
+        # Single-sentence relations
         sentence_relations = infer_sentence_relations(
             sentence_text=sentence_text,
             sentence_entities=sentence_entities,
             sentence_index=sentence_index,
         )
+
+        # Cross-sentence window: merge entities from adjacent sentences
+        if sentence_index + 1 < len(sentences):
+            window_text = sentence_text + " " + sentences[sentence_index + 1]
+            window_entities_map: dict[str, EntityMention] = {}
+            for e in sentence_entities:
+                window_entities_map[e.entity_id] = e
+            for e in per_sentence_entities[sentence_index + 1]:
+                window_entities_map.setdefault(e.entity_id, e)
+            window_entities = list(window_entities_map.values())
+
+            if len(window_entities) >= 2:
+                cross_relations = infer_sentence_relations(
+                    sentence_text=window_text,
+                    sentence_entities=window_entities,
+                    sentence_index=sentence_index,
+                )
+                for rel in cross_relations:
+                    key = (rel.source_entity_id, rel.relation_type, rel.target_entity_id)
+                    if key not in seen_relation_keys:
+                        seen_relation_keys.add(key)
+                        sentence_relations.append(rel)
+
+        for rel in sentence_relations:
+            seen_relation_keys.add((rel.source_entity_id, rel.relation_type, rel.target_entity_id))
+
         records.append(
             SentenceExtractionRecord(
                 sentence_id=f"sentence::{sentence_index}",
@@ -884,13 +980,23 @@ def split_text_into_sentences(text: str) -> list[str]:
 
 
 def query_terms(text: str) -> set[str]:
-    """Extract normalized query terms for lexical tie-breaking."""
+    """Extract normalized query terms for lexical tie-breaking.
 
-    return {
-        token
-        for token in TOKEN_RE.findall(text.lower())
-        if token not in STOPWORDS and len(token) > 2
-    }
+    Returns unigrams + bigrams so that phrases like 'strategic manufacturing'
+    and 'sourced from abroad' are captured as query signals.
+    """
+
+    tokens = [t for t in TOKEN_RE.findall(text.lower()) if len(t) > 2]
+    terms: set[str] = set()
+    for t in tokens:
+        if t not in STOPWORDS:
+            terms.add(t)
+    # Add bigrams for more precise lexical matching
+    for i in range(len(tokens) - 1):
+        a, b = tokens[i], tokens[i + 1]
+        if a not in STOPWORDS or b not in STOPWORDS:
+            terms.add(f"{a} {b}")
+    return terms
 
 
 def infer_entity_type_for_phrase(phrase: str) -> str | None:

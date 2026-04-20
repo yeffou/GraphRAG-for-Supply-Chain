@@ -244,14 +244,76 @@ def run_graph_query(
     if not scored_chunks:
         raise GraphQueryError("no graph retrieval candidates were produced")
 
-    ranked_chunks = [
-        retrieved_chunk
-        for _, retrieved_chunk in sorted(
-            scored_chunks,
-            key=lambda item: item[0],
-            reverse=True,
-        )[: min(top_k, len(scored_chunks))]
+    # Primary ranking: entity + relation scores
+    primary_ranked: list[GraphRetrievedChunk] = [
+        c for _, c in sorted(scored_chunks, key=lambda x: x[0], reverse=True)
     ]
+
+    # --- Lexical safety-net -------------------------------------------
+    # Guarantee that the top-2 chunks by bigram-enriched lexical overlap
+    # are ALWAYS present in the final result set.  This prevents highly
+    # specific factual queries (numbers, exact phrases, document-specific
+    # terminology) from being buried under entity-rich but off-topic chunks.
+    # We force-inject them into the last available slots so the entity-based
+    # top ranks are never displaced.
+    already_ids = {c.chunk_id for c in primary_ranked[:top_k]}
+    lexical_scored: list[tuple[float, str]] = []
+    for chunk_id, chunk in chunk_map.items():
+        overlap = lexical_overlap_score(query_term_set, chunk.text)
+        if overlap >= 0.28:
+            lexical_scored.append((overlap, chunk_id))
+
+    lexical_scored.sort(reverse=True)
+    injection_slots = min(2, top_k)  # always inject up to 2 lexical chunks
+    injected = 0
+    lexical_fallbacks: list[GraphRetrievedChunk] = []
+    for overlap, chunk_id in lexical_scored:
+        if injected >= injection_slots:
+            break
+        if chunk_id in already_ids:
+            continue
+        chunk = chunk_map[chunk_id]
+        graph_record = graph_record_map.get(chunk_id)
+        if graph_record is None:
+            continue
+        fallback_score = overlap * 2.0
+        lexical_fallbacks.append(GraphRetrievedChunk(
+            rank=1,
+            score=fallback_score,
+            chunk_id=chunk.chunk_id,
+            doc_id=chunk.doc_id,
+            title=chunk.title,
+            publisher=chunk.publisher,
+            page_number=chunk.page_number,
+            source_url=chunk.source_url,
+            local_path=chunk.local_path,
+            year=chunk.year,
+            text=chunk.text,
+            char_count=chunk.char_count,
+            contributing_entities=[],
+            contributing_relations=[],
+            supporting_paths=[],
+            score_breakdown=GraphScoreBreakdown(
+                entity_match=0.0,
+                coverage_bonus=0.0,
+                sentence_alignment=0.0,
+                direct_relation=0.0,
+                path_bonus=0.0,
+                lexical_overlap=round(fallback_score, 6),
+                generic_penalty=0.0,
+                query_miss_penalty=0.0,
+                hub_penalty=0.0,
+                total=round(fallback_score, 6),
+            ),
+        ))
+        injected += 1
+
+    # Build final list: entity-based top ranks + injected lexical safety chunks
+    entity_slots = max(top_k - len(lexical_fallbacks), top_k - injection_slots)
+    ranked_chunks = primary_ranked[:entity_slots] + lexical_fallbacks
+    ranked_chunks = ranked_chunks[:top_k]
+    # ------------------------------------------------------------------
+
     for rank, chunk in enumerate(ranked_chunks, start=1):
         chunk.rank = rank
 
@@ -306,8 +368,17 @@ def score_chunk(
         entity_id for entity_id in matched_entity_ids if entity_id not in generic_entity_ids
     ]
 
-    lexical_score = lexical_overlap_score(query_term_set, chunk.text) * 0.7
-    if not matched_non_generic_ids and lexical_score < 0.18:
+    raw_lexical = lexical_overlap_score(query_term_set, chunk.text)
+    # Strong lexical anchor: factual chunks that match query terms closely
+    # are never buried by entity-rich but off-topic chunks.
+    if raw_lexical >= 0.45:
+        lexical_score = raw_lexical * 4.5      # strong factual signal
+    elif raw_lexical >= 0.25:
+        lexical_score = raw_lexical * 3.0
+    else:
+        lexical_score = raw_lexical * 1.5
+
+    if not matched_non_generic_ids and not matched_entity_ids and raw_lexical < 0.10:
         return None
 
     contributing_entities = build_entity_contributions(
@@ -340,7 +411,7 @@ def score_chunk(
         sentence_scores.append(sentence_scored["score"])
         contributing_relations.extend(sentence_scored["relations"])
 
-    if not sentence_scores and not matched_non_generic_ids:
+    if not sentence_scores and not matched_non_generic_ids and not matched_entity_ids:
         return None
 
     sentence_alignment_score = sum(sorted(sentence_scores, reverse=True)[:2])
@@ -361,17 +432,17 @@ def score_chunk(
         and entity_id not in generic_entity_ids
     }
     missing_high_signal = high_signal_query_ids - set(matched_non_generic_ids)
-    query_miss_penalty = 2.4 * len(missing_high_signal)
+    query_miss_penalty = 1.2 * len(missing_high_signal)
     if high_signal_query_ids and not contributing_relations and not supporting_paths:
-        query_miss_penalty += 2.0
+        query_miss_penalty += 0.8
 
     generic_penalty = 0.0
     if matched_entity_ids and not matched_non_generic_ids:
-        generic_penalty += 3.4
-    generic_penalty += 0.25 * sum(
+        generic_penalty += 1.6
+    generic_penalty += 0.15 * sum(
         1 for relation in contributing_relations if relation.direct_query_pair is False
     )
-    hub_penalty = 0.10 * max(0, len(graph_record.extracted_entities) - 10)
+    hub_penalty = 0.05 * max(0, len(graph_record.extracted_entities) - 12)
 
     total_score = (
         entity_match_score
@@ -432,9 +503,9 @@ def build_entity_contributions(
     for entity_id in matched_entity_ids:
         mention = mentions_by_id[entity_id]
         specificity = query_specificity.get(entity_id, 1.0)
-        contribution = 4.0 * specificity
+        contribution = 5.0 * specificity
         if entity_id in generic_entity_ids:
-            contribution *= 0.45
+            contribution *= 0.55
         contributions.append(
             GraphEntityContribution(
                 entity_id=mention.entity_id,
@@ -460,9 +531,9 @@ def coverage_bonus_for_query(
     matched_non_generic = matched_entity_ids - generic_entity_ids
     if query_non_generic:
         coverage_ratio = len(matched_non_generic) / len(query_non_generic)
-        return 4.5 * coverage_ratio * max(len(matched_non_generic), 1)
+        return 5.5 * coverage_ratio * max(len(matched_non_generic), 1)
     coverage_ratio = len(matched_entity_ids) / len(query_entity_ids)
-    return 1.5 * coverage_ratio
+    return 2.5 * coverage_ratio
 
 
 def score_sentence(
@@ -703,13 +774,22 @@ def detect_query_intent(query_text: str) -> QueryIntent:
 
 
 def lexical_overlap_score(query_term_set: set[str], text: str) -> float:
-    """Compute a small lexical tie-break score."""
+    """Compute lexical overlap score.
 
+    Unigrams are weighted 1.0, bigrams (space in term) are weighted 2.0
+    because a bigram match is a stronger signal of document relevance.
+    """
     if not query_term_set:
         return 0.0
     lowered = text.lower()
-    overlap = sum(1 for term in query_term_set if term in lowered)
-    return overlap / max(len(query_term_set), 1)
+    score = 0.0
+    max_score = 0.0
+    for term in query_term_set:
+        weight = 2.0 if " " in term else 1.0
+        max_score += weight
+        if term in lowered:
+            score += weight
+    return score / max(max_score, 1.0)
 
 
 def query_entity_specificity(entity_type: str, mention_count: int, is_generic: bool) -> float:
