@@ -42,3 +42,4 @@ results/answer_evaluation/*
 results/animations/*
 results/demo_runs/*
 .claude/
+.claude/
